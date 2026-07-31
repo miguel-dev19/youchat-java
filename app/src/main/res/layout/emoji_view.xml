@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <LinearLayout
+      android:id="@+id/emojiViewTab"
+      android:layout_width="match_parent"
+      android:layout_height="36dp"
+      android:background="@color/fondo_blanco"
+      android:orientation="horizontal" />
+
+  <View
+      android:id="@+id/emojiViewDivider"
+      android:layout_width="match_parent"
+      android:visibility="invisible"
+      android:layout_height="1dp" />
+
+  <LinearLayout
+      android:id="@+id/root"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ViewTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:background="@color/fondo_blanco"
+        android:orientation="horizontal">
+          <ImageView
+              android:id="@+id/more_sticker"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:layout_marginStart="5dp"
+              android:padding="3dp"
+              android:background="?attr/selectableItemBackgroundBorderless"
+              android:layout_marginEnd="8dp"
+              app:tint="@color/texto_negro_to_gris"
+              android:src="@drawable/plus"/>
+          <com.google.android.material.tabs.TabLayout
+              android:id="@+id/tab_sticker"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:tabIndicatorColor="?attr/colorAccent"
+              app:tabIndicator="@drawable/tab_indicator"
+              app:tabIndicatorHeight="3dp"
+              app:tabInlineLabel="true"
+              app:tabIndicatorFullWidth="true"
+              app:tabMode="scrollable"
+              app:tabPaddingBottom="6dp"/>
+    </LinearLayout>
+
+      <androidx.viewpager.widget.ViewPager
+          android:id="@+id/emojiViewPager"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:background="@color/fondo_blanco" />
+
+      <androidx.viewpager2.widget.ViewPager2
+          android:id="@+id/stickerViewPager"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1"
+          android:visibility="gone"
+          android:background="@color/fondo_blanco"/>
+
+    <LinearLayout
+        android:id="@+id/ViewSticker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:elevation="2dp"
+        android:background="@color/fondo_blanco"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/emoji"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:padding="2dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginEnd="@dimen/margen"
+            app:tint="@color/texto_negro_to_gris"
+            android:src="@drawable/emoji"/>
+        <ImageView
+            android:id="@+id/sticker"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:padding="2dp"
+            android:layout_marginStart="@dimen/margen"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@color/texto_negro_to_gris"
+            android:src="@drawable/ic_sticker"/>
+    </LinearLayout>
+  </LinearLayout>
+</merge>

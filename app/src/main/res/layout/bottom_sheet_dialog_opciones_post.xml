@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/modalBottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/separator"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/separatorX"
+            android:layout_height="@dimen/separatorY"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_item_search"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"/>
+
+        <TextView
+            android:id="@+id/tv_limite_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_negro_to_gris"
+            android:textSize="16sp"
+            android:layout_marginStart="@dimen/margen"
+            android:layout_marginEnd="@dimen/margen"
+            android:padding="8dp"/>
+
+        <!--<cu.alexgi.youchat.views_GI.ExtendedFABGI
+            android:id="@+id/efab_post_publicar_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margen"
+            android:text="CREAR POST TEXTO"
+            android:textAlignment="center"
+            android:textColor="@color/texto_blanco_to_gris"
+            android:textSize="@dimen/size_text_button"
+            app:backgroundTint="?attr/colorAccent"
+            app:iconTint="@color/texto_blanco_to_gris"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent" />-->
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:alpha="0.5"
+            android:background="#868c90"/>
+
+        <cu.alexgi.youchat.views_GI.ExtendedFABGI
+            android:id="@+id/efab_post_eliminar_todos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margen"
+            android:text="ELIMINAR TODOS"
+            android:textAlignment="center"
+            android:textColor="@color/texto_blanco_to_gris"
+            android:textSize="@dimen/size_text_button"
+            app:backgroundTint="?attr/colorAccent"
+            app:iconTint="@color/texto_blanco_to_gris"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

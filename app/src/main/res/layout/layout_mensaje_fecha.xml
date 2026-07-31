@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp">
+        <cu.alexgi.youchat.views_GI.CardViewFechaGI
+            android:id="@+id/fecha_card_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            app:cardBackgroundColor="@color/msg_fecha"
+            app:cardElevation="0dp">
+            <TextView
+                android:id="@+id/fecha_global"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/margen"
+                android:layout_marginEnd="@dimen/margen"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_fecha" />
+        </cu.alexgi.youchat.views_GI.CardViewFechaGI>
+    </RelativeLayout>
+</RelativeLayout>

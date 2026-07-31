@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/modalBottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/list_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"
+        android:textAlignment="center"
+        android:text="No existe ningún fondo.\nCopie las imágenes en\nYouChat/Fondos YouChat"
+        android:textSize="18sp"
+        android:textColor="@color/texto_grisoscuro_to_grisclaro"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lista_fondos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/margen"
+        android:layout_marginBottom="@dimen/margen"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"/>
+
+    <cu.alexgi.youchat.views_GI.ExtendedFABGI
+        android:id="@+id/efab_elegirFondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margen"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Borrar fondo"
+        android:textSize="@dimen/size_text_button"
+        app:icon="@drawable/image"
+        android:textColor="@color/texto_blanco_to_gris"
+        app:backgroundTint="?attr/colorAccent"
+        app:iconTint="@color/texto_blanco_to_gris"/>
+</RelativeLayout>

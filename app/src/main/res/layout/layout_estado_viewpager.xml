@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_estado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/estados_fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:alpha="0.85" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="2dp">
+
+        <com.vanniktech.emoji.EmojiTextView
+            android:id="@+id/tv_texto_estado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/margen"
+            android:layout_marginEnd="@dimen/margen"
+            android:autoLink="all"
+            android:background="@color/invisible"
+            android:linksClickable="true"
+            android:maxLength="500"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textColorHint="@color/gris"
+            android:textColorLink="?attr/colorAccent"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/view_descarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_back_descarga"
+        android:orientation="horizontal">
+        <cu.alexgi.youchat.progressbar.DownloadProgressView
+            android:id="@+id/progress_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:padding="4dp"
+            app:lineWidth="0.8dp"
+            app:circleRadius="@dimen/margen"/>
+        <TextView
+            android:id="@+id/tv_tam_max_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:maxLines="1"
+            android:textColor="@color/texto_blanco_to_gris"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <!--<ImageView
+        android:animateLayoutChanges="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:padding="6dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/reac0"
+        android:visibility="invisible"/>-->
+
+    <!--<RelativeLayout
+        android:id="@+id/contenedor_input_estado_reacciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#33000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+    </RelativeLayout>-->
+
+</RelativeLayout>

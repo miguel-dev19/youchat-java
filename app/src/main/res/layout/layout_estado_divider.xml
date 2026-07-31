@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:id="@+id/root"
+    android:padding="8dp"
+    android:orientation="vertical">
+    <cu.alexgi.youchat.views_GI.TextViewFontGenOscuroGI
+        android:id="@+id/tipo_estado_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/margen"
+        android:maxLines="1"
+        android:textSize="16sp"/>
+</RelativeLayout>
+
+

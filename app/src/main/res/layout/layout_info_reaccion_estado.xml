@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/tipo_reac"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+        android:id="@+id/nombre_usuario_reacciono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textSize="14sp"
+        android:textColor="@color/texto_grisoscuro_to_grisclaro"/>
+
+</LinearLayout>

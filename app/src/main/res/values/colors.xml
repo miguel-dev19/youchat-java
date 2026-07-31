@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    ////////////////////////////////////////COLORPICKER///////////////////////////////////////////
+    <array name="demo_colors">
+        <item>@color/md_red_500</item>
+        <item>@color/md_pink_500</item>
+        <item>@color/md_purple_500</item>
+        <item>@color/md_deep_purple_500</item>
+        <item>@color/md_indigo_500</item>
+        <item>@color/md_blue_500</item>
+        <item>@color/md_light_blue_500</item>
+        <item>@color/md_cyan_500</item>
+        <item>@color/md_teal_500</item>
+        <item>@color/md_green_500</item>
+        <item>@color/md_light_green_500</item>
+        <item>@color/md_lime_500</item>
+        <item>@color/md_yellow_500</item>
+        <item>@color/md_amber_500</item>
+        <item>@color/md_orange_500</item>
+        <item>@color/md_deep_orange_500</item>
+        <item>@color/md_brown_500</item>
+        <item>@color/md_grey_500</item>
+        <item>@color/md_blue_grey_500</item>
+        <item>@color/md_white</item>
+    </array>
+    <color name="md_red_500">#f44336</color>
+    <color name="md_pink_500">#e91e63</color>
+    <color name="md_purple_500">#9c27b0</color>
+    <color name="md_deep_purple_500">#673ab7</color>
+    <color name="md_indigo_500">#3f51b5</color>
+    <color name="md_blue_500">#2196f3</color>
+    <color name="md_light_blue_500">#03a9f4</color>
+    <color name="md_cyan_500">#00bcd4</color>
+    <color name="md_teal_500">#009688</color>
+    <color name="md_green_500">#4caf50</color>
+    <color name="md_light_green_500">#8bc34a</color>
+    <color name="md_lime_500">#cddc39</color>
+    <color name="md_yellow_500">#ffeb3b</color>
+    <color name="md_amber_500">#ffc107</color>
+    <color name="md_orange_500">#ff9800</color>
+    <color name="md_deep_orange_500">#ff5722</color>
+    <color name="md_brown_500">#795548</color>
+    <color name="md_grey_500">#9e9e9e</color>
+    <color name="md_black">#000000</color>
+    <color name="md_white">#ffffff</color>
+    <color name="md_blue_grey_500">#607d8b</color>
+
+
+<!--    <color name="ACTION_BAR_COLOR">#FF5252</color>-->
+<!--    <color name="ACTION_BAR_PHOTO_VIEWER_COLOR">#E040FB</color>-->
+    <color name="ACTION_BAR_MEDIA_PICKER_COLOR">#536DFE</color>
+<!--    <color name="ACTION_BAR_SUBTITLE_COLOR">#041117</color>-->
+<!--    <color name="ACTION_BAR_SELECTOR_COLOR">#18FFFF</color>-->
+
+<!--    <color name="ACTION_BAR_PICKER_SELECTOR_COLOR">#69F0AE</color>-->
+<!--    <color name="ACTION_BAR_WHITE_SELECTOR_COLOR">#B2FF59</color>-->
+<!--    <color name="ACTION_BAR_AUDIO_SELECTOR_COLOR">#FFFF00</color>-->
+<!--    <color name="ACTION_BAR_MODE_SELECTOR_COLOR">#FFAB40</color>-->
+    ////////////////////////////////////////COLORPICKER///////////////////////////////////////////
+    /////////////////////////////////////////IMAGEPICKER KROEGRAMA////////////////////////////////////////////
+    <color name="bottomSheetTileShade">#80000000</color>
+    <color name="bottomSheetTileBackground">#171219</color>
+    <color name="bottomSheetTileImageBackground">#aaa</color>
+    /////////////////////////////////////////IMAGEPICKER KROEGRAMA////////////////////////////////////////////
+
+    <color name="progress_background">#55000000</color>
+    <color name="red_dark_primary_color">#D32F2F</color>
+    <color name="red_primary_color">#F44336</color>
+    <color name="red_light_primary_color">#FFCDD2</color>
+    <color name="red_text_icon_color">#FFFFFF</color>
+
+    <color name="blue_primary_color">#2196F3</color>
+    <color name="blue_light_primary_color">#BBDEFB</color>
+    <color name="blue_dark_primary_color">#1976D2</color>
+    <color name="blue_text_icon_color">#FFFFFF</color>
+
+    <color name="green_dark_primary_color">#388E3C</color>
+    <color name="green_primary_color">#4CAF50</color>
+    <color name="green_light_primary_color">#C8E6C9</color>
+    <color name="green_text_icon_color">#FFFFFF</color>
+    <!--<color name="progress_primary">@color/white</color>
+    <color name="progress_secondary">#8affffff</color>
+    <color name="progress_max_active">@color/colorAccent</color>-->
+
+    <!--<color name="colorPrimary">#0bbeee</color>-->
+    <!--<color name="colorPrimaryDark">#18829E</color>-->
+    <!--<color name="colorAccent">#00C853</color>-->
+
+    <!--<color name="icon_bottom_appbar">#464646</color>-->
+    <!--<color name="fondo_bottombar">#F7F6F6</color>-->
+    <!--<color name="mensaje_derecho">#E6E6E6</color>-->
+    <!--<color name="mensaje_izquierdo">#3F51B5</color>-->
+    <!--<color name="answer_der">#66ADADAD</color>-->
+    <!--<color name="texto_negro_to_gris">#222935</color>-->
+    <!--<color name="texto_blanco_to_gris">#FFF</color>-->
+    <!--<color name="texto_grisoscuro_to_grisclaro">#6B6B6B</color>-->
+    <!--<color name="slide_claro_to_oscuro">#D8DFE6</color>-->
+
+    <!--<color name="barra_network">#E7EDF3</color>-->
+    <!--<color name="gris">#E7EDF3</color>-->
+    <!--<color name="toast_rojo">#E53935</color>-->
+    <!--<color name="texto_gris">#7C7C7C</color>-->
+    <!--<color name="invisible">#00FFFFFF</color>-->
+    <!--<color name="fondo_blanco">#FFF</color>-->
+    <!--<color name="fondo_ajustes">#D3D3D3</color>-->
+    <!--<color name="black_overlay">#66000000</color>-->
+    <!--<color name="barra_preview">#202732</color>-->
+    <!--<color name="image_dialog_preview">#D8DFE6</color>-->
+    <!--<color name="item_seleccionado">#1A3F51B5</color>-->
+    <!--<color name="selected_search_option">#6B7EE7</color>-->
+
+    <!--<color name="inbox">#FF5751</color>-->
+    <!--<color name="primary">#3F51B5</color>-->
+    <!--<color name="theme">#35474e</color>-->
+
+    /////////////////////////originales abajo
+    <color name="audio_icon">#f68751</color>
+    <color name="touch_highlight">#406F7374</color>
+    <color name="universal_overlay">#44000000</color>
+    <color name="transparent_black_30">#30000000</color>
+    <color name="transparent_black">#00000000</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#CCC</color>
+    <color name="colorAccent">#3F51B5</color>
+    <!--<color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#2E3D8F</color>-->
+    <!--<color name="colorAccent">#00C853</color>-->
+
+    <color name="texto_cabecera">#3F51B5</color>
+
+    <color name="telegram">#28a6e5</color>
+
+    <color name="icon_bottom_appbar">#464646</color>
+    <color name="fondo_bottombar">#F7F6F6</color>
+    <color name="mensaje_derecho2">#E6E6E6</color>
+    <color name="mensaje_derecho">#E6E6E6</color>
+    <color name="mensaje_izquierdo">#3F51B5</color>
+    <color name="msg_fecha">#66000000</color>
+    <color name="answer_der">#66ADADAD</color>
+    <color name="texto_negro_to_gris">#200e32</color>
+    <color name="texto_blanco_to_gris">#FFF</color>
+    <color name="texto_grisoscuro_to_grisclaro">#6B6B6B</color>
+    <color name="slide_claro_to_oscuro">#D8DFE6</color>
+
+    <color name="barra_network">#E7EDF3</color>
+    <color name="gris">#E7EDF3</color>
+    <color name="toast_rojo">#E53935</color>
+    <color name="texto_gris">#7C7C7C</color>
+    <color name="invisible">#00FFFFFF</color>
+    <color name="fondo_blanco">#FFF</color>
+    <color name="fondo_blanco_con_transparencia">#80FFFFFF</color>
+    <color name="fondo_ajustes">#D3D3D3</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="barra_preview">#202732</color>
+    <color name="image_dialog_preview">#D8DFE6</color>
+    <color name="item_seleccionado">#1A3F51B5</color>
+    <color name="selected_search_option">#6B7EE7</color>
+
+    <color name="inbox2">#7FD7D1</color>
+    <color name="inbox3">#FF5751</color>
+    <color name="inbox4">#BF9791</color>
+    <color name="inbox5">#404040</color>
+
+    <color name="inbox">#FF5751</color>
+    <color name="primary">#3F51B5</color>
+    <color name="theme">#35474e</color>
+    <color name="gris_perfecto">#868c90</color>
+
+<!--    <color name="mensaje_oscuro">#302F2F</color>-->
+
+
+    ////////////////////////////////////////TEMA///////////////////////////////////////////
+    <color name="defectoAccent">#3F51B5</color>
+    <color name="temaRojoAccent">#B71C1C</color>
+    <color name="temaRosadoAccent">#D81B60</color>
+    <color name="temaAzulCelesteAccent">#039BE5</color>
+    <color name="temaVerdeAccent">#43A047</color>
+    <color name="temaNaranjaAccent">#FB8C00</color>
+    <color name="temaMarronAccent">#886558</color>
+    <color name="temaPurple">#9c27b0</color>
+    <color name="temaDeep_purple">#673ab7</color>
+    <color name="temaCyan">#00bcd4</color>
+    <color name="temaTeal">#009688</color>
+    <color name="temaGreen">#4caf50</color>
+    <color name="temaLight_green">#8bc34a</color>
+    <color name="temaYellow">#ffeb3b</color>
+    <color name="temaBlue_grey">#607d8b</color>
+    ////////////////////////////////////////TEMA///////////////////////////////////////////
+
+    ////////////////////////////////////////TARJETA///////////////////////////////////////////
+    <color name="card1">#E53935</color>
+    <color name="card2">#D81B60</color>
+    <color name="card3">#8E24AA</color>
+    <color name="card4">#5E35B1</color>
+    <color name="card5">#3949AB</color>
+    <color name="card6">#1E88E5</color>
+    <color name="card7">#039BE5</color>
+    <color name="card8">#00ACC1</color>
+    <color name="card9">#00897B</color>
+    <color name="card10">#43A047</color>
+    <color name="card11">#7CB342</color>
+    <color name="card12">#C0CA33</color>
+    <color name="card13">#FDD835</color>
+    <color name="card14">#FFB300</color>
+    <color name="card15">#FB8C00</color>
+    <color name="card16">#F4511E</color>
+    <color name="card17">#886558</color>
+    ////////////////////////////////////////TARJETA///////////////////////////////////////////
+    ///////////////////EMOJIS/////////////////////////////////////////////////////////////////
+    <color name="emoji_background">@color/emoji_white</color>
+    <color name="emoji_icons">@color/emoji_gray70</color>
+    <color name="emoji_divider">@color/emoji_gray20</color>
+    <color name="emoji_white">#ffffffff</color>
+    <color name="emoji_black">#ff000000</color>
+    <color name="emoji_gray20">#ffcccccc</color>
+    <color name="emoji_gray70">#ff4d4d4d</color>
+    <color name="emoji_grey_900">#212121</color>
+    ///////////////////EMOJIS/////////////////////////////////////////////////////////////////
+    //////////////////////////////////////ALBUM///////////////////////////////////////////////
+    <!--<color name="albumColorPrimary">#3F51B5</color>
+    <color name="albumColorPrimaryDark">#2E3D8F</color>
+    <color name="albumColorPrimaryBlack">#2B2B2B</color>-->
+    <color name="albumColorPrimaryBlack">#2B2B2B</color>
+    <color name="albumPageLight">#FFF</color>
+    <color name="albumTransparent">#0000</color>
+    <color name="albumFontHint">#808080</color>
+    <color name="albumFontLight">#FFF</color>
+    <color name="albumFontDark">#333</color>
+    <color name="albumIconDark">#333</color>
+    <color name="albumLoadingDark">#333</color>
+    <color name="albumSelectorNormal">#E0E0E0</color>
+    <color name="albumSheetBottom">#992B2B2B</color>
+    <color name="albumSheetLayer">#EE2B2B2B</color>
+    //////////////////////////////////////ALBUM//////////////////////////////////////////////
+    ////////////////////////////////////////EDITOR///////////////////////////////////////////
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue_color_picker">#0066FF</color>
+    <color name="brown_color_picker">#AF593E</color>
+    <color name="green_color_picker">#01A368</color>
+    <color name="orange_color_picker">#FF861F</color>
+    <color name="red_color_picker">#ED0A3F</color>
+    <color name="red_orange_color_picker">#FF3F34</color>
+    <color name="sky_blue_color_picker">#76D7EA</color>
+    <color name="violet_color_picker">#8359A3</color>
+    <color name="yellow_color_picker">#FBE870</color>
+    <color name="yellow_green_color_picker">#C5E17A</color>
+    <color name="tool_bg">#151414</color>
+    <color name="semi_black_transparent">#99000000</color>
+    ////////////////////////////////////////EDITOR///////////////////////////////////////////
+
+    <color name="divider">#dcdcdc</color>
+</resources>

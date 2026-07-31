@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cu.alexgi.youchat.views_GI.CardViewDialogGI
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/fondo_blanco"
+    app:cardCornerRadius="@dimen/spacing_xmedium"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="?attr/colorAccent">
+            <ImageView
+                android:id="@+id/icon_dialog_confirm"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="10dp"
+                app:tint="#fff"
+                android:src="@drawable/message" />
+            <TextView
+                android:id="@+id/titulo_dialog_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Nueva conversación"/>
+        </LinearLayout>
+
+        <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+            android:id="@+id/texto_dialog_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="@dimen/margen"
+            android:layout_marginEnd="@dimen/margen"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:textColor="@color/texto_grisoscuro_to_grisclaro"
+            android:text="Introduzca un correo para iniciar una nueva conversación"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margen"
+            app:boxBackgroundMode="outline"
+            android:background="@null"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+            app:hintEnabled="false"
+            app:hintTextColor="@color/texto_grisoscuro_to_grisclaro">
+            <EditText
+                android:id="@+id/et_codigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:maxLines="1"
+                android:minLines="1"
+                android:inputType="textEmailAddress"
+                android:hint="Escriba un correo"
+                android:textColorHint="@color/texto_grisoscuro_to_grisclaro"
+                android:textColor="@color/texto_negro_to_gris"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <cu.alexgi.youchat.views_GI.TextViewBtnGI
+                android:layout_weight="1"
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/fondo_blanco"
+                android:text="CANCELAR"
+                android:textAllCaps="true"
+                android:textSize="@dimen/size_text_button"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:layout_margin="8dp"
+                android:textColor="?attr/colorAccent" />
+            <cu.alexgi.youchat.views_GI.TextViewBtnGI
+                android:layout_weight="1"
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/fondo_blanco"
+                android:text="IR A CHAT"
+                android:textAllCaps="true"
+                android:textSize="@dimen/size_text_button"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:layout_margin="8dp"
+                android:textColor="?attr/colorAccent" />
+        </LinearLayout>
+    </LinearLayout>
+</cu.alexgi.youchat.views_GI.CardViewDialogGI>

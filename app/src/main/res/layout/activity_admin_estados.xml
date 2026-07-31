@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:background="@color/fondo_ajustes"
+    tools:context=".AdminEstadosActivity">
+
+    <cu.alexgi.youchat.views_GI.LinearLayoutBarGI
+        android:id="@+id/toolbar_admin_estados"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+        <cu.alexgi.youchat.views_GI.ImageViewBarGI
+            android:id="@+id/atras_admin_estados"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/arrow_left"
+            app:tint="@color/texto_negro_to_gris"/>
+        <cu.alexgi.youchat.views_GI.TextViewBarGI
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/atras_admin_estados"
+            android:text="Administrar Now"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textColor="@color/texto_negro_to_gris"/>
+    </cu.alexgi.youchat.views_GI.LinearLayoutBarGI>
+
+    <!--<RelativeLayout
+        android:id="@+id/contenedor_estados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_admin_estados"
+        android:orientation="vertical">
+        &lt;!&ndash;<LinearLayout
+            android:id="@+id/tipo_estado_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:text="Estados"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:textSize="20sp"
+                android:padding="8dp"/>
+            <TextView
+                android:id="@+id/contador_estados_principal"
+                android:visibility="gone"
+                android:text="3"
+                android:gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@drawable/shape_contador_chat"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="#fff"/>
+        </LinearLayout>&ndash;&gt;
+
+        &lt;!&ndash;<androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lista_otros_estado"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_below="@id/tipo_estado_divider"
+            android:scrollbars="none"/>&ndash;&gt;
+    </RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_admin_estados">
+        <!--<RelativeLayout
+            android:id="@+id/tipo_chats_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="@dimen/margen">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Mis estados"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:textSize="20sp"
+                android:padding="8dp"/>
+
+        </RelativeLayout>-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lista_mis_estados"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"/>
+
+        <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+            android:id="@+id/text_vacio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/margen"
+            android:layout_marginEnd="@dimen/margen"
+            android:text="Aún no ha publicado ningún estado"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/texto_grisoscuro_to_grisclaro"/>
+
+    </RelativeLayout>
+</RelativeLayout>

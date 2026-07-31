@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_navrail_vista_favoritos"
+        android:enabled="true"
+        android:icon="@drawable/mail_star"
+        android:title="Favoritos"/>
+    <item
+        android:id="@+id/menu_navrail_vista_usuario"
+        android:enabled="true"
+        android:icon="@drawable/chat_4_line"
+        android:title="Chats"/>
+    <item
+        android:id="@+id/menu_navrail_vista_email_rec"
+        android:enabled="true"
+        android:icon="@drawable/mail_download"
+        android:title="Recibidos"/>
+    <item
+        android:id="@+id/menu_navrail_vista_email_env"
+        android:enabled="true"
+        android:icon="@drawable/mai_send"
+        android:title="Enviados"/>
+    <item
+        android:id="@+id/menu_navrail_vaciar"
+        android:enabled="true"
+        android:icon="@drawable/inbox_line"
+        android:title="Vaciar"/>
+    <item
+        android:id="@+id/menu_navrail_ajustes"
+        android:enabled="true"
+        android:icon="@drawable/mail_settings"
+        android:title="Ajustes"/>
+</menu>

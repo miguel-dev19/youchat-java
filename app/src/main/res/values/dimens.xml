@@ -1,0 +1,181 @@
+<resources>
+    <dimen name="cpv_required_padding">6dp</dimen>
+    <dimen name="cpv_dialog_preview_width">66dp</dimen>
+    <dimen name="cpv_dialog_preview_height">34dp</dimen>
+    <dimen name="cpv_column_width">58dp</dimen>
+    <dimen name="cpv_item_size">50dp</dimen>
+    <dimen name="cpv_item_horizontal_padding">8dp</dimen>
+    <dimen name="cpv_color_preference_normal">28dp</dimen>
+    <dimen name="cpv_color_preference_large">40dp</dimen>
+
+    <dimen name="radial_progress_size">40dp</dimen>
+    <dimen name="default_radial_progress_stroke_size">2dp</dimen>
+    <dimen name="radial_progress_padding">3dp</dimen>
+    //////////////////////////////////LAYOUT CHAT////////////////////////////////
+    <dimen name="text_answer_nombre">13sp</dimen>
+    <dimen name="text_answer_mensaje">12sp</dimen>
+    <dimen name="text_fecha">12sp</dimen>
+    <dimen name="text_hora">10sp</dimen>
+    <dimen name="img_estado">14dp</dimen>
+    //////////////////////////////////LAYOUT CHAT////////////////////////////////
+
+    //////////////////////////////////SIZE TEXT////////////////////////////////
+    <dimen name="size_text_button">13sp</dimen>
+    <dimen name="size_text_editor">11sp</dimen>
+    //////////////////////////////////SIZE TEXT////////////////////////////////
+
+    <dimen name="separatorX">38dp</dimen>
+    <dimen name="separatorY">5dp</dimen>
+
+    <dimen name="progress_bar_height">3.3dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="margin_dots">60dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="margen">12dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">15dp</dimen>
+    <dimen name="emoji_size_default">18sp</dimen>
+    <dimen name="emoji_size_only_emojis">30sp</dimen>
+    <dimen name="emoji_size_single_emoji">50sp</dimen>
+    <dimen name="emoji_grid_view_column_width">36dp</dimen>
+    <dimen name="emoji_grid_view_spacing">6dp</dimen>
+
+    <dimen name="default_emoji_description_label_height">23dp</dimen>
+    <dimen name="default_emoji_description_label_bottom_margin">8dp</dimen>
+
+
+
+    <dimen name="spacing_large">15dp</dimen>
+    <dimen name="spacing_medium">5dp</dimen>
+    <dimen name="spacing_middle">10dp</dimen>
+    <dimen name="spacing_mlarge">20dp</dimen>
+    <dimen name="spacing_mxlarge">25dp</dimen>
+    <dimen name="spacing_small">3dp</dimen>
+    <dimen name="spacing_smlarge">18dp</dimen>
+    <dimen name="spacing_xlarge">35dp</dimen>
+    <dimen name="spacing_xmedium">7dp</dimen>
+    <dimen name="spacing_xmlarge">40dp</dimen>
+    <dimen name="spacing_xsmall">2dp</dimen>
+    <dimen name="spacing_xxlarge">50dp</dimen>
+    <dimen name="spacing_xxxlarge">55dp</dimen>
+
+    ////////////////////////////////////////ALBUM//////////////////////////////////////////
+    <dimen name="album_sp_14">14sp</dimen>
+    <dimen name="album_sp_16">16sp</dimen>
+    <dimen name="album_sp_18">18sp</dimen>
+    <dimen name="album_sp_20">20sp</dimen>
+    <dimen name="album_dp_0">0dp</dimen>
+    <dimen name="album_dp_1">1dp</dimen>
+    <dimen name="album_dp_2">2dp</dimen>
+    <dimen name="album_dp_4">4dp</dimen>
+    <dimen name="album_dp_6">6dp</dimen>
+    <dimen name="album_dp_10">10dp</dimen>
+    <dimen name="album_dp_15">15dp</dimen>
+    <dimen name="album_dp_20">20dp</dimen>
+    <dimen name="album_dp_30">30dp</dimen>
+    <dimen name="album_dp_35">35dp</dimen>
+    <dimen name="album_dp_40">35dp</dimen>
+    <dimen name="album_dp_45">45dp</dimen>
+    <dimen name="album_dp_50">50dp</dimen>
+    <dimen name="album_dp_80">80dp</dimen>
+    <dimen name="album_dp_100">100dp</dimen>
+    <dimen name="album_dp_200">200dp</dimen>
+    <dimen name="editor_size">35dp</dimen>
+    <dimen name="normal_margin">8dp</dimen>
+    <dimen name="large_margin">16dp</dimen>
+    <dimen name="top_tool_icon_width">50dp</dimen>
+    ////////////////////////////////////////ALBUM//////////////////////////////////////////
+    <!--//////////////////////////////////CROPPER//////////////////////////////////////////////
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="drawer_text_size">14sp</dimen>
+    <dimen name="drawer_text_padding">8dp</dimen>
+    //////////////////////////////////CROPPER//////////////////////////////////////////////-->
+
+    ////////////////////////////////////////ESTADOS//////////////////////////////////////////
+    <dimen name="estado_size_40">40sp</dimen>
+    <dimen name="estado_size_38">38sp</dimen>
+    <dimen name="estado_size_36">36sp</dimen>
+    <dimen name="estado_size_34">34sp</dimen>
+    <dimen name="estado_size_32">32sp</dimen>
+    <dimen name="estado_size_30">30sp</dimen>
+    <dimen name="estado_size_28">28sp</dimen>
+    <dimen name="estado_size_26">26sp</dimen>
+    <dimen name="estado_size_24">24sp</dimen>
+    <dimen name="estado_size_22">22sp</dimen>
+    <dimen name="estado_size_20">20sp</dimen>
+    <dimen name="estado_size_18">18sp</dimen>
+    <dimen name="estado_size_16">16sp</dimen>
+    ////////////////////////////////////////ESTADOS//////////////////////////////////////////
+
+
+
+
+
+
+
+
+    //////////////////////////////////DELTACHAT/////////////////////////////////////////
+    <dimen name="emoji_drawer_size">32sp</dimen>
+    <dimen name="min_keyboard_size">50dp</dimen>
+    <dimen name="default_custom_keyboard_size">220dp</dimen>
+    <dimen name="min_custom_keyboard_size">110dp</dimen>
+    <dimen name="min_custom_keyboard_top_margin">170dp</dimen>
+    <dimen name="emoji_drawer_item_padding">5dp</dimen>
+    <dimen name="emoji_drawer_indicator_height">1.5dp</dimen>
+    <dimen name="emoji_drawer_left_right_padding">5dp</dimen>
+    <dimen name="conversation_item_body_text_size">16sp</dimen>
+    <dimen name="conversation_item_date_text_size">12sp</dimen>
+    <dimen name="transport_selection_popup_width">200sp</dimen>
+    <dimen name="transport_selection_popup_xoff">2dp</dimen>
+    <dimen name="transport_selection_popup_yoff">2dp</dimen>
+    <dimen name="contact_photo_target_size">64dp</dimen>
+    <dimen name="contact_list_normal_padding">16dp</dimen>
+
+    <dimen name="message_corner_radius">12dp</dimen>
+    <dimen name="message_bubble_corner_radius">2dp</dimen>
+    <dimen name="message_bubble_shadow_distance">1.5dp</dimen>
+    <dimen name="message_bubble_horizontal_padding">8dp</dimen>
+    <dimen name="message_bubble_horizontal_padding_half">4dp</dimen>
+    <dimen name="message_bubble_top_padding">8dp</dimen>
+    <dimen name="message_bubble_collapsed_footer_padding">6dp</dimen>
+    <dimen name="message_bubble_edge_margin">32dp</dimen>
+    <dimen name="message_bubble_bottom_padding">6dp</dimen>
+    <dimen name="media_bubble_remove_button_size">24dp</dimen>
+    <dimen name="media_bubble_edit_button_size">24dp</dimen>
+    <dimen name="media_bubble_default_dimens">210dp</dimen>
+    <dimen name="media_bubble_min_width">150dp</dimen>
+    <dimen name="media_bubble_max_width">240dp</dimen>
+    <dimen name="media_bubble_min_height">100dp</dimen>
+    <dimen name="media_bubble_max_height">320dp</dimen>
+    <dimen name="below_bubble">3dp</dimen>
+
+    <dimen name="gallery_thumbnail_radius">1dp</dimen>
+
+    <dimen name="conversation_individual_right_gutter">12dp</dimen>
+    <dimen name="conversation_individual_left_gutter">12dp</dimen>
+    <dimen name="conversation_group_left_gutter">52dp</dimen>
+    <dimen name="conversation_vertical_message_spacing_collapse">1dp</dimen>
+
+    <dimen name="quote_corner_radius_large">10dp</dimen>
+    <dimen name="quote_corner_radius_bottom">4dp</dimen>
+    <dimen name="quote_corner_radius_preview">18dp</dimen>
+
+    <dimen name="quick_camera_shutter_ring_size">52dp</dimen>
+
+    <dimen name="conversation_list_fragment_archive_padding">16dp</dimen>
+    <dimen name="contact_selection_actions_tap_area">10dp</dimen>
+
+    <dimen name="scribble_stroke_size">2dp</dimen>
+
+    <dimen name="slider_trackHeight">6dp</dimen>
+    <dimen name="slider_thumbRadius">14dp</dimen>
+    <dimen name="slider_thumbOutlineSize">4dp</dimen>
+    <dimen name="slider_displayTextFontSize">12sp</dimen>
+    <dimen name="slider_displayTextBasicOffsetY">8dp</dimen>
+    <integer name="slider_minValue">100</integer>
+    <integer name="slider_maxValue">100</integer>
+</resources>

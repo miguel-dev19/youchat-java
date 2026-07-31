@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BandejaFragment">
+
+    <cu.alexgi.youchat.views_GI.LinearLayoutBarGI
+        android:id="@+id/toolbar_bandeja"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+        <RelativeLayout
+            android:id="@+id/rl_barra_contacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+            <cu.alexgi.youchat.views_GI.ImageViewBarGI
+                android:id="@+id/atras"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/arrow_left"/>
+            <cu.alexgi.youchat.views_GI.TextViewBarGI
+                android:id="@+id/titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/atras"
+                android:text="Bandeja de entrada"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:textColor="@color/texto_negro_to_gris"/>
+            <cu.alexgi.youchat.views_GI.TextViewBarGI
+                android:id="@+id/cant_nuevos_correos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_below="@+id/titulo"
+                android:layout_toEndOf="@+id/atras"
+                android:text="0 mensajes"
+                android:textSize="14sp"
+                android:textColor="@color/texto_negro_to_gris"/>
+            <cu.alexgi.youchat.views_GI.ImageViewBarGI
+                android:id="@+id/abrir_nav_rail"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/item_menu"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/ll_modo_seleccionar"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <cu.alexgi.youchat.views_GI.ImageViewBarGI
+                android:id="@+id/cancelarModoSeleccionarBtn"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="4dp"
+                android:padding="8dp"
+                app:tint="@color/texto_negro_to_gris"
+                android:src="@drawable/arrow_left"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+            <cu.alexgi.youchat.views_GI.TextViewBarGI
+                android:id="@+id/main_ms_cant"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="22sp" />
+
+            <cu.alexgi.youchat.views_GI.ImageViewBarGI
+                android:id="@+id/selTodoItemModoSeleccionar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                app:tint="@color/texto_negro_to_gris"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/category" />
+
+            <cu.alexgi.youchat.views_GI.ImageViewBarGI
+                android:id="@+id/eliminarItemModoSeleccionar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                app:tint="@color/texto_negro_to_gris"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/delete" />
+
+        </LinearLayout>
+    </cu.alexgi.youchat.views_GI.LinearLayoutBarGI>
+
+    <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+        android:id="@+id/list_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Aún no hay datos"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="@color/texto_grisoscuro_to_grisclaro"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lista_emails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_bandeja"
+        android:layout_alignParentBottom="true"
+        app:fastScrollEnabled="false"
+        android:scrollbars="none"/>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/linearProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_below="@+id/toolbar_bandeja"
+        app:indicatorColor="?attr/colorAccent"
+        app:trackCornerRadius="15dp"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_contenedor_nav_rail"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="4dp"
+        android:layout_below="@+id/toolbar_bandeja">
+        <com.google.android.material.navigationrail.NavigationRailView
+            android:id="@+id/navigation_rail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/navigation_rail_menu"/>
+    </RelativeLayout>
+
+    <cu.alexgi.youchat.views_GI.FABGI
+        android:id="@+id/fab_nuevo_correo"
+        app:backgroundTint="?attr/colorAccent"
+        android:src="@drawable/menu_add"
+        app:tint="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:fabCustomSize="55dp"
+        app:maxImageSize="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"/>
+</RelativeLayout>

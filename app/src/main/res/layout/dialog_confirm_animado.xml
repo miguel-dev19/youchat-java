@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cu.alexgi.youchat.views_GI.CardViewDialogGI
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/fondo_blanco"
+    app:cardCornerRadius="@dimen/spacing_xmedium"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            android:gravity="center">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/aaalert"
+                app:lottie_autoPlay="true"/>
+            <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+                android:id="@+id/text_icono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Bienvenido a YouChat"/>
+        </LinearLayout>
+
+        <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+            android:id="@+id/text_eliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="@dimen/margen"
+            android:layout_marginEnd="@dimen/margen"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:textColor="@color/texto_grisoscuro_to_grisclaro"
+            android:text="¿Quieres avisar a tus contactos con correo que usas YouChat?"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <cu.alexgi.youchat.views_GI.TextViewBtnGI
+                android:layout_weight="1"
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CANCELAR"
+                android:textSize="@dimen/size_text_button"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:layout_margin="8dp"
+                android:textColor="?attr/colorAccent" />
+            <cu.alexgi.youchat.views_GI.TextViewBtnGI
+                android:layout_weight="1"
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avisar"
+                android:textSize="@dimen/size_text_button"
+                android:textAllCaps="true"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:layout_margin="8dp"
+                android:textColor="?attr/colorAccent" />
+        </LinearLayout>
+    </LinearLayout>
+</cu.alexgi.youchat.views_GI.CardViewDialogGI>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/background_mensaje"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="64dp"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/sticker_izq"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                app:lottie_repeatMode="restart"/>
+            <!--        app:lottie_repeatCount="2"-->
+
+            <cu.alexgi.youchat.views_GI.ImageViewIconGenGI
+                android:id="@+id/sticker_empty"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:padding="24dp"
+                android:visibility="gone"
+                android:scaleType="centerCrop"
+                android:layout_centerInParent="true"
+                android:src="@drawable/sticker_empty_focus" />
+            <LinearLayout
+                android:id="@+id/contenedor_view_descarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_back_descarga"
+                android:orientation="horizontal">
+                <cu.alexgi.youchat.progressbar.DownloadProgressView
+                    android:id="@+id/progress_view"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:lineWidth="0.8dp"
+                    app:circleRadius="@dimen/margen"/>
+                <TextView
+                    android:id="@+id/tv_tam_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:maxLines="1"
+                    android:textColor="@color/texto_blanco_to_gris"
+                    android:textSize="16sp"
+                    android:text="36.50 kb"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_alignEnd="@+id/sticker_izq"
+                android:layout_alignBottom="@+id/sticker_izq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/shape_mensaje_sticker">
+
+                <ImageView
+                    android:id="@+id/view1"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="5dp"
+                    app:tint="#FFF"
+                    android:src="@drawable/option_chat_reenviar" />
+                <TextView
+                    android:id="@+id/view2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:maxLines="1"
+                    android:text="Reenviado"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/text_hora" />
+
+                <TextView
+                    android:id="@+id/hora_izq"
+                    android:text="10:00 am"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="3dp"
+                    android:maxLines="1"
+                    android:textColor="@color/texto_blanco_to_gris"
+                    android:textSize="@dimen/text_hora" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

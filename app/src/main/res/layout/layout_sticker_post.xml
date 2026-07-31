@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    android:layout_margin="4dp">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/stickerAnimation"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+</RelativeLayout>
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/background_mensaje"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/lllll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+        <!--android:layout_toEndOf="@+id/cb_modo_seleccion"-->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/corner_izq"
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="-3.5dp"
+            android:src="@drawable/corner_izq"/>
+
+        <cu.alexgi.youchat.views_GI.TextViewMsgIzqGI
+            android:id="@+id/mensaje_izq"
+            android:paddingBottom="3dp"
+            android:paddingStart="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:linksClickable="true"
+            android:textColor="@color/texto_blanco_to_gris"
+            app:layout_alignSelf="flex_start"
+            app:layout_wrapBefore="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="bottom"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_mensaje_sticker">
+
+            <ImageView
+                android:id="@+id/view1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="5dp"
+                app:tint="#FFF"
+                android:src="@drawable/option_chat_reenviar" />
+            <TextView
+                android:id="@+id/view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:maxLines="1"
+                android:text="Reenviado"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_hora" />
+
+            <TextView
+                android:id="@+id/hora_izq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="3dp"
+                android:maxLines="1"
+                android:textColor="@color/texto_blanco_to_gris"
+                android:textSize="@dimen/text_hora" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

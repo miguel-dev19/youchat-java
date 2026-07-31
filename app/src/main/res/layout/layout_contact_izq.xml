@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/background_mensaje"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/corner_izq"
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="-3.5dp"
+            android:src="@drawable/corner_izq"/>
+        <RelativeLayout
+            android:id="@+id/fondo_msg_chat"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginEnd="120dp">
+
+            <LinearLayout
+                android:id="@+id/est_reenviado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:orientation="horizontal">
+                <cu.alexgi.youchat.views_GI.ImageViewMsgIzqGI
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/option_chat_reenviar"/>
+                <cu.alexgi.youchat.views_GI.TextViewMsgIzqGI
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reenviado"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_hora"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/contact_image_izq"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/est_reenviado"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:padding="8dp"
+                android:background="@drawable/shape_icono_acerca_de"
+                app:tint="#FFF"
+                android:src="@drawable/profile" />
+
+            <cu.alexgi.youchat.views_GI.TextViewMsgIzqGI
+                android:id="@+id/contact_nombre_izq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="5dp"
+                android:layout_below="@+id/est_reenviado"
+                android:layout_toEndOf="@id/contact_image_izq"
+                android:maxLines="1"
+                android:textColor="@color/texto_blanco_to_gris"
+                android:textSize="16sp"/>
+            <cu.alexgi.youchat.views_GI.TextViewMsgIzqGI
+                android:id="@+id/contact_correo_izq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_below="@id/contact_nombre_izq"
+                android:layout_toEndOf="@id/contact_image_izq"
+                android:maxLines="1"
+                android:textSize="14sp"
+                android:textColor="@color/texto_blanco_to_gris"/>
+
+            <cu.alexgi.youchat.views_GI.TextViewMsgIzqGI
+                android:id="@+id/hora_izq"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="3dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/contact_correo_izq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_blanco_to_gris"
+                android:textSize="@dimen/text_hora"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

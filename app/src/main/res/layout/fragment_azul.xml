@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    tools:context=".AzulFragment">
+<!--android:background="#1976D2"-->
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/margen"
+        android:layout_marginStart="@dimen/margen"
+        android:layout_marginEnd="@dimen/margen"
+        android:textSize="30sp"
+        android:textColor="@color/texto_blanco_to_gris"
+        android:text="¡Todo listo!"
+        android:gravity="center"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_azul"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/margen"
+        android:layout_marginEnd="@dimen/margen"
+        android:layout_gravity="center_horizontal"
+        app:lottie_rawRes="@raw/aaanimation"
+        app:lottie_loop="true"/>
+
+    <cu.alexgi.youchat.views_GI.ExtendedFABGI
+        android:id="@+id/finalizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/lottie_azul"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:textSize="@dimen/size_text_button"
+        android:text="ENTRAR"
+        android:textAlignment="center"
+        app:backgroundTint="#00FFFFFF"
+        app:strokeColor="#fff"
+        app:strokeWidth="2dp"/>
+    <!--<ImageView
+        android:id="@+id/img_azul"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/margen"
+        android:layout_marginEnd="@dimen/margen"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/viewpager_ready"/>-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_dots"
+        android:layout_marginStart="@dimen/margen"
+        android:layout_marginEnd="@dimen/margen"
+        android:textSize="20sp"
+        android:textColor="@color/texto_blanco_to_gris"
+        android:text="@string/viewpager_azul"
+        android:gravity="center"/>
+
+
+</LinearLayout>

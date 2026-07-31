@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true">
+
+    <LinearLayout
+        android:id="@+id/contenedor_input_estado_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margen"
+        android:paddingBottom="@dimen/margen"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <cu.alexgi.youchat.views_GI.CardViewBarChatGI
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:gravity="bottom"
+            android:paddingStart="5dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="3dp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            app:cardElevation="0dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <cu.alexgi.youchat.views_GI.ImageViewBarChatGI
+                    android:id="@+id/input_estado_emoji"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:visibility="gone"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="7dp"
+                    android:src="@drawable/emoji" />
+
+                <com.vanniktech.emoji.EmojiEditText
+                    android:id="@+id/input_estado_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:background="@null"
+                    android:hint=" Responder..."
+                    android:imeOptions="actionDone"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLines="3"
+                    android:minHeight="40dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/texto_negro_to_gris"
+                    android:textColorHint="@color/texto_gris"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </cu.alexgi.youchat.views_GI.CardViewBarChatGI>
+
+
+
+        <cu.alexgi.youchat.views_GI.CardViewButtonGI
+            android:id="@+id/input_estado_send"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="5dp"
+            android:animateLayoutChanges="true"
+            app:cardBackgroundColor="?attr/colorAccent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:src="@drawable/input_send"
+                android:tint="#fff" />
+        </cu.alexgi.youchat.views_GI.CardViewButtonGI>
+    </LinearLayout>
+</RelativeLayout>

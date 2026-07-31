@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:background="@color/fondo_blanco">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp">
+        <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margen"
+            android:layout_marginEnd="@dimen/margen"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:text="Reporte del error"
+            android:textSize="19sp"
+            android:textColor="@color/texto_negro_to_gris"/>
+        <TextView
+            android:id="@+id/tv_descripcion_error_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_negro_to_gris"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:alpha="0.5"
+            android:background="#868c90"/>
+        <cu.alexgi.youchat.views_GI.CheckBoxGI
+            android:id="@+id/show_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_negro_to_gris"
+            app:buttonTint="?attr/colorAccent"
+            android:text="Mostrar correo"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:alpha="0.5"
+            android:background="#868c90"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_negro_to_gris"
+            android:text="Descripción del error:"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margen"
+            android:background="@null"
+            style="?attr/colorAccent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+            app:boxBackgroundMode="outline"
+            app:hintTextColor="@color/texto_grisoscuro_to_grisclaro"
+            app:hintAnimationEnabled="false"
+            app:hintEnabled="false"
+            app:counterEnabled="true"
+            app:counterTextColor="@color/texto_grisoscuro_to_grisclaro"
+            app:counterMaxLength="500"
+            app:counterOverflowTextColor="@color/toast_rojo">
+            <com.vanniktech.emoji.EmojiEditText
+                android:id="@+id/editext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:hint="Añada más información (Opcional)"
+                android:padding="8dp"
+                android:maxLines="5"
+                android:textColorHint="@color/texto_grisoscuro_to_grisclaro"
+                android:textColor="@color/texto_negro_to_gris"
+                android:inputType="textMultiLine"
+                android:imeOptions="actionDone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <cu.alexgi.youchat.views_GI.ExtendedFABGI
+            android:id="@+id/aceptar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margen"
+            android:textAlignment="center"
+            app:backgroundTint="?attr/colorAccent"
+            android:textColor="@color/texto_blanco_to_gris"
+            android:textSize="@dimen/size_text_button"
+            android:text="ENVIAR"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent" />
+        <!--<TextView
+            android:id="@+id/aceptar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackground"
+            android:text="ENVIAR PERFIL"
+            android:textColor="?attr/colorAccent"/>-->
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

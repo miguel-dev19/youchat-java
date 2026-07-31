@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/design_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/root_estado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/estados_fondo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:alpha="0.85" />
+        </RelativeLayout>
+
+
+
+
+        <!--<LinearLayout
+            android:id="@+id/contenedor_input_estado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+        </LinearLayout>-->
+
+
+        <!--android:background="#33000000"-->
+
+
+        <cu.alexgi.youchat.storiesprogressview.StoriesProgressView
+            android:id="@+id/story"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="3dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="3dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp" />
+        <!--<LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/videoView"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>-->
+
+        <!--<RelativeLayout
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/invisible"
+            android:elevation="2dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/reverse"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <View
+                android:id="@+id/skip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="2dp">
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:id="@+id/tv_texto_estado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="2dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/margen"
+                android:layout_marginEnd="@dimen/margen"
+                android:autoLink="all"
+                android:background="@color/invisible"
+                android:linksClickable="true"
+                android:maxLength="501"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textColorHint="@color/gris"
+                android:textColorLink="?attr/colorAccent" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/toolbar_visor_estado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:layout_alignParentTop="true"
+            android:background="#33000000"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal">
+
+                <cu.alexgi.youchat.CircleImageView
+                    android:id="@+id/mini_img_perfil_estados"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="3dp"
+                    android:src="@drawable/profile_white"
+                    app:civ_circle_background_color="@color/image_dialog_preview" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="vertical">
+
+                    <com.vanniktech.emoji.EmojiTextView
+                        android:id="@+id/nombre_usuario_estado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/size_text_button" />
+
+                    <TextView
+                        android:id="@+id/fecha_subida_estado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:maxLines="1"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/estado_copiar_texto"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="10dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    app:tint="#fff"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/copy_duplicate"/>
+
+                <ImageView
+                    android:id="@+id/estado_resubir"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="10dp"
+                    android:layout_marginEnd="4dp"
+                    app:tint="#fff"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/option_chat_reenviar"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/answer"
+            android:elevation="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <ImageView
+                android:animateLayoutChanges="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="6dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/reac0"
+                android:visibility="invisible"/>
+
+            <cu.alexgi.youchat.views_GI.CardViewGI
+                android:id="@+id/showEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="24dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#868c90"
+                app:cardElevation="0dp"
+                app:contentPaddingBottom="5dp"
+                app:contentPaddingLeft="12dp"
+                app:contentPaddingRight="12dp"
+                app:contentPaddingTop="5dp"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent">
+
+                <cu.alexgi.youchat.views_GI.TextViewFontGenOscuroGI
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="20dp"
+                    android:text="Responder..."
+                    android:textColor="@color/texto_blanco_to_gris"
+                    android:textSize="15dp" />
+            </cu.alexgi.youchat.views_GI.CardViewGI>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/contenedor_input_estado_reacciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#33000000"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/may_reac_3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="-10dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/may_reac_2"/>
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/may_reac_2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="-10dp"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/may_reac_1"/>
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/may_reac_1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="12dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:id="@+id/tv_total_reacciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/texto_blanco_to_gris"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/may_reac_3"/>
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/show"
+                app:tint="@color/texto_blanco_to_gris"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/tv_cant_total_vistas"/>
+            <TextView
+                android:id="@+id/tv_cant_total_vistas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/texto_blanco_to_gris"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/animacion_reaccion"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:elevation="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="6dp"
+            android:layout_marginStart="12dp"
+            android:layout_alignParentBottom="true">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animacion_icono_reaccion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/input_estado_reaccionar"
+            android:layout_alignParentBottom="true"
+            android:elevation="3dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="6dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/reac0" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:elevation="3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:id="@+id/show_text"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:elevation="3dp"
+                android:background="@drawable/deltachat_circle_touch_highlight_background"
+                android:padding="8dp"
+                android:src="@drawable/arrow_up_2"
+                app:tint="#fff" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/contenedor_preview_infotext_estados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:layout_alignParentBottom="true"
+            android:background="#99000000"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <com.vanniktech.emoji.EmojiTextView
+                android:id="@+id/preview_infotext_estados"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:autoLink="all"
+                android:layout_margin="3dp"
+                android:linksClickable="true"
+                android:maxLength="501"
+                android:textColor="#fff"
+                android:textColorHint="@color/gris"
+                android:textColorLink="?attr/colorAccent" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

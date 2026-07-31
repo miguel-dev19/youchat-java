@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#edf2f8"
+    tools:context=".LoginActivity">
+
+    <!--<cu.alexgi.youchat.TopCropImageView
+        android:id="@+id/chat_fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondo_login"
+        android:layout_alignParentBottom="true" />-->
+
+
+    <!--<com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:contentPaddingBottom="12dp"
+        app:cardBackgroundColor="#B3FFFFFF"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp">-->
+        <RelativeLayout
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin">
+            <!--<TextView
+                android:id="@+id/txt_sesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="Iniciar Sesión"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline2"
+                android:textColor="#000"
+                android:textSize="25sp"/>-->
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/icon"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="24dp"
+                android:layout_above="@id/input_email"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/iconycvector9"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margen"
+                android:layout_centerInParent="true"
+                app:boxBackgroundMode="outline"
+                android:background="@null"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                app:hintEnabled="false"
+                android:nextFocusDown="@id/pass"
+                app:hintTextColor="#6B6B6B"
+                app:startIconDrawable="@drawable/profile"
+                app:startIconCheckable="true"
+                app:startIconTint="#000">
+                <EditText
+                    android:id="@+id/campo_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"
+                    android:hint="Correo"
+                    android:autofillHints="/@nauta.cu/@gmail.com"
+                    android:padding="8dp"
+                    android:textColorHint="#6B6B6B"
+                    android:textColor="#000"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/input_email"
+                android:layout_margin="@dimen/margen"
+                app:boxBackgroundMode="outline"
+                android:background="@null"
+                style="?attr/colorAccent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                app:hintEnabled="false"
+                app:hintTextColor="#6B6B6B"
+                app:startIconDrawable="@drawable/lock"
+                app:startIconCheckable="true"
+                app:startIconTint="#000"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="#000">
+                <EditText
+                    android:id="@+id/campo_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"
+                    android:hint="Contraseña"
+                    android:padding="8dp"
+                    android:textColorHint="#6B6B6B"
+                    android:textColor="#000"
+                    android:imeOptions="actionDone"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <cu.alexgi.youchat.views_GI.ExtendedFABGI
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="@dimen/margen"
+                android:layout_marginEnd="@dimen/margen"
+                android:textAlignment="center"
+                android:layout_below="@+id/pass"
+                app:backgroundTint="@color/colorAccent"
+                android:textColor="#fff"
+                android:textSize="@dimen/size_text_button"
+                android:text="Autenticar"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent" />
+
+        </RelativeLayout>
+    <!--</com.google.android.material.card.MaterialCardView>-->
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationLoad"
+        android:visibility="gone"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        app:lottie_rawRes="@raw/aasend_e_mail_egpid"
+        app:lottie_loop="true" />
+
+</RelativeLayout>

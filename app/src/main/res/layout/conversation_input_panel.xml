@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+
+    <LinearLayout
+        android:id="@+id/recording"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<cu.alexgi.youchat.views_GI.CardViewBarChatGI
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:layout_marginEnd="60dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="4dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/contenedor_input_answer"
+                        android:animateLayoutChanges="true"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/icono_respuesta"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginStart="8dp"
+                            android:src="@drawable/msg_share"
+                            app:tint="?attr/colorAccent"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/img_answer_chat"
+                                android:layout_width="30dp"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:layout_marginStart="2dp" />
+                            <LinearLayout
+                                android:id="@+id/mensaje_respuesta"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginEnd="4dp"
+                                android:orientation="vertical">
+
+                                <com.vanniktech.emoji.EmojiTextView
+                                    android:id="@+id/mensaje_respuesta_nombre"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="1"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/texto_negro_to_gris"/>
+
+                                <com.vanniktech.emoji.EmojiTextView
+                                    android:id="@+id/mensaje_respuesta_texto"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxLines="2"
+                                    android:textSize="14sp"
+                                    android:textColor="@color/texto_grisoscuro_to_grisclaro"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/icono_eliminar_answer"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:padding="3dp"
+                            android:src="@drawable/send_error"
+                            app:tint="@color/texto_negro_to_gris"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/contenedor_input_audio_play"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical">
+
+                        <cu.alexgi.youchat.CircleImageView
+                            android:id="@+id/play_audio_rec"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:padding="4dp"
+                            android:layout_marginStart="4dp"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:src="@drawable/audio_play"
+                            app:civ_circle_background_color="?attr/colorAccent"
+                            app:civ_border_color="?attr/colorAccent"
+                            app:civ_border_width="6dp"/>
+
+                        &lt;!&ndash;<ImageView
+                            android:id="@+id/play_audio_rec"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="8dp"
+                            android:padding="6dp"
+                            android:background="@drawable/shape_audio"
+                            android:src="@drawable/audio_play"/>&ndash;&gt;
+
+                        <com.google.android.material.slider.Slider
+                            android:id="@+id/seekbar_audio_rec"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginEnd="3dp"
+                            app:labelBehavior="gone"
+                            app:trackColorInactive="@color/texto_grisoscuro_to_grisclaro"
+                            app:trackColorActive="?attr/colorAccent"
+                            app:haloRadius="3dp"
+                            app:thumbElevation="3dp"
+                            app:thumbColor="?attr/colorAccent"/>
+
+                        <TextView
+                            android:id="@+id/duration_audio_rec"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="00:00"
+                            android:textSize="15sp"
+                            android:textColor="@color/texto_negro_to_gris"
+                            android:layout_marginEnd="4dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/recording_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/input_emoji"
+                            android:layout_weight="0"
+                            android:padding="7dp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/deltachat_circle_touch_highlight_background"
+                            android:src="@drawable/emoji"
+                            app:tint="@color/texto_negro_to_gris"/>
+
+                        <com.vanniktech.emoji.EmojiEditText
+                            android:id="@+id/input_texts"
+                            android:scrollbars="vertical"
+                            android:background="@null"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="6dp"
+                            android:minHeight="40dp"
+                            android:textColor="@color/texto_negro_to_gris"
+                            android:textColorHint="@color/texto_gris"
+                            android:hint="Mensaje"
+                            android:inputType="textCapSentences|textMultiLine"
+                            android:imeOptions="actionDone"
+                            android:maxLines="4"/>
+
+                        <cu.alexgi.youchat.chatUtils.HidingLinearLayout
+                            android:id="@+id/quick_attachment_toggle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clipChildren="false"
+                            android:clipToPadding="false">
+                            <ImageView
+                                android:id="@+id/quick_camera_toggle"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/camera"
+                                android:padding="8dp"
+                                app:tint="@color/texto_negro_to_gris"
+                                android:background="@drawable/deltachat_circle_touch_highlight_background"
+                                android:contentDescription="Camera" />
+
+                            <ImageView
+                                android:id="@+id/attach_button"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:padding="8dp"
+                                android:layout_gravity="center_vertical"
+                                app:tint="@color/texto_negro_to_gris"
+                                android:background="@drawable/deltachat_circle_touch_highlight_background"
+                                android:src="@drawable/category"
+                                android:nextFocusLeft="@+id/embedded_text_editor" />
+                        </cu.alexgi.youchat.chatUtils.HidingLinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </cu.alexgi.youchat.views_GI.CardViewBarChatGI>-->
+
+
+            <TextView
+                android:id="@+id/btn_cancelar_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="bottom|center_vertical|end"
+                android:layout_marginEnd="88dp"
+                android:layout_marginBottom="8dp"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackground"
+                android:text="CANCELAR"
+                android:textColor="?attr/colorAccent"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/layoutSlideCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_vertical|end"
+                android:layout_marginEnd="88dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginEnd="8dp"
+                    app:tint="@color/texto_grisoscuro_to_grisclaro"
+                    android:src="@drawable/arrow_left_2" />
+
+                <TextView
+                    android:id="@+id/textViewSlide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/slide_to_cancel"
+                    android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/layoutEffect1"
+                android:layout_width="70dp"
+                android:layout_height="36dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/layoutEffect2"
+                android:layout_width="20dp"
+                android:layout_height="36dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="90dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageViewMic"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="bottom|center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="12dp"
+                android:elevation="2dp"
+                android:paddingBottom="2dp"
+                android:src="@drawable/voice"
+                app:tint="@android:color/holo_red_light"
+                android:translationZ="10dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/layoutDustin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:elevation="2dp"
+                android:gravity="start|bottom"
+                android:orientation="vertical"
+                android:translationZ="10dp">
+
+                <ImageView
+                    android:id="@+id/dustin_cover"
+                    android:layout_width="32dp"
+                    android:layout_height="4dp"
+                    android:src="@drawable/dustbin_cover_ic"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/dustin"
+                    android:layout_width="16dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:src="@drawable/dustbin_wheel_ic"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_vertical"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="6dp"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="0:00"
+                android:textSize="20sp"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:textStyle="normal"
+                android:translationZ="10dp"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/layoutLock"
+        android:layout_width="56dp"
+        android:layout_height="180dp"
+        android:visibility="gone"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="4dp"
+        android:translationZ="2dp"
+        app:cardBackgroundColor="@color/fondo_blanco"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="2dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageViewLock"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                app:tint="@color/texto_grisoscuro_to_grisclaro"
+                android:padding="18dp"
+                android:src="@drawable/ic_lock" />
+            <ImageView
+                android:id="@+id/imageViewLockArrow"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                app:tint="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginTop="-8dp"
+                android:rotation="90"
+                android:src="@drawable/arrow_left_2" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <cu.alexgi.youchat.views_GI.CardViewButtonGI
+        android:id="@+id/layoutStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="90dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        app:cardElevation="3dp">
+        <ImageView
+            android:id="@+id/stop_audio_rec"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="8dp"
+            android:contentDescription="stop audio"
+            android:src="@drawable/audio_stop"/>
+    </cu.alexgi.youchat.views_GI.CardViewButtonGI>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/layoutDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="90dp"
+        app:cardBackgroundColor="@color/temaRojoAccent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        app:cardElevation="3dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="8dp"
+            app:tint="#FFF"
+            android:contentDescription="borrar audio"
+            android:src="@drawable/delete"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <cu.alexgi.youchat.views_GI.CardViewButtonGI
+        android:id="@+id/imageViewAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="4dp"
+        app:cardElevation="3dp"
+        android:clickable="true"
+        android:translationZ="2dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent">
+
+        <cu.alexgi.youchat.chatUtils.AnimatingToggle
+            android:id="@+id/button_toggle"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+            <ImageView
+                android:id="@+id/imageAudio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                app:tint="#fff"
+                android:src="@drawable/voice" />
+
+            <cu.alexgi.youchat.chatUtils.SendButton
+                android:id="@+id/send_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:visibility="gone"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/menu_send"
+                android:nextFocusLeft="@+id/embedded_text_editor"
+                android:src="@drawable/send"
+                android:layout_marginStart="-4dp"
+                android:tint="@color/texto_blanco_to_gris"
+                android:rotation="45"
+                android:background="@drawable/deltachat_circle_touch_highlight_background" />
+        </cu.alexgi.youchat.chatUtils.AnimatingToggle>
+    </cu.alexgi.youchat.views_GI.CardViewButtonGI>
+
+    <cu.alexgi.youchat.views_GI.CardViewButtonGI
+        android:id="@+id/imageViewStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:clickable="true"
+        android:translationZ="2dp"
+        android:visibility="gone"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+        app:cardElevation="3dp">
+
+        <ImageView
+            android:id="@+id/imageStop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:src="@drawable/input_send" />
+
+    </cu.alexgi.youchat.views_GI.CardViewButtonGI>
+
+</FrameLayout>

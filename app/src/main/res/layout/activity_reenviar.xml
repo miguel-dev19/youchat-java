@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    tools:context=".ReenviarActivity">
+
+    <cu.alexgi.youchat.views_GI.LinearLayoutBarGI
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <cu.alexgi.youchat.views_GI.ImageViewBarGI
+            android:id="@+id/atras_reenviar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/arrow_left"
+            app:tint="@color/texto_negro_to_gris"/>
+        <cu.alexgi.youchat.views_GI.TextViewBarGI
+            android:id="@+id/reenvAct_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Reenviar a..."
+            android:textStyle="bold"
+            android:textColor="@color/texto_negro_to_gris"
+            android:textSize="20sp" />
+        <cu.alexgi.youchat.views_GI.TextViewBarGI
+            android:id="@+id/cant_selec_reenviar"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="@dimen/margen"
+            android:textColor="@color/texto_negro_to_gris" />
+    </cu.alexgi.youchat.views_GI.LinearLayoutBarGI>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_selecc_list"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <cu.alexgi.youchat.views_GI.FABGI
+        android:id="@+id/fab_reenviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/input_send"
+        app:fabCustomSize="50dp"
+        app:backgroundTint="?attr/colorAccent"
+        app:tint="#fff"
+        app:maxImageSize="30dp"/>
+</RelativeLayout>

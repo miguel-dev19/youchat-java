@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/background_mensaje"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/corner_izq"
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="-3.5dp"
+            android:src="@drawable/corner_izq"/>
+
+        <RelativeLayout
+            android:id="@+id/fondo_msg_chat"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="80dp">
+
+            <cu.alexgi.youchat.views_GI.TextViewMsgNombreIzqGI
+                android:id="@+id/mensaje_nombre_izq"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_blanco_to_gris"/>
+
+            <LinearLayout
+                android:id="@+id/est_reenviado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_below="@id/mensaje_nombre_izq"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:orientation="horizontal">
+                <cu.alexgi.youchat.views_GI.ImageViewMsgIzqGI
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/option_chat_reenviar"/>
+                <cu.alexgi.youchat.views_GI.TextViewMsgIzqGI
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reenviado"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_hora"/>
+            </LinearLayout>
+
+            <cu.alexgi.youchat.views_GI.CircleImageViewGloboChatIzqGI
+                android:id="@+id/audio_play_izq"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/est_reenviado"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/audio_play"
+                android:tint="#fff"
+                app:civ_border_width="8dp"/>
+
+            <cu.alexgi.youchat.progressbar.DownloadProgressView
+                android:id="@+id/progress_view"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:visibility="gone"
+                android:layout_below="@+id/est_reenviado"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                app:lineWidth="0.8dp"
+                app:circleRadius="@dimen/margen"/>
+
+            <cu.alexgi.youchat.views_GI.AudioWaveViewIzqGI
+                android:id="@+id/audio_seekbar_izq"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_below="@+id/est_reenviado"
+                android:layout_toEndOf="@id/audio_play_izq"
+                app:animateExpansion="false"
+                app:touchable="true"/>
+
+            <cu.alexgi.youchat.views_GI.TextViewMsgIzqGI
+                android:id="@+id/audio_duration_izq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_below="@id/audio_seekbar_izq"
+                android:layout_toEndOf="@id/audio_play_izq"
+                android:textSize="12sp"
+                android:textColor="@color/texto_blanco_to_gris"
+                android:text="0:00" />
+
+            <cu.alexgi.youchat.views_GI.TextViewMsgIzqGI
+                android:id="@+id/hora_izq"
+                android:text="10:00 am"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="3dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/audio_seekbar_izq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_blanco_to_gris"
+                android:textSize="@dimen/text_hora"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

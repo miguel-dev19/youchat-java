@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <cu.alexgi.youchat.views_GI.CardViewDialogGI
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        app:cardBackgroundColor="@color/fondo_blanco"
+        app:cardCornerRadius="@dimen/spacing_xmedium"
+        app:cardElevation="3dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="5dp">
+            <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_horizontal"
+                android:text="Añadir atajo"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margen"
+                app:boxBackgroundMode="outline"
+                android:background="@null"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+                app:hintEnabled="false"
+                app:hintTextColor="@color/texto_grisoscuro_to_grisclaro">
+                <EditText
+                    android:id="@+id/et_atajo_com"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxLines="5"
+                    android:minLines="1"
+                    android:inputType="textMultiLine"
+                    android:hint="Escriba el atajo"
+                    android:textColorHint="@color/texto_grisoscuro_to_grisclaro"
+                    android:textColor="@color/texto_negro_to_gris"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margen"
+                app:boxBackgroundMode="outline"
+                android:background="@null"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+                app:hintEnabled="false"
+                app:hintTextColor="@color/texto_grisoscuro_to_grisclaro">
+                <EditText
+                    android:id="@+id/et_atajo_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:maxLines="5"
+                    android:minLines="1"
+                    android:inputType="textMultiLine"
+                    android:hint="Escriba una descripción (Opcional)"
+                    android:textColorHint="@color/texto_grisoscuro_to_grisclaro"
+                    android:textColor="@color/texto_negro_to_gris"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <cu.alexgi.youchat.views_GI.ExtendedFABGI
+                android:id="@+id/efab_guardar_atajo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="8dp"
+                android:text="GUARDAR"
+                android:textSize="@dimen/size_text_button"
+                app:icon="@drawable/option_copia_seguridad"
+                android:textColor="@color/texto_blanco_to_gris"
+                app:backgroundTint="?attr/colorAccent"
+                app:iconTint="@color/texto_blanco_to_gris"/>
+        </LinearLayout>
+    </cu.alexgi.youchat.views_GI.CardViewDialogGI>
+</RelativeLayout>
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/modalBottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/separator"
+        android:orientation="horizontal"
+        android:layout_width="@dimen/separatorX"
+        android:layout_height="@dimen/separatorY"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_item_search"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="9dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/color_tarjeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/separator"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/color_picker_item_list" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/color_tarjeta"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/fondo_tarjeta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="8dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="13dp">
+        <com.vanniktech.emoji.EmojiEditText
+            android:hint="Escribe algo..."
+            android:id="@+id/texto_tarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:imeOptions="normal"
+            android:inputType="textCapSentences|textMultiLine"
+            android:textStyle="bold"
+            android:maxLength="30"
+            android:maxLines="5"
+            android:padding="@dimen/margen"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textColorHint="#EBEBEB"
+            android:textSize="23sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <cu.alexgi.youchat.views_GI.FABGI
+        android:id="@+id/fab_enviar_tarjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        app:srcCompat="@drawable/input_send"
+        app:backgroundTint="?attr/colorAccent"
+        app:tint="#fff"
+        app:fabCustomSize="50dp"
+        app:maxImageSize="30dp"/>
+    </LinearLayout>
+</RelativeLayout>

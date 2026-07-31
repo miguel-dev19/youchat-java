@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".BlancoFragment">
+<!--android:background="#3f48cc"-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/margen"
+        android:layout_marginStart="@dimen/margen"
+        android:layout_marginEnd="@dimen/margen"
+        android:textSize="30sp"
+        android:textColor="@color/texto_blanco_to_gris"
+        android:text="Bienvenido a"
+        android:gravity="center"/>
+    <ImageView
+        android:id="@+id/img_blanco"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/margen"
+        android:layout_marginEnd="@dimen/margen"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/iconycvector9_2_1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_dots"
+        android:layout_marginStart="@dimen/margen"
+        android:layout_marginEnd="@dimen/margen"
+        android:textSize="20sp"
+        android:textColor="@color/texto_blanco_to_gris"
+        android:text="@string/viewpager_blanco"
+        android:gravity="center"/>
+
+</RelativeLayout>

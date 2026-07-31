@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <cu.alexgi.youchat.views_GI.CardViewDialogGI
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margen"
+        android:layout_marginEnd="@dimen/margen"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay10Percent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <cu.alexgi.youchat.progressbar.DownloadProgressView
+                android:id="@+id/progressbar_vaciar_inbox"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"/>
+            <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+                android:id="@+id/texto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:padding="6dp"
+                android:maxLines="1"
+                android:text="Vaciando bandeja"
+                android:textSize="15sp"/>
+            <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+                android:id="@+id/texto_cant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                android:padding="6dp"
+                android:maxLines="1"
+                android:text="0/0"
+                android:textSize="13sp"/>
+        </LinearLayout>
+    </cu.alexgi.youchat.views_GI.CardViewDialogGI>
+
+</LinearLayout>
+

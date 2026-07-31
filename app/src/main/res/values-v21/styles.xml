@@ -1,0 +1,10 @@
+<resources>
+    <style name="AppThemeDOCK" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <!--<item name="android:windowDrawsSystemBarBackgrounds">false</item>-->
+
+</resources>

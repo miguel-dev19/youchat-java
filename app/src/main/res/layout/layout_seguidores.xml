@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+        <cu.alexgi.youchat.CircleImageView
+            android:id="@+id/preview_seguidor_image"
+            android:layout_marginStart="@dimen/margen"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:civ_circle_background_color="@color/image_dialog_preview"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical">
+            <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+                android:id="@+id/tv_seguidor_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textSize="14sp"/>
+            <cu.alexgi.youchat.views_GI.TextViewFontGenOscuroGI
+                android:id="@+id/tv_seguidor_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:maxLines="1"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/fondo_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="6dp"
+            app:cardBackgroundColor="#00FFFFFF"
+            app:cardElevation="0dp"
+            app:contentPadding="6dp"
+            app:strokeWidth="2dp">
+            <TextView
+                android:id="@+id/btn_seguir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:letterSpacing="0.1"
+                android:textSize="14sp"
+                android:textAllCaps="true"/>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</RelativeLayout>

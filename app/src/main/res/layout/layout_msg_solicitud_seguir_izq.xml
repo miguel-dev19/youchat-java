@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/background_mensaje"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/corner_izq"
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_marginEnd="-3.5dp"
+            android:src="@drawable/corner_izq"/>
+        <RelativeLayout
+            android:id="@+id/fondo_msg_chat"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp">
+
+            <!--<RelativeLayout
+                android:id="@+id/contact_image_izq"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+
+                >-->
+            <ImageView
+                android:id="@+id/contact_image_izq"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:padding="8dp"
+                android:background="@drawable/shape_icono_error"
+                app:tint="#FFF"
+                android:src="@drawable/user_3" />
+            <!-- </RelativeLayout>-->
+
+            <cu.alexgi.youchat.views_GI.TextViewMsgIzqGI
+                android:id="@+id/tv_descrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Solicitud de seguidor"
+                android:layout_below="@id/contact_image_izq"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/texto_blanco_to_gris"/>
+
+            <cu.alexgi.youchat.views_GI.TextViewMsgIzqGI
+                android:id="@+id/tv_correo_seguir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/tv_descrip"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/texto_blanco_to_gris"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_correo_seguir"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardElevation="0dp"
+                app:contentPadding="8dp"
+                app:strokeWidth="2dp">
+                <TextView
+                    android:id="@+id/txt_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="6dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:letterSpacing="0.1"
+                    android:text="ACEPTAR"
+                    android:textSize="14sp"
+                    android:textAllCaps="true"/>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tema_creador"
+                android:layout_below="@+id/btn_ok"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                app:cardBackgroundColor="#00FFFFFF"
+                app:cardElevation="0dp"
+                app:contentPadding="8dp"
+                app:strokeWidth="2dp">
+                <TextView
+                    android:id="@+id/txt_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="6dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:letterSpacing="0.1"
+                    android:text="RECHAZAR"
+                    android:textSize="14sp"
+                    android:textAllCaps="true"/>
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

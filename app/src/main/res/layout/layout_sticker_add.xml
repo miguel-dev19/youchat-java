@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contenedor_layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:background="@color/fondo_blanco"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/thumb"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:id="@+id/tv_name_pack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:maxLines="1"
+            android:textColor="@color/texto_negro_to_gris" />
+
+        <cu.alexgi.youchat.progressbar.DownloadProgressView
+            android:id="@+id/fab_add_pack"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/fab_delete"
+            android:visibility="gone"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            app:cardBackgroundColor="@color/toast_rojo">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:padding="3dp"
+                android:src="@drawable/send_error"
+                app:tint="@color/texto_blanco_to_gris"/>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</RelativeLayout>

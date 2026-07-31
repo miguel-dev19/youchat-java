@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/modalBottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/separator"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/separatorX"
+            android:layout_height="@dimen/separatorY"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_item_search"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/margen"
+            android:paddingEnd="@dimen/margen">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margen"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="20sp"
+                android:layout_marginBottom="24dp"
+                android:text="Preguntas Frecuentes:" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="1- ¿Qué es YouChat?" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginBottom="24dp"
+                android:text="@string/ayuda_1" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="2- ¿Quiénes la desarrollaron?" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginBottom="24dp"
+                android:text="@string/ayuda_2" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="3- ¿Cómo funciona la aplicación?" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginBottom="24dp"
+                android:text="@string/ayuda_3" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="4- ¿Recopila algún tipo de información de los usuarios?" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginBottom="24dp"
+                android:text="@string/ayuda_4" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="5- ¿Tengo privacidad en mis chats?" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginBottom="24dp"
+                android:text="@string/ayuda_5" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="6- Añadí un contacto nuevo al teléfono, ¿dónde está?" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginBottom="24dp"
+                android:text="@string/ayuda_6" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="7- ¿Puedo comunicarme con alguien que no use YouChat?" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginBottom="24dp"
+                android:text="@string/ayuda_7" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="8- ¿Cómo funciona la bandeja de entrada?" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginBottom="24dp"
+                android:text="@string/ayuda_8" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="9- ¿Por qué no me carga ningún contacto? O tengo pocos contactos¿Qué hago?" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginBottom="24dp"
+                android:text="@string/ayuda_9" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="10- ¿De que forma se puede ahorrar más datos?" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginBottom="24dp"
+                android:text="@string/ayuda_10" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="11- ¿YouChat está disponible para iOS?" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginBottom="24dp"
+                android:text="@string/ayuda_11" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="12- ¿Por qué no se pueden crear grupos?" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginBottom="24dp"
+                android:text="@string/ayuda_12" />
+/////////////////////////////////////////////////////////////////////////
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="13- ¿Por qué la aplicación no funciona con el número de teléfono?" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginBottom="24dp"
+                android:text="@string/ayuda_13" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="14- ¿Por qué no se pueden hacer videollamadas y audiollamadas?" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginBottom="24dp"
+                android:text="@string/ayuda_14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="15- ¿Se puede usar la aplicación en el extranjero?" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginBottom="24dp"
+                android:text="@string/ayuda_15" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="16- ¿Cómo puedo enterarme que hay una nueva actualización?" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginBottom="24dp"
+                android:text="@string/ayuda_16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="17- ¿Por qué en mi teléfono no funciona el trabajo en segundo plano?" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginBottom="24dp"
+                android:text="@string/ayuda_17" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="18- ¿Cómo funcionan los Now?" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginBottom="24dp"
+                android:text="@string/ayuda18" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="19- ¿Cómo funciona la calificación de usuario?" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:text="@string/ayuda_19" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="24dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="8dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/verified_profile"
+                        app:tint="@color/texto_grisoscuro_to_grisclaro" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                        android:text="Usuario oficial o VIP" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="8dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/verified_profile"
+                        app:tint="@color/texto_grisoscuro_to_grisclaro" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                        android:text="Usuario BetaTester" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="8dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/vip_crown_line"
+                        app:tint="@color/texto_grisoscuro_to_grisclaro" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                        android:text="Usuario influencer" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="8dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/vip_diamond_line"
+                        app:tint="@color/texto_grisoscuro_to_grisclaro" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                        android:text="Usuario micro influencer" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="8dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/award_line"
+                        app:tint="@color/texto_grisoscuro_to_grisclaro" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                        android:text="Usuario popular" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="8dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/star"
+                        app:tint="@color/texto_grisoscuro_to_grisclaro" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                        android:text="Usuario normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="20- ¿Qué gano por cada calificación de usuario?" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginBottom="24dp"
+                android:text="@string/ayuda_20" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="21- ¿Cómo funcionan los Post?" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginBottom="24dp"
+                android:text="@string/ayuda_21" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                android:text="22- ¿Cómo puedo usar los Sticker de Telegram, WhatsApp u otro aquí?" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                android:layout_marginBottom="24dp"
+                android:text="@string/ayuda_22" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorAccent"
+            android:textColor="@color/texto_blanco_to_gris"
+            android:textSize="15sp"
+            android:paddingTop="8dp"
+            android:paddingStart="@dimen/margen"
+            android:paddingBottom="8dp"
+            android:paddingEnd="@dimen/margen"
+            android:text="@string/ayuda_nota" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

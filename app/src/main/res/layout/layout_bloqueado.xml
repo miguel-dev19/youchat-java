@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+
+    <cu.alexgi.youchat.CircleImageView
+        android:id="@+id/preview_bloqueado_image"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="4dp"
+        android:layout_alignParentStart="true"
+        android:background="?attr/selectableItemBackground"
+        app:civ_circle_background_color="@color/image_dialog_preview"/>
+
+
+        <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+            android:id="@+id/bloqueado_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="@dimen/margen"
+            android:paddingEnd="4dp"
+            android:layout_toEndOf="@+id/preview_bloqueado_image"
+            android:layout_toStartOf="@+id/btn_desbloquear"
+            android:maxLines="1"
+            android:textColor="@color/texto_negro_to_gris"/>
+
+        <cu.alexgi.youchat.views_GI.TextViewFontGenOscuroGI
+            android:id="@+id/bloqueado_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margen"
+            android:paddingEnd="4dp"
+            android:layout_toEndOf="@+id/preview_bloqueado_image"
+            android:layout_toStartOf="@+id/btn_desbloquear"
+            android:layout_below="@+id/bloqueado_nombre"
+            android:maxLines="1"
+            android:textColor="@color/texto_grisoscuro_to_grisclaro"
+            android:textSize="14sp" />
+
+    <cu.alexgi.youchat.views_GI.ImageViewIconGenGI
+        android:id="@+id/btn_desbloquear"
+        android:layout_width="30dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_close"/>
+</RelativeLayout>

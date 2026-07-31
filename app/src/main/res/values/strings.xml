@@ -1,0 +1,1264 @@
+<resources>
+
+    <string name="version_actual">4.7.20</string>
+
+    <bool name="is_right_to_left">false</bool>
+
+    <!--Hola señor hacker-->
+    <plurals name="n_minutes">
+        <item quantity="one">%d minuto</item>
+        <item quantity="other">%d minutos</item>
+    </plurals>
+
+    <plurals name="n_hours">
+        <item quantity="one">%d hora</item>
+        <item quantity="other">%d horas</item>
+    </plurals>
+    <plurals name="n_chats">
+        <item quantity="one">%d chat</item>
+        <item quantity="other">%d chats</item>
+    </plurals>
+    <plurals name="n_contacts">
+        <item quantity="one">%d contacto</item>
+        <item quantity="other">%d contactos</item>
+    </plurals>
+    <plurals name="n_messages">
+        <item quantity="one">%d mensaje</item>
+        <item quantity="other">%d mensajes</item>
+    </plurals>
+    <plurals name="n_members">
+        <item quantity="one">%d miembro</item>
+        <item quantity="other">%d miembros</item>
+    </plurals>
+    <plurals name="album_check_image_limit">
+        <item quantity="one">Sólo puede seleccionar %1$d imagen.</item>
+        <item quantity="other">Sólo puede seleccionar %1$d imagenes.</item>
+    </plurals>
+    <plurals name="album_check_image_limit_camera">
+        <item quantity="one">Sólo puede seleccionar %1$d imagen, no puede usar la camara.</item>
+        <item quantity="other">Sólo puede seleccionar %1$d imagenes, no puede usar la camara.</item>
+    </plurals>
+    <plurals name="album_check_video_limit">
+        <item quantity="one">Sólo puede seleccionar %1$d video.</item>
+        <item quantity="other">Sólo puede seleccionar %1$d videos.</item>
+    </plurals>
+
+    <plurals name="album_check_video_limit_camera">
+        <item quantity="one">Sólo puede seleccionar %1$d video, no puede usar la camara.</item>
+        <item quantity="other">Sólo puede seleccionar %1$d videos, no puede usar la camara.</item>
+    </plurals>
+    <plurals name="chat_archived">
+        <item quantity="one">%d chat archivado</item>
+        <item quantity="other">%d chats archivados</item>
+    </plurals>
+    <plurals name="chat_unarchived">
+        <item quantity="one">%d chat desarchivado</item>
+        <item quantity="other">%d chats desarchivados</item>
+    </plurals>
+    <plurals name="chat_n_new_messages">
+        <item quantity="one">%d nuevo mensaje</item>
+        <item quantity="other">%d nuevos mensajes</item>
+    </plurals>
+    <plurals name="imagePickerMulti">
+        <item quantity="one">Has seleccionado una imagen</item>
+        <item quantity="other">Has seleccionado %1$d imágenes</item>
+    </plurals>
+
+
+    <plurals name="imagePickerMultiMore">
+        <item quantity="one">Tienes que seleccionar una imagen más</item>
+        <item quantity="other">Tienes que seleccionar %1$d imágenes más</item>
+    </plurals>
+    <plurals name="pick_multi">
+        <item quantity="one">Una imagen seleccionada</item>
+        <item quantity="other">%1$d imágenes seleccionadas</item>
+    </plurals>
+
+
+    <plurals name="pick_multi_more">
+        <item quantity="one">Selecciona una imagen más…</item>
+        <item quantity="other">Selecciona %1$d imágenes más…</item>
+    </plurals>
+
+    <string name="theme_font">Color del texto</string>
+    <string name="app_name">YouChat</string>
+    <string name="csr_text_state_normal">Swipe  to  refresh </string>
+
+
+    <string name="csr_text_state_ready">Release to refresh </string>
+    <!-- Translators: used as a headline in sections with actions that cannot be undone. could also be "Caution" or "Cave" or so. -->
+    <string name="csr_text_state_refresh">Refreshing  ...   </string>
+    <!-- n_min_ago is deprecated, use n_minutes instead -->
+    <string name="csr_text_state_complete">Refreshing complete </string>
+    <string name="csr_text_last_refresh">last update:  </string>
+    <string name="app_contact">Nueva conversación</string>
+    <string name="contact_empty">Aún no hay contactos</string>
+    <string name="followers_empty">Aún no hay seguidores</string>
+    <string name="bloqueados_empty">Aún no hay bloqueados</string>
+    <string name="network">Esperando conexión</string>
+    <!-- Translators: show beside messages that are "N minutes old". prefer a short string, prefer abbreviations if they're well-known -->
+    <string name="network_connect">Conectando</string>
+    <!-- Translators: show beside messages that are "N hours old". prefer a short string, prefer abbreviations if they're well-known -->
+    <string name="network_update">Actualizando</string>
+    <string name="accion_bloquear">Bloquear</string>
+    <string name="accion_bloqueado">BLOQUEADO</string>
+    <string name="accion_silenciar">Silenciar</string>
+    <string name="accion_silenciado">SILENCIADO</string>
+
+
+    <string name="unknown">Desconocido</string>
+    <string name="slide_to_cancel">"Deslice para cancelar"</string>
+    <string name="now">Now</string>
+    <string name="danger">Danger</string>
+    <string name="n_min_ago">%d min</string>
+
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="this_week">This week</string>
+    <string name="this_month">This month</string>
+    <string name="last_week">Last week</string>
+    <string name="last_month">Last month</string>
+    <string name="viewpager_blanco">YouChat la nueva aplicación de mensajería instantánea</string>
+    <string name="viewpager_rojo">YouChat es seguro, su privacidad está asegurada con nosotros</string>
+    <string name="viewpager_verde">Converse bajo una interfaz cómoda, moderna y agradable</string>
+    <string name="viewpager_amarillo">Comuníquese con las personas de manera rápida y en tiempo real</string>
+
+    /////////////////////////////////////////////////PREGUNTAS
+    FRECUENTES/////////////////////////////////////////
+    <string name="viewpager_azul">Adelante, comience a usar YouChat</string>
+    <string name="info_perfil">Hola, conecta conmigo en YouChat :)</string>
+    <string name="version_bd">1</string>
+    <string name="texto_conexion">Compruebe su conexión de red</string>
+    <string name="actualizo">Vaya al apartado ajustes, luego toque la opción \"Ver última versión\" y sabrá si está usando una versión antigua de la aplicación.</string>
+    <string name="disponible">Se quiere hacer una entrega de un servicio bueno, rápido y eficaz, lo que requiere más esfuerzo y dedicación de parte de los desarrolladores. Danos tu opinión acerca de este apartado enviando una sugerencia, para así saber cuántas personas les gustaría usar este servicio.</string>
+    <string name="hint_sugerencia"> Escríbanos una sugerencia\n - Coméntenos que le parece la aplicación\n - Alguna idea de como mejorarla\n - Haznos saber si la experiencia de usuario es mala\n - Recuerde que su opinión para nosotros cuenta.</string>
+    <!--La aplicación se encarga de que no pueda escribirle a ningún usuario que no use la aplicación, en caso de que un usuario se haya registrado previamente y luego desintalado YouChat, el correo le va a llegar normalmente, pero aunque ese usuario responda no le va a llegar el mensaje desde la aplicación de YouChat.-->
+    <string name="hint_reporte"> Reporte aquí cualquier problema que haya tenido usando la aplicación, trate de ser lo más preciso posible con el error para así poder darle la solución más óptima posible.</string>
+    <string name="option_lectura">Si desactivas las confirmaciones de lectura, no podrás enviarlas ni recibirlas.</string>
+    <string name="option_notificacion">Si desactivas las notificaciones no recibirás ninguna cuando entren nuevos mensajes.</string>
+    <string name="option_sonido">Si desactivas los sonidos no se reproducirán ninguno, salvo los audios del chat.</string>
+    <string name="ayuda_1">
+        Esta aplicación fue programada para establecer comunicación entre las personas
+        que la utilizan, diseñada para atraer a la mayoría del público por su interfaz
+        gráfica y con la esperanza de que se convierta en otra aplicación de mensajería
+        instantánea útil y necesaria en cualquier dispositivo android.</string>
+    <string name="ayuda_2">Fue desarrollada por unos hermanos en plena cuarentena,
+        con la visión de extenderla por todo el país y dar una opción más para la comunicación, aparte
+        de las ya existentes.</string>
+    <string name="ayuda_3">Funciona a través del correo electrónico(nauta o gmail). Utilizando
+        la bolsa de correo nauta o cualquier otra vía de conexión.</string>
+    <string name="ayuda_4">Si, la aplicación necesita, para funcionar, un correo legítimo y su contraseña.
+        El correo si es público, es el necesario para la comunicación, por otra parte, la contraseña nunca sale de su teléfono.
+        Los datos que luego son pedidos para llenar el perfil son opcionales y siempre pueden dejarse en blanco.
+        Estos datos no se almacenan en ningún lugar salvo en su teléfono y el teléfono del contacto donde se actualizó su perfil.</string>
+    <string name="ayuda_5">Los chats son totalmente privados, van de un usuario a
+        otro sin pasar por intermediarios y después de recibirlos son borrados
+        de la bandeja de entrada del usuario, sin dejar rastro de ningún tipo.
+        También tiene la opción de encriptar los mensajes y multimedia enviadas.</string>
+    <string name="ayuda_6">Si añades algún contacto nuevo al teléfono
+        y no aparece en la lista, usa el botón actualizar lista en el apartado \"Nueva
+        conversación\" para actualizar la lista con el contacto añadido.</string>
+    <string name="ayuda_7">No era posible en sus versiones iniciales,
+        ahora a través de la bandeja de entrada el usuario puede comunicarse normalmente por el correo con otras
+        aplicaciones usando la modalidad de chat o de correo tradicional. El chat principal sigue siendo
+        compatible solamente con correos que sean enviados desde la propia apk.</string>
+
+    <string name="ayuda_8">La bandeja de entrada fue pensada y diseñada para el gusto de todos los
+        usuarios que la usen, ya que cuenta con dos formas de visualizar los correos:\n
+        -Modalidad chat: parecida a la vista de DeltaChat o Dímelo, donde se pueden ver lo
+        correo en forma de chat y ordenados por usuarios.\n
+        -Modalidad tradicional: parecida a la vista tradicional de ver los correos, ordenados
+        uno debajo del otro. Ejemplo de esto está el buzón de Sijú, AqualMail, Gmail y muchas otras.\n\n
+    El usuario siempre tiene la opción de desactivar la bandeja de YouChat si se siente cómodo
+        con la aplicación que esté usando para gestionar su correo o si no quiere gestionar el
+        mismo. También se incluyen opciones para restringir la entrada a la bandeja de correos
+        provenientes de otras aplicaciones de correo para que, en caso que el usuario guste en
+        poseer varias aplicaciones, no reciba más de 1 vez el mismo correo.</string>
+    <string name="ayuda_9">La aplicación carga solamente los contactos de su teléfono que tengan correo.
+        En caso de tener pocos contactos, invite a sus amigos por el botón \"Invitar amigos\" en el apartado
+        \"Nueva conversación\" y comparta la aplicación con todos para que así pueda crecer la
+        comunidad de YouChat.</string>
+    <string name="ayuda_10">Para ahorrar datos la aplicación cuenta con determinadas opciones que pueden ser activadas o
+        desactivadas cuando usted lo desee. En el apartado de \"Ajustes\" vaya a la esquina superior derecha y encontrará
+        un signo de pregunta, tóquelo y luego toque una opción para saber como funciona y si consume o no datos. Recuerde
+        siempre que la aplicación funciona con el correo, así que su consumo se adecua a la tarifa de su operadora, en este
+        caso ETECSA para los residentes en Cuba.</string>
+
+    <string name="ayuda_11">El equipo de desarrolladores de YouChat no cuenta con un programador
+        en este sistema operativo. Si tienes conocimiento de desarrollo de aplicaciones en iOS,
+        puedes formar parte del equipo para desarrollar YouChat en esta plataforma.</string>
+    <string name="ayuda_12">En estos momentos la aplicación está en sus primeros
+        meses de desarrollo. En próximas versiones vendrán las opciones de crear grupos y canales.</string>
+
+    <string name="ayuda_13">La aplicación no puede ser con número de teléfono ya que esto requeriría una gran infraestructura,
+        dígase un buen servidor y contrato con ETECSA lo cual no poseemos, para permitirnos el manejo de los números de teléfono.</string>
+    <string name="ayuda_14">Las audiollamadas y videollamadas necesitan, para ejecutarse, una conexión directa con el otro usuario siendo
+        posible sólo si se cuenta con un servidor. El correo no otorga ese tipo de soporte para implementar en él estos servicios.</string>
+
+    <string name="ayuda_15">Este servicio aún está en desarrollo, sólo está disponible el correo gmail.
+        Esto le dará la opción a los cubanos de comunicarse con su familia en el extranjero simplemente adquiriendo la bolsa de correo nauta.</string>
+
+    <string name="ayuda_16">Puede entrar al grupo oficial en toDus, al canal en Telegram o ir directo a comprobarlo en Apklis, estos enlaces
+        puedes obtenerlos en el apartado \"Acerca de\" tocando los íconos correspondientes a cada uno.</string>
+
+    <string name="ayuda_17">El trabajo en segundo plano de la aplicación aún está en desarrollo,
+        no funciona para todos los teléfonos, por tanto, si ve que se le detiene la aplicación al activarlo no lo
+        use. Se avisará por el historial de cambio cuando funcione para todos.</string>
+
+    <string name="ayuda18">
+        Los Now de YouChat se crearon con la idea general de los estados de WhatsApp, pero siempre adaptándolos a
+        nuestro entorno y las limitaciones que con el vienen. Para poder ver los Now de alguien debes
+        primero ser su seguidor y para que alguien pueda ver tus Now debe seguirte. Para seguir a alguien
+        debes de entrar a su perfil y allí tocar la opción \"SEGUIR\", o ir a la opción \"Seguir a\", en
+        la vista de los contactos, y allí agregar el correo de la persona a la que quieres seguir. La
+        estrella bajo su perfil representa la cantidad de seguidores que tiene.\n\n
+
+        En el apartado \"Ajustes\" tenemos las opciones \"Administrar Now\" y \"Aceptar solicitud\", de
+        la primera hablaremos más adelante, en cuanto a la segunda brinda la opción de escoger entre dos modos:\n
+        -Manual: Usted será notificado y tendrá la opción de aceptar o no las solicitudes de las personas
+        que le quieren seguir.\n
+        -Automático: Todas las solicitudes de personas que le quieren seguir serán aceptadas automáticamente sin ser
+        notificado.\n\n
+
+        La opción \"Administrar Now\" te da la posibilidad de ver todos los now que hayas recibido o publicado
+        y varias funciones más. Los Now no se borrarán automáticamente luego de 24hrs, simplemente se almacenarán
+        hasta que decidas borrarlos.\n\n
+
+        En la pantalla inicial se podrán visualizar los Now que no hayas visto y los más recientes, y solamente podrás reaccionar una
+        sola vez por estado. Cuando subes un nuevo estado, este se enviará a todos tus seguidores y si un seguidor
+        nuevo entra no le llegarán los Now previamente subidos por ti.\n\n
+
+        En cuanto al consumo dependerá de la cantidad de seguidores que tengas y el tipo de estado, explico:\n
+        - ETECSA brinda la opción de enviar un sólo correo hasta 20 personas, consumiéndote lo que pesa el correo
+        una sola vez. Es decir, si tiene de 1 a 20 seguidores será como enviar un solo correo, de 21 a 40 son 2
+        correos que envías y así sucesivamente cada 20 usuarios. Para los que le guste ahorrar se aconseja que no
+        pasen de 20 sus seguidores.\n
+        - En cuanto al tipo de estado hay 2, si subes un estado \"Sólo texto\" su peso será el de un mensaje de texto
+        normal, es decir, casi nada. En cambio, si subes uno \"Imagen y texto\" su peso dependerá del peso de la imagen,
+        este se puede regular con la opción \"Calidad de imágenes\" de los ajustes de YouChat.\n\n
+
+        Cualquier otra duda sobre los Now o si desea aportar alguna idea para mejorarlos. Nos puede escribir a
+        través de la opción \"Contáctenos\".
+    </string>
+    <string name="ayuda_19">La calificación de usuario es la siguiente:\n
+    -Usuario oficial o VIP, si es un usuario oficial de la aplicación.\n
+    -Usuario BetaTester, si tiene activado el beta tester de la aplicación.\n
+    -Usuario influencer, si tiene más de 300 seguidores.\n
+    -Usuario micro influencer, si tiene más de 200 seguidores.\n
+    -Usuario popular, si tiene más de 100 seguidores.\n
+    -Usuario normal, si tiene menos de 100 seguidores.\n\n
+    Este sería el orden de prioridad para la calificación de usuario.
+    \n\nIconogafía según el tipo de usuario:</string>
+
+    <string name="ayuda_20">Se puede apreciar en la lista de chats delante del
+        nombre del usuario un ícono que indica su calificación, no obstante cada uno de los tipos
+        de usuarios tienen disponibles las siguientes funciones:\n
+    -Usuario oficial o VIP, se le concede hasta 7 puntos diario para publicar Post, 10 puntos diarios para comentar en los Post y tiene acceso a 15 íconos diferentes para los mismos. Además cuenta con la opción de compartir temas, crear tarjetas y subir imágenes por los mismos Post.\n
+    -Usuario BetaTester, se le concede hasta 6 puntos diario para publicar Post, 9 puntos diarios para comentar en los Post y tiene acceso a 15 íconos diferentes para los mismos. Además cuenta con la opción de compartir temas, crear tarjetas y subir imágenes por los mismos Post.\n
+    -Usuario influencer, se le concede hasta 5 puntos diario para publicar Post, 8 puntos diarios para comentar en los Post y tiene acceso a 15 íconos diferentes para los mismos. Además cuenta con la opción de compartir temas, crear tarjetas y subir imágenes por los mismos Post.\n
+    -Usuario micro influencer, se le concede hasta 4 puntos diario para publicar Post, 7 puntos diarios para comentar en los Post y tiene acceso a 15 íconos diferentes para los mismos. Además cuenta con la opción de compartir temas, crear tarjetas y subir imágenes por los mismos Post.\n
+    -Usuario popular, se le concede hasta 3 puntos diario para publicar Post, 6 puntos diarios para comentar en los Post y tiene acceso a 10 íconos diferentes para los mismos. Además cuenta con la opción de compartir temas, crear tarjetas y subir imágenes por los mismos Post..\n
+    -Usuario normal, se le concede hasta 2 puntos diario para publicar Post, 5 puntos diarios para comentar en los Post y tiene acceso a 5 íconos diferentes para los mismos. Además cuenta con la opción de compartir temas por los mismos Post y crear tarjetas por los mismos Post.\n\n
+    Serán agregadas más funciones según vayan saliendo nuevas actualizaciones, por tanto, esto puede variar.</string>
+
+    <string name="ayuda_21">El servicio de Post te permite publicar un mensaje,
+        válido por 24 horas, que le llegará a todos los usuarios que usen la aplicación y tengan el servicio de Post activado.\n\n
+    Es de obligación por cada usuario que el servicio sea usado con disciplina, sino serán privados de la opción de publicar Post.
+    También pueden reportar aquellos Post que su contenido sea realmente ofensivo,
+        en caso contrario puede bloquearlo localmente en su aplicación para que no recibir más Post de ese correo.</string>
+
+    <string name="ayuda_22">La aplicación soporta las siguientes extensiones para el uso de stickers:\n
+    -.tgs\n
+    -.webp\n
+    -.jpg o .jpeg\n
+    -.png\n
+    -.gif\n
+    Usted solamente debe ir a la carpeta \"YouChat/Stickers\", crear dentro una nueva carpeta y
+        copiar en ella todos los stickers que quiera, luego abrir la aplicación y ya deben de cargar todos.\n
+    Los stickers no son comprimidos al enviarse, por tanto, tenga cuidado con ellos, podrían generar un gran consumo si se envían demasiados.</string>
+    <string name="ayuda_nota">Si todavía presenta alguna inquietud, envíenos su duda desde el apartado \"Contáctenos\".
+        Esta envía su inquietud a nuestro canal en Telegram y usted tiene la opción de hacer o no su correo visible.</string>
+
+    <string name="version_beta">+Versión para los Beta Tester</string>
+    <string name="cambio_beta">
+        -Pueden ayudarnos a dar soporte y aclarar dudas desde el grupo oficial de YouChat en telegram, el enlace está en \"acerca de\".
+        -Ahora para sacar el cartel del Beta Tester
+        hay que tener la calidad de imagen en 70% y desactivar la opción de notificaciones de la apk.\n
+    </string>
+
+    /////////////////////////////////////////////////HISTORIAL DE CAMBIO/////////////////////////////////////////
+    <string name="version_7">+Versión 4.7.20</string>
+    <string name="cambio_7">
+        -Implementado sistema de usuarios públicos.\n
+        -Implementado filtro de búsqueda en el sistema de usuarios públicos.\n
+        -Añadido nuevo sistema de descarga automática.\n
+        -Implementada copia de seguridad en la nube.\n
+        -Soporte para modificar esquinas de mensajes a gusto.\n
+        -Añadido nuevos tipos de notificación.\n
+        -Soporte de emojis animados.\n
+        -Implementadas pantalla de soporte al recibir muchos errores.\n
+        -Implementada bandeja de entrada para recibir todos los mensajes.\n
+        -Implementadas opciones para la bandeja de entrada en ajustes.\n
+        -Añadido soporte con los bots de DeltaChat.\n
+        -Añadido apartado para ver seguidores y seguidos.\n
+        -Añadido soporte para detectar errores en la aplicación, y poder reportarlos.\n
+        -Mejorado las reacciones en los Now, ahora son más animadas.\n
+        -Mejorado sistema de envío y recepción.\n
+        -Ahora se detienen otros audios externos al grabar o reproducir algun sonido.\n
+        -Mejorado deslizamiento en la pantalla de bienvenida y añadido botón de SALTAR.\n
+        -Añadida opción para elegir la dirección al deslizar para responder un mensaje.\n
+        -Añadida opción para desenfocar los fondos de pantalla.\n
+        -Añadida opción de establecer fondos al crear un tema.\n
+        -Implementado sistema para recibir noticias y actualizaciones desde el chat oficial de YouChat.\n
+        -Implementado sistema de post diarios.\n
+        -Añadida opción de crear tarjetas en los post y enviar imágenes.\n
+        -Añadida opción de enviar imágenes en los post.\n
+        -Añadida opción de compartir temas en los post.\n
+        -Añadida opción para responder en los post.\n
+        -Aumentado a 500 los caracteres en los post.\n
+        -Implementado sistema para reportar errores en la apk.\n
+        -Añadida opción para limitar la cantidad de Post recibidas.\n
+        -Añadida opción de lista negra para los Post.\n
+        -Implementado sistema de calificación de usuario según la cantidad de seguidores.\n
+        -Añadida función para compartir la lista de seguidores.\n
+        -Ocultada lista de correos en mensajes con más de un destinatario.\n
+        -Implementada función para ir atrás deslizando de izquierdo a derecha.\n
+        -Aumentada velocidad de envío de mensajes.\n
+        -Soporte creado para personalizar la app a gusto.\n
+        -Añadidos algunos temas por defecto.\n
+        -Implementada función para compartir los temas.\n
+        -Añadida opción para redondear barra de chat a gusto.\n
+        -Añadida opción para escoger la cantidad de líneas en la lista de chat.\n
+        -Añadida opción para enviar mensajes al pulsar la tecla Intro.\n
+        -Añadida función de descargas gratis de stickers.\n
+        -Implementada función para encriptar los mensajes que se envían.\n
+        -Mejorado el sistema de envío y recepción de stickers.\n
+        -Añadida la compatibilidad de sticker con tgs, jpg, jpeg, png, gif y webp, podrás usar los sticker de Telegram y WhatsApp.\n
+        -Mejorado sistema de descargas.\n
+        -Implementada función de autoenviar todos los mensajes que no se enviaron apenas se conecte.\n
+        -Añadido apartado \"Estadísticas\" para hacer seguimiento del consumo.\n
+        -Añadidos gráficos a las estadísticas.\n
+        -Añadida burbuja de datos para ver el consumo en tiempo real.\n
+        -Implementada función para editar mensajes después de haber sido enviados.\n
+        -Mejorado visor de imágenes.\n
+        -Mejorado dimensiones del contenedor de imágenes en el chat.\n
+        -Mejorado sistema de responder mensajes.\n
+        -Añadida función de selección múltiple en el chat.\n
+        -Añadida función de reenvío múltiple de mensajes.\n
+        -Cambiado nombre \"Estados\" por \"Now\", contribución de Roclahy admin de iTecnoGeek.\n
+        -Implementado sistema para recibir Now oficiales de YouChat.\n
+        -Implementada función para saber quien vió tu Now.\n
+        -Mejorado visor de Now.\n
+        -Añadida barra de progreso al subir un Now para saber si se envía correctamente y cuanto demora.\n
+        -Añadida función de subida múltiple de Now.\n
+        -Añadida función de copiar y resubir un Now.\n
+        -Incorporado gestor de archivos.\n
+        -Mejorado sistema de subida de archivos.\n
+        -Mejorado sistema al abrir archivos.\n
+        -Implementado sistema para escuchar audio al acercarlo al oido.\n
+        -Mejorado la reproducción de audios.\n
+        -Mejora visual de la barra de audio.\n
+        -Implementado resaltado de texto al concatenarlo con \"#\".\n
+        -Arreglado error de imágenes en negro al seleccionarlas desde el carrusel.\n
+        -Arreglado errores de incompatibilidad con la cámara del chat.\n
+        -Cambio total de iconografía.\n
+        -Cambio total en la infraestructura.\n
+        -Añadido fondo de pantalla actual en el apartado ver perfil.\n
+        -Corregido fallo de fotos de perfil repetidas en chats.\n
+        -Corregidos otros errores.\n
+    </string>
+    <string name="version_6">+Versión 4.3.08</string>
+    <string name="cambio_6">
+        -Mejorado el trabajo en segundo plano.\n
+        -Implementado cambio de temas.\n
+        -Añadida opciones de personalización del chat.\n
+        -Opción para aumentar el tamaño de las letras de los mensajes.\n
+        -Añadida primera versión de stickers (beta).\n
+        -Añadida copia de seguridad para respaldar sus datos.\n
+        -Implementada función de borrar mensajes para todos.\n
+        -Añadido soporte para más correos internacionales (en prueba, puede tener errores).\n
+        -Implementada cámara propia en la app.\n
+        -Añadido efecto para abrir cámara desde el chat.\n
+        -Mejorado visualmente el sistema de grabar mensaje de voz.\n
+        -Mejorado forma de abrir el clip de adjuntar.\n
+        -Añadido carrusel de imágenes en el clip de adjuntar.\n
+        -Añadidas imágenes y animaciones en carteles de información, por ejemplo al anclar, silenciar o grabar.\n
+        -Separado por tabs los estados de la conversación principal.\n
+        -Añadida función de borrar cada 24h los estados.\n
+        -Rediseñado componentes de estados.\n
+        -Mejoras en el visor de estados.\n
+        -Añadida función de girar la pantalla para usar la aplicación en modo paisaje.\n
+        -Añadidas animaciones para las tarjetas de felicitaciones en fechas puntuales.\n
+        -Nueva tematización estándar de la aplicación.\n
+        -Mejorado el slider de calidad de imágenes y de tamaño máximo de descarga en ajustes.\n
+        -Mejorado el sistema de descarga de mensajes.\n
+        -Rediseñadas algunas secciones.\n
+        -Añadidos nuevos fondos de pantalla.\n
+        -Mejorado tema oscuro y errores en el mismo.\n
+        -Corregido errores menores.\n
+        Gracias por el apoyo brindado al desarrollo de la app, gracias por la paciencia y por preferir a YouChat para comunicarse.\n
+        \#Vamos_por_más
+    </string>
+    <string name="version_5">+Versión 4.1.12</string>
+
+    <string name="cambio_5">
+        -Implementados los estados y un sistema de seguidores.\n
+        -Añadidas reacciones a los estados.\n
+        -Aumentada la velocidad al enviar y recibir mensajes.\n
+        -Añadida la opción de ver a todas las personas bloqueadas.\n
+        -Añadida estadística dentro del perfil de cada usuario.\n
+        -Añadida función de \"Seguir\" o \"Ir a chat\" tocando un correo desde fuera de la aplicación.\n
+        -Corregido el error de la opción \"Aviso en línea\".\n
+        -Corregido el error al intentar poner un fondo de la galería.\n
+        -Disminuido el tamaño mínimo de descarga automática a 50Kb.\n
+        -Añadida la opción manual de elegir si quieres avisar a tus contactos que te has unido a YouChat.\n
+        -Corregidos algunos errores.\n
+        -Realizadas algunas mejoras visuales.\n
+    </string>
+
+    <string name="version_4">+Versión 4.0.06</string>
+    <string name="cambio_4">
+        -Por problemas en la versión anterior se desactivó el trabajo en segundo plano, si eres uno de los
+        usuarios afectados por favor, no actives esta opción por ahora.\n
+        -Se arregló el error del login de la versión anterior.\n\n
+        Disculpen las molestias ocasionadas.
+    </string>
+    <string name="version_3">+Versión 4.0.05</string>
+    <string name="cambio_3">
+        -Cambio total en el diseño de la aplicación y nuevo ícono.\n
+        -Ahora la aplicación trabaja en segundo plano.\n
+        -Habilitado un sólo toque para acceder a las opciones de los mensajes dentro del chat.\n
+        -Añadida opción de avisar a tus contactos de YouChat que te has conectado.\n
+        -Habilitada la función de avisar a todos tus contactos de que usas YouChat la primera vez que te conectas.\n
+        -Añadida la función de acceder desde un correo directamente al chat de la aplicación.\n
+        -Añadida la opción de empezar una conversación sin necesidad de agregar el correo a tus contactos del teléfono.\n
+        -Añadida la opción de limitar el tamaño máximo de descarga automática de los mensajes.\n
+        -Añadida la opción de descargar los mensajes manualmente si sobrepasan el límite de tamaño establecido.\n
+        -Aumentado el límite de envío de archivos hasta 20Mb.\n
+        -Ahora los perfiles se actualizan sin necesidad de agregar el contacto al teléfono.\n
+        -Ahora puedes escribirte a ti mismo para almacenar mensajes, estos correos no se enviarán.\n
+        -Añadido mensaje \"Conectando\".\n
+        -Añadidas algunas mejoras visuales.\n
+        -Arreglados algunos errores.\n
+        -Añadidas otras sorpresas.\n\n
+        Agradecer a todo aquel que nos hizo llegar su idea para mejorar la aplicación.
+    </string>
+    <string name="version_2">+Versión 3.0.47</string>
+    <string name="cambio_2">
+        -Ahorro sustancial de datos.\n
+        -Aumentada la calidad de la foto de perfil.\n
+        -Añadida función de enviar tarjetas.\n
+        -Añadido mensaje \"Actualizando\".\n
+        -Añadidos nuevos fondos de pantalla para el chat.\n
+        \nFeliz fin de año y próspero año nuevo para todos.
+    </string>
+
+    <string name="version_1">+Versión 3.0.01</string>
+    <string name="cambio_1">
+        -Corregido error al abrir la cámara para android 7 en adelante.\n
+        -Añadida notificación de \"escribiendo...\" y \"grabando audio\" dentro y fuera del chat.\n
+        -Implementada la función de enviar archivos de hasta 5Mb.\n
+        -Implementada la función de enviar contactos.\n
+        -Integrada la lista de contactos de YouChat con la lista de contactos del teléfono.\n
+        -Añadido \"Borrador\" al salir de las conversaciones y dejar algo escrito.\n
+        -Añadido mensaje \"Conectando\".\n
+        -Añadida opción de desactivar animaciones en el chat.\n
+        -Añadido peso de las imágenes.\n
+        -Añadidos paneles de confirmación a las opciones de bloquear y silenciar.\n
+        -Añadidos nuevos fondos de pantalla para el chat.\n
+        -Añadido soporte para GIF en el fondo de pantalla para el chat.\n
+        -Realizadas algunas reformas visuales.\n
+        -Arreglados varios bugs y corregido algunos errores.\n\n
+        Muchas gracias a todos los usuarios que nos hicieron llegar su sugerencia
+        a través de los distintos medios disponibles.
+    </string>
+
+    /////////////////////////////////////////////////EXPLICACIONES DE AJUSTES/////////////////////////////////////////
+    <string name="explicarProgresoEstados">Activado: Se pasará automáticamente al siguiente estado transcurrido el tiempo establecido.\n
+    Desactivado: Sin tiempo establecido para visualizar el estado, debe pasar al próximo manualmente.\n
+    Tiempo de progreso: Establezca el tiempo a esperar antes de pasar automáticamente al siguiente estado.</string>
+
+    <string name="explicarPerfil">En esta opción se va al apartado de
+        editar perfil. Para que se actualicen los perfiles deben cumplirse las siguientes condiciones:\n
+        -Ambos usuarios deben tener activada la opción de \"Actualizaciones de perfil\".\n
+    -Ambos usuarios deben de entablar una conversación.</string>
+
+    <string name="explicarActPerfil">Mientras esta opción esté activada se
+        actualizarán todos los perfiles de los usuarios con los cuales entables una conversación.
+        Siempre y cuando el otro usuario también tenga activada esta opción.
+    \nPara un menor consumo de datos se recomienda tener desactivada esta opción.</string>
+
+    <string name="explicarEncript">Es recomendable activa esta opción para que ningún
+        otra aplicación que acceda al correo pueda leer los mensajes enviados desde YouChat.
+        Si envias un mensaje encriptado a un usuario que no use YouChat este no será capaz de leerlo, si es el caso se recomienda desactivar esta opción.
+    \nLos mensajes de texto pueden llegar a pesar ligeramente y la multimedia es comprimida bajo un archivo zip con contraseña, haciendo que sea más segura al enviarla y en algunas ocasiones pesa menos.</string>
+
+    <string name="explicarEmojiAnimChat">Mientras esta opción esté activada cuando envíes o recibas un emoji, el cual tenga su animación en el sistema, será reemplazado por dicha animación.</string>
+    <string name="explicarPost">Si desactiva esta opción dejará de recibir y enviar post, sirve para ahorrar megas, esta opción no se le notificará a nadie y es su decisión si desea usar o no este apartado.</string>
+    <string name="explicarPostDesImg">Mientras esta opción esté activada todas las imágenes enviadas en los Post se descargarán automáticamente.</string>
+    <string name="explicarPostBorrar24">Mientras esta opción esté activada se borrarán automáticamente los Post que tengan 24 horas o más de publicados.</string>
+    <string name="explicarIntro">Activar para enviar mensaje al pulsar la tecla Intro, si está desactivado hace un cambio de línea. Esta opción no es compatible con todos los teclados de android.</string>
+    <string name="explicarPostHistorial">Mientras esta opción esté activada se podrán visualizar todos los Post recibidos, inclusos los que sean eliminado de la pestaña de Post. De esta forma no se llenará la vista principal y siempre tendrás acceso a todos los Post guardados. En caso de estar desactivada los Post se borrarán definitivamente cuando sean borrados de la vista principal.</string>
+    <string name="explicarPostVerHistorial">Aquí se pueden visualizar todos los Post recibidos que no hallan sido borrados.</string>
+    <string name="explicarHacerPerfilPublico">Si activa ésta opción su correo se hará público para todos los usuarios
+        dentro de la aplicación
+        , es decir, si va a la vista de ver usuarios públicos y actualiza, allí estarás. Si activó o desactivó esta
+        opción debe esperar como máximo 24 horas para que la lista general sea actualizada y usted sea
+        agregado o quitado de la misma. Sólo se mostrarán los datos que tengas en el perfil sin incluir la foto,
+        si deseas actualizarlos debes cambiarte los datos de perfil, desactivar y volver a activar esta opción.
+        Debe activar o desactivar esta opción teniendo acceso a la red. Si deja de usar la
+        aplicación y su perfil es público lo seguirá siendo ya que no tenemos modo de saber si dejó de usarla.</string>
+
+    <string name="explicarModoUsoPubPost">
+        Esta es la pantalla de creación de Post, las opciones de los mismos
+        se irán liberando a medida que suba su clasificación como usuario.
+        Cada Post que se
+        publique tiene un coste de 1 punto con respecto a su límite de puntos diarios, esto
+        incluye aquellos donde se compartan un tema. No es igual con los
+        Post de tipo tarjeta que cuestan 2 puntos y los de tipo imagen que
+        cuestan 3 puntos. (ver preguntas 19 y 20 de Preguntas frecuentes)\n\n
+        Los puntos para publicar Post son restablecidos diariamente luego de pasadas 24
+        horas después de la publicación de su primer Post. Estos puntos no son acumulativos.\n\n
+        Los Post publicados son visualizados por todos los usuarios que hagan uso de
+        la aplicación y tengan activado el servicio. Por tanto, está prohibido el
+        uso de los mismos para promover actividades contrarrevolucionarias y
+        tampoco para discutir temas políticos; también excluir de los mismos contenido
+        pornográfico. En caso de existir usuarios que incumplan con estas normas se
+        le hará un llamado de atención directamente y en caso de continuar
+        se le quitará el permiso para publicar Post.\n\n
+        Si usted como usuario se siente ofendido por algún tipo de
+        contenido existente en los Post, puede, si es un caso menor, bloquear el
+        correo del creador para que no le lleguen más publicaciones del mismo. En
+        caso que sea de más gravedad, puede reportarlo y escribir el motivo de
+        su reporte.
+    </string>
+
+    <string name="explicarInvertirRespondido">
+        Si esta opción está activada los mensajes en el chat tendrán que ser deslizados de derecha a izquierda para ser respondidos.
+        En caso de estar desactivada los mensajes se responderán deslizando de izquierda a derecha.</string>
+    <string name="explicarActivarBuzon">
+        Si esta opción está activada recibirás todos los mensajes que lleguen a la bandeja de entrada de tu correo.</string>
+    <string name="explicarLimitePost">
+        Activar para limitar la cantidad de Post máximos que van a ser descargados y mostrados en pantalla.
+         Para obtener nuevos Post debe borrar los almacenados actualmente y volver a actualizar.
+        \nPara un menor consumo de datos se recomienda tener activada esta opción y limitada a valores entre 10 y 30.
+    </string>
+    <string name="explicarEnLinea"> Mientras esta opción esté activada, notificará
+        a sus contactos de YouChat, con los que tenga conversación, que usted está en línea cuando se conecte.
+    \nPara un menor consumo de datos se recomienda tener desactivada esta opción.</string>
+    <string name="explicarSegundoPlano"> Mientras esta opción esté activada la aplicación será forzada a trabajará en
+        segundo plano por medio de una notificación permanente.
+        \nEsta opción no es funcional en algunos dispositivos, por los tanto que se active no es siempre seguro.
+        A quien se le detenga la aplicación que no lo use.
+    \n\nSi presenta bajo nivel de batería se recomienda tener desactivada esta opción.</string>
+
+    <string name="explicarDatos">En esta opción se establece la calidad de imágenes que usted
+        envía en el chat y la de los now que sube.
+        \nPara un menor consumo de datos se recomienda tener la calidad al mínimo.</string>
+    <string name="explicarCopiadeSeguridad">Guarde sus datos, conversaciones y seguidores para no perderlos nunca más.\n
+    -Exportar: Guarda sus datos en sdCard/YouChat/YouChat_BDatos.db\n
+    -Importar: Carga sus datos desde sdCard/YouChat/YouChat_BDatos.db y elimina todos los datos actuales antes de la carga.</string>
+    <string name="explicarEstadisticas">Revise su consumo y cuanto ha usado la aplicación, vea las estadísticas reunidas hasta la fecha.</string>
+    <string name="explicarBurbujaDatos">Mientras esta opción esté activada, cuando se conecte, se
+        mostrará una burbuja en la cual se visualizará en tiempo real el consumo aproximado que tiene
+        la aplicación tanto con los datos enviados como recibidos.</string>
+
+    <string name="explicarSincronizarMensajes"> Con esta opción se hace un repaso entero a su bandeja de entrada desde el inicio. Y se obtienen todos los mensajes que no estén guardados en ella.</string>
+    <string name="explicarDescargarAdjuntosAutomatico"> Si tiene esta opción desactivada no se descargarán automáticamente los adjuntos de los correos, si se podrán descargar luego manualmente. En caso de activar esta opción se tendrá que poner un límite de descarga automática para los mismos.\n\nExisten casos en el que el mensaje viene en formato html y se descarga como un archivo aparte, no es un adjunto.</string>
+    <string name="explicarDescargarImagenNowAutomatico"> Si tiene esta opción desactivada no se descargarán automáticamente las imágenes de los Now, si se podrán descargar luego manualmente. En caso de activar esta opción se tendrá que poner un límite de descarga automática para las mismas.</string>
+    <string name="explicarDescargarMultimediaChatAutomatico"> Si tiene esta opción desactivada no se descargarán automáticamente la multimedia que lleguen por el chat, si se podrán descargar luego manualmente. En caso de activar esta opción se tendrá que poner un límite de descarga automática para la misma.</string>
+    <string name="explicarAjustesBuzon"> Aquí están las opciones que puedes hacer en tu buzón de correo.</string>
+    <string name="explicarEscanearBandeja"> Si eres de los que gustan mantener su bandeja con correos puede escanearla de vez en cuando con esta opción para saber la cantidad total de mensajes que tienes y el peso que estos total.</string>
+    <string name="explicarPieDeFirma"> Lo que escriba aquí será añadido al final de los mensajes que vayas a enviar. Al crear el mensaje tienes opción de modificarlo.</string>
+
+    <string name="explicarRecibirCorreoDeltaLab"> Mientras esta opción esté activada recibirás los correos provenientes de la apk de DeltaLab o DeltaChat. Esta opción puede o no funcionar de la manera correcta ya que se usan criterios que pueden o no coincidir con los de los mensajes recibidos de esa apk.\n\nEn este caso, tener esta opción desactivada puede hacer que los bots de la misma no funcionen con la aplicación.</string>
+    <string name="explicarRecibirCorreoDimelo"> Mientras esta opción esté activada recibirás los correos provenientes de la apk de Dímelo. Esta opción puede o no funcionar de la manera correcta ya que se usan criterios que pueden o no coincidir con los de los mensajes recibidos de esa apk.</string>
+    <string name="explicarRecibirCorreoLetterSocial"> Mientras esta opción esté activada recibirás los correos provenientes de la apk de LetterSocial. Esta opción puede o no funcionar de la manera correcta ya que se usan criterios que pueden o no coincidir con los de los mensajes recibidos de esa apk.</string>
+
+    <string name="explicarCSGuardarLocal">Esta opción permite guardar localmente en \"YouChat/YouChat_BDatos.dbyc\" una copia de todos los datos actuales de la aplicación, no incluye ninguna multimedia, sólo texto plano.</string>
+    <string name="explicarCSGuardarNube">Esta opción permite guardar localmente en \"YouChat/YouChat_BDatos.dbyc\" una copia de todos los datos actuales de la aplicación, no incluye ninguna multimedia, sólo texto plano. Luego la sube a la nube para tener acceso a esta información desde cualquier otro teléfono donde use su cuenta con YouChat.</string>
+    <string name="explicarCSCargarLocal">Esta opción permite cargar una copia de seguridad guardada localmente en su teléfono en la dirección \"YouChat/YouChat_BDatos.dbyc\".</string>
+    <string name="explicarCSCargarNube">Esta opción permite descargar, si cuenta con acceso a internet, una copia de seguridad que exista para su cuenta en la nube. Al descargarla remplaza la copia que tenga almacenada localmente y luego la cargar desde la dirección \"YouChat/YouChat_BDatos.dbyc\".</string>
+    <string name="explicarCSBorrarNube">Esta opción permite, si cuenta con acceso a internet, eliminar cualquier copia de seguridad que tenga almacenada en la nube.</string>
+
+    <string name="explicarConvertirGruposMuchosDest">
+        Mientras esta opción esté activada los correos que lleguen con más de un destinatario
+        se convertirán en grupos. En caso de usar nauta, si el grupo tiene más de 20 correos,
+        sólo les llegará el mensaje que se envíe a los 20 primeros.\n\n
+    Los grupos creados a través de esta opción no son gestionables, es decir,
+        no se pueden agregar ni quitar correos, no tienen nombres ni foto, y pueden o no ser
+        compatibles con grupos de otras aplicaciones de correo.
+        Solamente son simples grupos con más de un destinatario.</string>
+    <string name="explicarAddPieFirmaChat"> Mientras esta opción esté activada los correos que se envíen por el chat se le añadirán el pie de firma que insertes debajo.</string>
+
+    <string name="explicarAtajos">Los atajos de escritura son usados popularmente para evitar escribir nuevamente una información dada. Si usas los bots de DeltaChat guardar sus comandos como atajo serán de gran utilidad si quieres volver a usarlos.</string>
+    <string name="explicarVerAtajos">Aquí se muestran los atajos de escritura que guardaste. También tiene opción de borrarlos.</string>
+    <string name="explicarBloqueados"> Con esta opción usted puede visualizar a todos los usuarios
+        que hayan sido bloqueados.</string>
+    <string name="explicarBloqueadosPost"> Con esta opción usted puede visualizar a todos los usuarios
+        que hayan sido agregados a la lista negra de los Post.</string>
+
+    <string name="explicarLectura"> Mientras esta opción esté activada, notificará y será notificado
+        cuando los mensajes lleguen correctamente al destinatario.
+        Siempre y cuando el otro usuario también tenga activada esta opción.
+    \nPara un menor consumo de datos se recomienda tener desactivada esta opción.</string>
+
+    <string name="explicarAnimaciones"> Mientras esta opción esté activada, se realizarán las animaciones dentro
+        del chat.
+    \nPara teléfonos con poco rendimiento, se recomienda desactivarla para una mayor fluidez dentro del chat.</string>
+    <string name="explicarDinamico"> Mientras esta opción esté activada, notificará y será notificado
+        cuando esté escribiendo o grabando audio.
+        Siempre y cuando el otro usuario también tenga activada esta opción.
+    \nPara un menor consumo de datos se recomienda tener desactivada esta opción.</string>
+    <string name="explicarAdminEstados"> Con esta opción usted accede a todos los estados publicados, tanto los
+        tuyos como los de las personas a quien sigues. Aquí tendrás las opciones
+        de borrar Now ya existentes y ver información de los mismos.\n
+        También puede acceder a esta opción dejándo presionado, en la pantalla principal de la aplicación,
+        cualquier estado.
+    </string>
+    <string name="explicarVisibilidadEstados"> Con esta opción usted puede elegir como proceder ante la solicitud de un seguidor:\n
+        -Manual: Usted tiene la opción de aceptar o no las solicitudes de las personas que le quieren seguir.\n
+        -Automático: Todas las solicitudes de personas que le quieren seguir serán aceptadas automáticamente sin ser
+        notificado.\n
+        Mientras más seguidores tengas mayor será el consumo de datos, para tener un buen control sobre quien debe
+        seguirte mantenga esta opción en \"Manual\".
+    </string>
+    <string name="explicarVaciarBandeja"> En esta opción se vacía la bandeja de entrada del
+        usuario, borrando todos los mensajes existentes en ella.
+    \nPara un mejor y rápido funcionamiento de la aplicación se recomienda vaciar periódicamente su bandeja de entrada.</string>
+    <string name="explicarPlan"> Con esta opción se consulta su plan de datos actual,
+        sólamente para los usuarios residentes en Cuba.</string>
+    <string name="explicarDonación"> Con esta opción usted puede hacer una donación de saldo a los desarrolladores,
+        sólamente para los usuarios residentes en Cuba.</string>
+    <string name="explicarNotificacion"> Mientras esta opción esté activada, recibirá notificaciones de la
+        aplicación. También puedes activar o desactivar notificaciones específicas de la aplicación.</string>
+
+    <string name="explicarSonidos"> Mientras esta opción esté activada, se reproducirán los sonidos de la aplicación.</string>
+    <string name="texto_inicio_chats">Los mensajes serán enviados pero solo podrás chatear por aquí con personas que usen esta aplicación. Invítalo para que puedas chatear con él.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_login">Iniciar Sesión</string>
+
+    <string name="edit_alias">Este alias es el nombre público que van a ver los usuarios, asegúrese de que sea fácil reconocerle.</string>
+    <string name="edit_info">Este campo es totalmente público, escriba en qué está pensando o algo sobre usted.</string>
+    <string name="edit_phone">El número de teléfono expuesto acá será público para todos los usuarios, asegúrese de escribirlo correctamente para que puedan contactarlo. Este campo es opcional por si no quiere publicar su número.</string>
+    <string name="edit_calendario">Este campo es totalmente público, sirve para que los usuarios puedan saber su fecha de cumpleaños.</string>
+    <string name="edit_genero">Este campo es totalmente público, por tanto, los usuarios sabrán su género.</string>
+    <string name="edit_provincia">Este campo es totalmente público, por tanto, los usuarios sabrán a que provincia pertenece.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_acerca_de_">Acerca de</string>
+    <string name="title_activity_view_image">Imagen</string>
+    <string name="dummy_button">Dummy Button</string>
+
+
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="emoji_category_recent">Recent</string>
+    <string name="emoji_backspace">Backspace</string>
+    <string name="emoji_facebook_category_smileysandpeople">Faces</string>
+    <string name="emoji_facebook_category_animalsandnature">Nature</string>
+    <string name="emoji_facebook_category_foodanddrink">Food</string>
+    <string name="emoji_facebook_category_activities">Activities</string>
+    <string name="emoji_facebook_category_travelandplaces">Places</string>
+    <string name="emoji_facebook_category_objects">Objects</string>
+    <string name="emoji_facebook_category_symbols">Symbols</string>
+    <string name="emoji_facebook_category_flags">Flags</string>
+    <string name="prov0">Ninguna</string>
+    <string name="prov1">Pinar del Río</string>
+    <string name="prov2">Artemisa</string>
+    <string name="prov3">Mayabeque</string>
+    <string name="prov4">La Habana</string>
+    <string name="prov5">Matanzas</string>
+
+    <string name="prov6">Cienfuegos</string>
+    <string name="prov7">Villa Clara</string>
+
+    /////////////////////////////////////////////////COLORPICKER/////////////////////////////////////////
+    <string name="prov8">Sancti Spíritus</string>
+    <string name="prov9">Ciego de Ávila</string>
+    <string name="prov10">Camagüey</string>
+    <string name="prov11">Las Tunas</string>
+    <string name="cpv_default_title">Seleccione un color</string>
+    <string name="cpv_presets">Puntos</string>
+    <string name="cpv_custom">Personalizar</string>
+    /////////////////////////////////////////////////COLORPICKER/////////////////////////////////////////
+    /////////////////////////////////////////////////ALBUM/////////////////////////////////////////
+    <string name="cpv_select">Aceptar</string>
+    <string name="cpv_transparency">Transparencia</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="color_picker_dialog">Color Picker Dialog</string>
+    <string name="prov12">Holguín</string>
+    <string name="prov13">Granma</string>
+    <string name="prov14">Santiago de Cuba</string>
+    <string name="prov15">Guantánamo</string>
+    <string name="prov16">Isla de la Juventud</string>
+    <string name="title_activity_reenviar">Enviar a:</string>
+    <string name="btn_plus">+</string>
+    <string name="title_camera">Camera</string>
+    <string name="menu_camera_image">Image</string>
+    <string name="menu_camera_video">Video</string>
+    <string name="title_image_select">Galería</string>
+    <string name="menu_image_select">Imagen</string>
+    <string name="title_album_select">Media Album</string>
+    <string name="menu_album_select">Album</string>
+    <string name="title_gallery">Galeria</string>
+    <string name="menu_preview">Galeria</string>
+    <string name="canceled">Cancelado</string>
+    <string name="no_selected">Seleccione una imagen antes</string>
+    <string name="hint_image_preview_click">Toca un item para previsualizar.</string>
+    <string name="album_loading">Cargando&#8230;</string>
+    <string name="album_converting">Cargando&#8230;</string>
+    <string name="album_thumbnail">Generando miniauturas&#8230;</string>
+    <string name="album_not_found_image">Sin imagenes para mostrar</string>
+    <string name="album_not_found_video">Sin video para mostrar</string>
+    <string name="album_not_found_album">Sin media para mostrar</string>
+    <string name="album_camera_image_capture">Tomar foto</string>
+    <string name="album_camera_video_capture">Grabar video</string>
+    <string name="album_title">Media Album</string>
+    <string name="album_all_images">Todas las imagenes</string>
+    <string name="album_all_videos">Todos los videos</string>
+    <string name="album_all_images_videos">Todos las Imagenes/Videos</string>
+    <string name="album_ok">OK</string>
+    <string name="album_confirm">Confirmar</string>
+    <string name="album_cancel">Cancelar</string>
+    <string name="album_check_image_little">Seleccione una imagen.</string>
+    <string name="album_check_video_little">Seleccione un video.</string>
+    <string name="album_check_album_little">Seleccione una media.</string>
+    <string name="album_menu_finish">OK</string>
+    <string name="album_check">Seleccionar</string>
+    //////////////////////////////////////ALBUM//////////////////////////////////
+
+    ////////////////////////////////////////EDITOR///////////////////////////////////////////
+    <string name="album_title_permission_failed">Permiso denegado</string>
+    <string name="album_permission_storage_failed_hint">Permisos de acceder al Almacenamiento denegados.</string>
+    <string name="album_permission_camera_image_failed_hint">Permisos de Camara o Almacenamiento denegados.</string>
+    <string name="album_permission_camera_video_failed_hint">Permisos de Camara, Almacenamiento o Microfono denegados.</string>
+    <string name="album_item_unavailable">No disponible</string>
+    <string name="album_take_file_unavailable">Archivo no disponible, por favor intente de nuevo.</string>
+    <string name="label_brush">Pincel</string>
+    <string name="label_emoji">Emoji</string>
+    <string name="label_sticker">Sticker</string>
+    <string name="label_eraser">Borrador</string>
+    <string name="label_eraser_mode">Modo Borrador</string>
+    ////////////////////////////////////////EDITOR///////////////////////////////////////////
+
+    /////////////////////////////////////////IMAGEPICKER
+    KROEGRAMA////////////////////////////////////////////
+    <string name="label_text">Texto</string>
+    <string name="label_filter">Filtro</string>
+    <string name="label_adjust">Ajustes</string>
+    <string name="msg_save_image">¿Desea salir sin guardar?</string>
+    <string name="imagePickerEmpty">Ninguna imagen encontrada</string>
+    <string name="imagePickerLoading">Cargando…</string>
+    <string name="toastImagePickerNoWritePermission">No tiene permiso de almacenamiento :(</string>
+
+
+    <string name="imagePickerSingle">Selecciona una imagen</string>
+    <string name="imagePickerMultiLimit">No puedes seleccionar más de %1$d imágenes</string>
+    <string name="pick_single">Selecciona una imagen</string>
+    <string name="pick_multi_limit">Tienes más de %1$d imágenes seleccionadas…</string>
+    /////////////////////////////////////////IMAGEPICKER
+    KROEGRAMA////////////////////////////////////////////
+
+    /////////////////////////////////////////DELTACHAT////////////////////////////////////////////
+    <string name="app_intent_name">YouChat Editor</string>
+    <string name="chat_archived_chats_title">Chat Archivado</string>
+    <string name="chat_please_enter_message">Por favor entra un mensaje.</string>
+    <string name="chat_camera_unavailable">Cámara no disponible.</string>
+    <string name="chat_unable_to_record_audio">Grabar audio no disponible.</string>
+    <string name="chat_no_messages_hint">Send message to %1$s:\n\n• It is okay if %2$s does not use Delta Chat.\n\n• Delivering the first message may take a while and may be unencrypted.</string>
+    <string name="chat_new_group_hint">Compose the first message, allowing others to reply within this group.\n\n• It is okay if not all members use Delta Chat.\n\n• Delivering the first message may take a while.</string>
+    <string name="chat_record_slide_to_cancel">Deslice para cancelar</string>
+    <string name="chat_record_explain">Toca y mantén para grabar un mensaje de voz, suelta para enviar</string>
+    <string name="chat_no_chats_yet_title">Empty inbox.\nPress \"+\" to start a new chat.</string>
+    <string name="chat_no_chats_yet_hint">You can chat with other Delta Chat users and with any email address.</string>
+    <string name="chat_all_archived">All chats archived.\nPress \"+\" to start a new chat.</string>
+    <string name="chat_share_with_title">Compartir con</string>
+    <string name="chat_input_placeholder">Mensaje</string>
+    <string name="chat_archived_label">Archived</string>
+    <string name="chat_no_messages">No messages.</string>
+    <string name="chat_self_talk_subtitle">Messages I sent to myself</string>
+    <string name="saved_messages">Mensaje guardado</string>
+    <string name="saved_messages_explain">• Forward messages here for easy access\n\n• Take notes or voice memos\n\n• Attach media to save them</string>
+    <string name="chat_contact_request">Contact request</string>
+    <string name="chat_no_contact_requests">No contact requests.\n\nIf you want classic emails to appear here as contact requests, you can change the corresponding setting in the app settings.</string>
+    <string name="retry_send">Retry to send message</string>
+    <string name="send_failed">Could not send message</string>
+    <string name="menu_send">Enviar</string>
+    <string-array name="provincias">
+        <item>Seleccione</item>
+        <item>Pinar del Río</item>
+        <item>Artemisa</item>
+        <item>Mayabeque</item>
+        <item>La Habana</item>
+        <item>Matanzas</item>
+        <item>Cienfuegos</item>
+        <item>Villa Clara</item>
+        <item>Sancti Spíritus</item>
+        <item>Ciego de Ávila</item>
+        <item>Camagüey</item>
+        <item>Las Tunas</item>
+        <item>Holguín</item>
+        <item>Granma</item>
+        <item>Holguín</item>
+        <item>Santiago de Cuba</item>
+        <item>Guantánamo</item>
+        <item>Isla de la Juventud</item>
+        <item>Ninguna</item>
+    </string-array>
+    <string-array name="photo_editor_emoji">
+        <!-- Smiles -->
+        <item>u+1f604</item>
+        <item>u+1f603</item>
+        <item>u+1f600</item>
+        <item>u+1f60a</item>
+        <item>u+1f609</item>
+
+        <item>u+1f60d</item>
+        <item>u+1f618</item>
+        <item>u+1f61a</item>
+        <item>u+1f617</item>
+        <item>u+1f619</item>
+
+        <item>u+1f61c</item>
+        <item>u+1f61d</item>
+        <item>u+1f61b</item>
+        <item>u+1f633</item>
+        <item>u+1f601</item>
+
+        <item>u+1f614</item>
+        <item>u+1f60c</item>
+        <item>u+1f612</item>
+        <item>u+1f61e</item>
+        <item>u+1f623</item>
+
+        <item>u+1f622</item>
+        <item>u+1f602</item>
+        <item>u+1f62d</item>
+        <item>u+1f62a</item>
+        <item>u+1f625</item>
+
+        <item>u+1f630</item>
+        <item>u+1f605</item>
+        <item>u+1f613</item>
+        <item>u+1f629</item>
+        <item>u+1f62b</item>
+
+        <!-- FILA #7 -->
+        <item>u+1f628</item>
+        <item>u+1f631</item>
+        <item>u+1f620</item>
+        <item>u+1f624</item>
+        <item>u+1f616</item>
+
+        <item>u+1f606</item>
+        <item>u+1f60b</item>
+        <item>u+1f637</item>
+        <item>u+1f60e</item>
+        <item>u+1f634</item>
+
+        <item>u+1f635</item>
+        <item>u+1f632</item>
+        <item>u+1f61f</item>
+        <item>u+1f626</item>
+        <item>u+1f627</item>
+
+        <item>u+1f608</item>
+        <item>u+1f47f</item>
+        <item>u+1f62e</item>
+        <item>u+1f62c</item>
+        <item>u+1f610</item>
+
+        <item>u+1f615</item>
+        <item>u+1f62f</item>
+        <item>u+1f636</item>
+        <item>u+1f607</item>
+        <item>u+1f60f</item>
+
+        <!-- FILA #12 -->
+        <item>u+1f611</item>
+        <item>u+1f472</item>
+        <item>u+1f476</item>
+        <item>u+1f466</item>
+        <item>u+1f467</item>
+
+        <item>u+1f468</item>
+        <item>u+1f469</item>
+        <item>u+1f474</item>
+        <item>u+1f475</item>
+
+        <item>u+1f47c</item>
+        <item>u+1f478</item>
+        <item>u+1f63a</item>
+        <item>u+1f638</item>
+        <item>u+1f63b</item>
+
+        <item>u+1f63d</item>
+        <item>u+1f63c</item>
+        <item>u+1f640</item>
+        <item>u+1f63f</item>
+        <item>u+1f639</item>
+
+        <item>u+1f63e</item>
+        <item>u+1f479</item>
+        <item>u+1f47a</item>
+        <item>u+1f648</item>
+        <item>u+1f649</item>
+
+        <item>u+1f64a</item>
+        <item>u+1f480</item>
+        <item>u+1f47d</item>
+        <item>u+1f4a9</item>
+        <item>u+1f525</item>
+
+        <item>u+2728</item>
+        <item>u+1f31f</item>
+        <item>u+1f4ab</item>
+        <item>u+1f4a5</item>
+        <item>u+1f4a2</item>
+
+        <item>u+1f4a6</item>
+        <item>u+1f4a7</item>
+        <item>u+1f4a4</item>
+        <item>u+1f4a8</item>
+        <item>u+1f442</item>
+
+        <item>u+1f440</item>
+        <item>u+1f443</item>
+        <item>u+1f445</item>
+        <item>u+1f444</item>
+        <item>u+1f44d</item>
+
+        <!-- FILA #21 -->
+        <item>u+1f44e</item>
+        <item>u+1f44c</item>
+        <item>u+1f44a</item>
+        <item>u+270a</item>
+
+        <!-- FILA #22 -->
+        <item>u+1f44b</item>
+        <item>u+270b</item>
+        <item>u+1f450</item>
+        <item>u+1f446</item>
+        <item>u+1f447</item>
+
+        <item>u+1f449</item>
+        <item>u+1f448</item>
+        <item>u+1f64c</item>
+        <item>u+1f64f</item>
+
+        <item>u+1f44f</item>
+        <item>u+1f4aa</item>
+        <item>u+1f483</item>
+
+        <item>u+1f46b</item>
+        <item>u+1f46a</item>
+        <item>u+1f46c</item>
+        <item>u+1f46d</item>
+        <item>u+1f48f</item>
+
+        <!-- FILA #26 -->
+        <item>u+1f491</item>
+        <item>u+1f46f</item>
+        <item>u+1f485</item>
+        <item>u+1f470</item>
+        <item>u+1f3a9</item>
+        <item>u+1f451</item>
+
+        <item>u+1f452</item>
+        <item>u+1f45f</item>
+        <item>u+1f45e</item>
+        <item>u+1f461</item>
+        <item>u+1f460</item>
+        <item>u+1f462</item>
+        <item>u+1f455</item>
+        <item>u+1f454</item>
+        <item>u+1f45a</item>
+        <item>u+1f457</item>
+        <item>u+1f3bd</item>
+        <item>u+1f456</item>
+        <item>u+1f458</item>
+        <item>u+1f459</item>
+        <item>u+1f4bc</item>
+        <item>u+1f45c</item>
+        <item>u+1f45d</item>
+        <item>u+1f45b</item>
+        <item>u+1f453</item>
+        <item>u+1f380</item>
+        <item>u+1f302</item>
+        <item>u+1f484</item>
+        <item>u+1f49b</item>
+        <item>u+1f499</item>
+
+        <!-- FILA #-45 -->
+        <item>u+1f49c</item>
+        <item>u+1f49a</item>
+        <item>u+1f494</item>
+        <item>u+1f497</item>
+
+        <item>u+1f493</item>
+        <item>u+1f495</item>
+        <item>u+1f496</item>
+        <item>u+1f49e</item>
+        <item>u+1f498</item>
+
+        <item>u+1f48c</item>
+        <item>u+1f48b</item>
+        <item>u+1f48d</item>
+        <item>u+1f48e</item>
+        <item>u+1f464</item>
+
+        <item>u+1f465</item>
+        <item>u+1f4ac</item>
+        <item>u+1f463</item>
+        <item>u+1f4ad</item>
+        <item>u+1f436</item>
+
+        <item>u+1f43a</item>
+        <item>u+1f431</item>
+        <item>u+1f42d</item>
+        <item>u+1f439</item>
+        <item>u+1f430</item>
+
+        <item>u+1f438</item>
+        <item>u+1f42f</item>
+        <item>u+1f428</item>
+        <item>u+1f43b</item>
+        <item>u+1f437</item>
+
+        <item>u+1f43d</item>
+        <item>u+1f42e</item>
+        <item>u+1f417</item>
+        <item>u+1f435</item>
+        <item>u+1f412</item>
+
+        <!-- FILA #-38 -->
+        <item>u+1f434</item>
+        <item>u+1f411</item>
+        <item>u+1f418</item>
+        <item>u+1f43c</item>
+        <item>u+1f427</item>
+
+        <item>u+1f426</item>
+        <item>u+1f424</item>
+        <item>u+1f425</item>
+        <item>u+1f423</item>
+        <item>u+1f414</item>
+
+        <item>u+1f40d</item>
+        <item>u+1f422</item>
+        <item>u+1f41b</item>
+        <item>u+1f41d</item>
+        <item>u+1f41c</item>
+
+        <item>u+1f41e</item>
+        <item>u+1f40c</item>
+        <item>u+1f419</item>
+        <item>u+1f41a</item>
+        <item>u+1f420</item>
+
+        <item>u+1f41f</item>
+        <item>u+1f42c</item>
+        <item>u+1f433</item>
+        <item>u+1f40b</item>
+        <item>u+1f404</item>
+
+        <item>u+1f40f</item>
+        <item>u+1f400</item>
+        <item>u+1f403</item>
+        <item>u+1f405</item>
+        <item>u+1f407</item>
+
+        <item>u+1f409</item>
+        <item>u+1f40e</item>
+        <item>u+1f410</item>
+        <item>u+1f413</item>
+        <item>u+1f415</item>
+
+        <item>u+1f416</item>
+        <item>u+1f401</item>
+        <item>u+1f402</item>
+        <item>u+1f432</item>
+        <item>u+1f421</item>
+
+        <!-- FILA #-30 -->
+        <item>u+1f40a</item>
+        <item>u+1f42b</item>
+        <item>u+1f42a</item>
+        <item>u+1f406</item>
+        <item>u+1f408</item>
+
+        <item>u+1f429</item>
+        <item>u+1f43e</item>
+        <item>u+1f490</item>
+        <item>u+1f338</item>
+        <item>u+1f337</item>
+
+        <item>u+1f340</item>
+        <item>u+1f339</item>
+        <item>u+1f33b</item>
+        <item>u+1f33a</item>
+        <item>u+1f341</item>
+
+        <item>u+1f343</item>
+        <item>u+1f342</item>
+        <item>u+1f33f</item>
+        <item>u+1f33e</item>
+        <item>u+1f344</item>
+
+        <item>u+1f335</item>
+        <item>u+1f334</item>
+        <item>u+1f332</item>
+        <item>u+1f333</item>
+        <item>u+1f330</item>
+
+        <item>u+1f331</item>
+        <item>u+1f33c</item>
+        <item>u+1f310</item>
+        <item>u+1f31e</item>
+        <item>u+1f31d</item>
+
+        <item>u+1f31a</item>
+        <item>u+1f311</item>
+        <item>u+1f312</item>
+        <item>u+1f313</item>
+        <item>u+1f314</item>
+
+        <item>u+1f315</item>
+        <item>u+1f316</item>
+        <item>u+1f317</item>
+        <item>u+1f318</item>
+        <item>u+1f31c</item>
+
+        <item>u+1f31b</item>
+        <item>u+1f319</item>
+        <item>u+1f30d</item>
+        <item>u+1f30e</item>
+        <item>u+1f30f</item>
+
+        <item>u+1f30b</item>
+        <item>u+1f30c</item>
+        <item>u+1f320</item>
+        <item>u+2b50</item>
+
+        <!-- FILA #-20 -->
+        <item>u+26c5</item>
+        <item>u+26a1</item>
+        <item>u+2614</item>
+
+        <item>u+26c4</item>
+        <item>u+1f300</item>
+        <item>u+1f301</item>
+        <item>u+1f308</item>
+        <item>u+1f30a</item>
+
+        <!--Places-->
+        <item>u+1f3e0</item>
+        <item>u+1f3e1</item>
+        <item>u+1f3eb</item>
+        <item>u+1f3e2</item>
+        <item>u+1f3e3</item>
+
+        <item>u+1f3e5</item>
+        <item>u+1f3e6</item>
+        <item>u+1f3ea</item>
+        <item>u+1f3e9</item>
+        <item>u+1f3e8</item>
+
+        <item>u+1f492</item>
+        <item>u+26ea</item>
+        <item>u+1f3ec</item>
+        <item>u+1f3e4</item>
+        <item>u+1f307</item>
+
+        <item>u+1f306</item>
+        <item>u+1f3ef</item>
+        <item>u+1f3f0</item>
+        <item>u+26fa</item>
+        <item>u+1f3ed</item>
+
+        <item>u+1f5fc</item>
+        <item>u+1f5fe</item>
+        <item>u+1f5fb</item>
+        <item>u+1f304</item>
+        <item>u+1f305</item>
+
+        <item>u+1f303</item>
+        <item>u+1f5fd</item>
+        <item>u+1f309</item>
+        <item>u+1f3a0</item>
+        <item>u+1f3a1</item>
+
+        <item>u+26f2</item>
+        <item>u+1f3a2</item>
+        <item>u+1f6a2</item>
+        <item>u+26f5</item>
+        <item>u+1f6a4</item>
+
+        <!-- FILA #-11 -->
+        <item>u+2693</item>
+        <item>u+1f680</item>
+        <item>u+1f4ba</item>
+
+        <item>u+1f681</item>
+        <item>u+1f682</item>
+        <item>u+1f68a</item>
+        <item>u+1f689</item>
+        <item>u+1f69e</item>
+
+        <item>u+1f686</item>
+        <item>u+1f684</item>
+        <item>u+1f685</item>
+        <item>u+1f688</item>
+        <item>u+1f687</item>
+
+        <item>u+1f69d</item>
+        <item>u+1f68b</item>
+        <item>u+1f683</item>
+        <item>u+1f68e</item>
+        <item>u+1f68c</item>
+
+        <item>u+1f68d</item>
+        <item>u+1f699</item>
+        <item>u+1f698</item>
+        <item>u+1f697</item>
+        <item>u+1f695</item>
+
+        <item>u+1f696</item>
+        <item>u+1f69b</item>
+        <item>u+1f69a</item>
+        <item>u+1f6a8</item>
+        <item>u+1f693</item>
+
+        <item>u+1f694</item>
+        <item>u+1f692</item>
+        <item>u+1f691</item>
+        <item>u+1f690</item>
+        <item>u+1f6b2</item>
+
+        <item>u+1f6a1</item>
+        <item>u+1f69f</item>
+        <item>u+1f6a0</item>
+        <item>u+1f69c</item>
+        <item>u+1f488</item>
+
+        <item>u+1f68f</item>
+        <item>u+1f3ab</item>
+        <item>u+1f6a6</item>
+        <item>u+1f6a5</item>
+        <!--<item>u+26a0</item>-->
+
+        <item>u+1f6a7</item>
+        <item>u+1f530</item>
+        <item>u+26fd</item>
+        <item>u+1f3ee</item>
+        <item>u+1f3b0</item>
+
+        <item>u+1f5ff</item>
+        <item>u+1f3aa</item>
+        <item>u+1f3ad</item>
+        <item>u+1f4cd</item>
+        <item>u+1f6a9</item>
+    </string-array>
+    /////////////////////////////////////////DELTACHAT////////////////////////////////////////////
+</resources>

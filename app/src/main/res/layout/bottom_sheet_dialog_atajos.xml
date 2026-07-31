@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/modalBottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/list_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_atajos_encabezado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"
+        android:text="Aún no hay atajos"
+        android:textSize="18sp"
+        android:textColor="@color/texto_grisoscuro_to_grisclaro"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lista_atajos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_atajos_encabezado"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"/>
+
+    <View
+        android:id="@+id/separator"
+        android:orientation="horizontal"
+        android:layout_width="@dimen/separatorX"
+        android:layout_height="@dimen/separatorY"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_item_search"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="9dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_atajos_encabezado"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/separator"
+        android:layout_marginBottom="3dp"
+        android:layout_marginStart="@dimen/margen"
+        android:layout_marginEnd="@dimen/margen">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/margen"
+            android:textColor="@color/texto_negro_to_gris"
+            android:textSize="25sp"
+            android:text="Atajos" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/add_new_atajo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:layout_gravity="center_vertical"
+            app:tint="@color/texto_negro_to_gris"
+            android:src="@drawable/plus"/>
+    </LinearLayout>
+</RelativeLayout>

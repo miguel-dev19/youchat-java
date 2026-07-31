@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cu.alexgi.youchat.views_GI.LinearLayoutBarGI
+        android:id="@+id/toolbar_seguidores"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+        <RelativeLayout
+            android:id="@+id/rl_barra_contacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+            <cu.alexgi.youchat.views_GI.ImageViewBarGI
+                android:id="@+id/atras_bloqueados"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/arrow_left"
+                app:tint="@color/texto_negro_to_gris"/>
+            <cu.alexgi.youchat.views_GI.TextViewBarGI
+                android:id="@+id/titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/atras_bloqueados"
+                android:text="Historial de Post"
+                android:textSize="20sp"
+                android:maxLines="1"
+                android:textColor="@color/texto_negro_to_gris"/>
+            <cu.alexgi.youchat.views_GI.TextViewBarGI
+                android:id="@+id/tv_cant_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_below="@+id/titulo"
+                android:layout_toEndOf="@+id/atras_bloqueados"
+                android:text="20 en total"
+                android:textSize="14sp"
+                android:textColor="@color/texto_negro_to_gris"/>
+        </RelativeLayout>
+    </cu.alexgi.youchat.views_GI.LinearLayoutBarGI>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_seguidores">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lista_post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/anim"
+            android:layout_width="200dp"
+            android:layout_height="220dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            app:lottie_loop="true"/>
+
+        <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+            android:id="@+id/list_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/anim"
+            android:text="Nada para mostrar"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_grisoscuro_to_grisclaro"/>
+
+    </RelativeLayout>
+
+    <cu.alexgi.youchat.views_GI.FABGI
+        android:id="@+id/fab_eliminar_todos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/delete"
+        app:fabCustomSize="50dp"
+        app:backgroundTint="?attr/colorAccent"
+        app:tint="#fff"
+        app:maxImageSize="30dp"/>
+
+</RelativeLayout>

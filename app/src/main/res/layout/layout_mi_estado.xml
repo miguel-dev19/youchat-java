@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/contenedor_layout_mi_estado"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <cu.alexgi.youchat.views_GI.CardViewGI
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:padding="4dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:layout_width="52dp"
+                    android:layout_height="52dp">
+                    <cu.alexgi.youchat.CircleImageView
+                        android:id="@+id/preview_mi_estado_image"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        app:civ_circle_background_color="@color/colorAccent" />
+                    <!--android:src="@drawable/plus_estado1"-->
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true">
+                        <com.vanniktech.emoji.EmojiTextView
+                            android:id="@+id/tv_contenido_mi_estado"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#fff"
+                            android:textSize="6sp"
+                            android:maxLines="5"
+                            android:textAlignment="center"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/carView_reacciones"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:padding="3dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/may_reac_3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="-10dp"
+                        android:layout_toEndOf="@+id/may_reac_2"/>
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/may_reac_2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="-10dp"
+                        android:layout_toEndOf="@+id/may_reac_1"/>
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/may_reac_1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentStart="true"/>
+                    <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+                        android:id="@+id/tv_cant_total_reacciones"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/texto_negro_to_gris"
+                        android:layout_toEndOf="@+id/may_reac_3"/>
+                </RelativeLayout>
+
+                <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+                    android:id="@+id/tv_fecha_subida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:textColor="@color/texto_negro_to_gris"/>
+            </LinearLayout>
+            <cu.alexgi.youchat.views_GI.ImageViewIconGenGI
+                android:id="@+id/info_vistas_mis_estados"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                app:tint="@color/texto_negro_to_gris"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="12dp"
+                android:src="@drawable/show"/>
+            <cu.alexgi.youchat.views_GI.ImageViewIconGenGI
+                android:id="@+id/info_reac_mis_estados"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                app:tint="@color/texto_negro_to_gris"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="12dp"
+                android:src="@drawable/info_circle"/>
+        </LinearLayout>
+    </cu.alexgi.youchat.views_GI.CardViewGI>
+
+
+</RelativeLayout>

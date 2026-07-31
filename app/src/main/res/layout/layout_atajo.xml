@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:padding="8dp"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_atajo_com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margen"
+            android:text="/help"
+            android:textColor="@color/texto_negro_to_gris"
+            android:textSize="16sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="@dimen/margen"
+            android:layout_marginEnd="@dimen/margen"
+            android:alpha="0.5"
+            android:background="#868c90" />
+        <TextView
+            android:id="@+id/tv_atajo_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margen"
+            android:hint="Sin descripción"
+            android:textColorHint="@color/texto_grisoscuro_to_grisclaro"
+            android:textAlignment="textEnd"
+            android:textColor="@color/texto_negro_to_gris"
+            android:textSize="13sp"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_eliminar_atajo"
+        android:visibility="gone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/msg_est_error"/>
+</LinearLayout>

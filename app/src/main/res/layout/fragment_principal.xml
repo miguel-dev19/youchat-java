@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PrincipalFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lista_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"/>
+
+    <ImageView
+        android:id="@+id/img_empty_chat"
+        android:layout_width="280dp"
+        android:layout_height="180dp"
+        android:layout_above="@id/text_vacio"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/empty_chat"/>
+    <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+        android:id="@+id/text_vacio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/margen"
+        android:layout_marginEnd="@dimen/margen"
+        android:text="Chat vacío\nInicie una nueva conversación"
+        android:textAlignment="center"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="@color/texto_grisoscuro_to_grisclaro"/>
+
+</RelativeLayout>

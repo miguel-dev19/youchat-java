@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cu.alexgi.youchat.views_GI.CardViewDialogGI
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/fondo_blanco"
+    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize5Percent"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="?attr/colorAccent">
+            <ImageView
+                android:id="@+id/icon_dialog_confirm"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="12dp"
+                app:tint="#fff"
+                android:src="@drawable/option_fondo" />
+            <TextView
+                android:id="@+id/titulo_dialog_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="Guardar tema"/>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margen"
+            app:boxBackgroundMode="outline"
+            android:background="@null"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+            app:hintEnabled="false"
+            app:hintTextColor="@color/texto_grisoscuro_to_grisclaro"
+            app:counterEnabled="true"
+            app:counterMaxLength="15"
+            app:counterTextAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+            app:counterTextColor="@color/texto_grisoscuro_to_grisclaro"
+            app:counterOverflowTextColor="@color/toast_rojo">
+            <com.vanniktech.emoji.EmojiEditText
+                android:id="@+id/text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"
+                android:padding="8dp"
+                android:maxLines="1"
+                android:maxLength="15"
+                android:inputType="textPersonName"
+                android:imeOptions="actionDone"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textColorHint="@color/texto_grisoscuro_to_grisclaro"
+                android:hint="Título"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroup_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/margen"
+            android:layout_marginEnd="@dimen/margen"
+            android:layout_marginBottom="@dimen/margen">
+            <cu.alexgi.youchat.views_GI.RadioButtonGI
+                android:id="@+id/radio_es_claro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tema claro"/>
+            <cu.alexgi.youchat.views_GI.RadioButtonGI
+                android:id="@+id/radio_es_oscuro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tema oscuro"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <cu.alexgi.youchat.views_GI.TextViewBtnGI
+                android:layout_weight="1"
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/fondo_blanco"
+                android:text="CANCELAR"
+                android:textAllCaps="true"
+                android:textSize="@dimen/size_text_button"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:layout_margin="8dp"
+                android:textColor="?attr/colorAccent" />
+            <cu.alexgi.youchat.views_GI.TextViewBtnGI
+                android:layout_weight="1"
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/fondo_blanco"
+                android:text="SIGUIENTE"
+                android:textAllCaps="true"
+                android:textSize="@dimen/size_text_button"
+                android:textAlignment="center"
+                android:padding="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:layout_margin="8dp"
+                android:textColor="?attr/colorAccent" />
+        </LinearLayout>
+    </LinearLayout>
+</cu.alexgi.youchat.views_GI.CardViewDialogGI>

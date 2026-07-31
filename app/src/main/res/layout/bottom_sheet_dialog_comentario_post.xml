@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/modalBottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/separator"
+                android:orientation="horizontal"
+                android:layout_width="@dimen/separatorX"
+                android:layout_height="@dimen/separatorY"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_item_search"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="9dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:textSize="20sp"
+                android:layout_marginStart="@dimen/margen"
+                android:padding="8dp"
+                android:text="Comentarios:"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lista_comentario_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margen"
+                android:layout_marginEnd="@dimen/margen"
+                android:layout_marginBottom="@dimen/margen"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

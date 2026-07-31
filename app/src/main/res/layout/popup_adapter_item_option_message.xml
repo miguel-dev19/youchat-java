@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_popup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="8dp"
+    android:background="?attr/selectableItemBackground">
+    <cu.alexgi.youchat.views_GI.ImageViewIconGenGI
+        android:id="@+id/icon_popup"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:padding="5dp"/>
+    <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+        android:id="@+id/text_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:maxLines="1"
+        android:textSize="13sp"
+        android:letterSpacing="0.1" />
+</LinearLayout>
+

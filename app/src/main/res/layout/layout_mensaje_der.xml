@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/background_mensaje"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/fondo_mensaje_der"
+            android:padding="8dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="64dp"
+            app:alignContent="flex_start"
+            app:flexDirection="row"
+            app:flexWrap="wrap">
+
+            <LinearLayout
+                android:id="@+id/est_reenviado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:orientation="horizontal">
+                <cu.alexgi.youchat.views_GI.ImageViewMsgDerGI
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/option_chat_reenviar"/>
+                <cu.alexgi.youchat.views_GI.TextViewMsgDerGI
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reenviado"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_hora"/>
+            </LinearLayout>
+
+            <cu.alexgi.youchat.views_GI.TextViewMsgDerGI
+                android:id="@+id/mensaje_der"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/texto_negro_to_gris"
+                android:autoLink="all"
+                android:linksClickable="true"
+                android:textColorLink="?attr/colorAccent"
+                app:layout_alignSelf="flex_start"
+                app:layout_wrapBefore="true"/>
+
+            <LinearLayout
+                android:id="@+id/fondo_hora_der"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end|bottom"
+                app:layout_alignSelf="flex_end"
+                app:layout_wrapBefore="false"
+                app:layout_flexGrow="1">
+                <cu.alexgi.youchat.views_GI.TextViewMsgDerGI
+                    android:id="@+id/tv_es_editado"
+                    android:visibility="gone"
+                    android:text="editado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="6dp"
+                    android:maxLines="1"
+                    android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                    android:textSize="@dimen/text_hora" />
+                <cu.alexgi.youchat.views_GI.TextViewMsgDerGI
+                    android:id="@+id/hora_der"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginStart="6dp"
+                    android:maxLines="1"
+                    android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                    android:textSize="@dimen/text_hora" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/estadoText"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="@dimen/img_estado"
+                    android:layout_height="@dimen/img_estado"
+                    android:layout_marginEnd="4dp"/>
+            </LinearLayout>
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/corner_der"
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="-3.5dp"
+            android:src="@drawable/corner_der"/>
+    </LinearLayout>
+</RelativeLayout>

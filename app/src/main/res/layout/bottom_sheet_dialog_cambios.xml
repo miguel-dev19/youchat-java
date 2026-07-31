@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/modalBottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/margen"
+        android:paddingEnd="@dimen/margen">
+
+        <View
+            android:id="@+id/separator"
+            android:orientation="horizontal"
+            android:layout_width="@dimen/separatorX"
+            android:layout_height="@dimen/separatorY"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_item_search"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margen"
+            android:textColor="@color/texto_negro_to_gris"
+            android:textSize="20sp"
+            android:layout_marginBottom="24dp"
+            android:text="Historial de cambios:" />
+
+        <LinearLayout
+            android:id="@+id/ll_cambios_beta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_negro_to_gris"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/version_beta" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_grisoscuro_to_grisclaro"
+            android:layout_marginBottom="24dp"
+            android:linksClickable="true"
+            android:autoLink="email"
+            android:textColorLink="@color/colorAccent"
+            android:text="@string/cambio_beta" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_negro_to_gris"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/version_7" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_grisoscuro_to_grisclaro"
+            android:layout_marginBottom="24dp"
+            android:text="@string/cambio_7" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_negro_to_gris"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/version_6" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_grisoscuro_to_grisclaro"
+            android:layout_marginBottom="24dp"
+            android:text="@string/cambio_6" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_negro_to_gris"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/version_5" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_grisoscuro_to_grisclaro"
+            android:layout_marginBottom="24dp"
+            android:text="@string/cambio_5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_negro_to_gris"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/version_4" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_grisoscuro_to_grisclaro"
+            android:layout_marginBottom="24dp"
+            android:text="@string/cambio_4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_negro_to_gris"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/version_3" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_grisoscuro_to_grisclaro"
+            android:layout_marginBottom="24dp"
+            android:text="@string/cambio_3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_negro_to_gris"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/version_2" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_grisoscuro_to_grisclaro"
+            android:layout_marginBottom="24dp"
+            android:text="@string/cambio_2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_negro_to_gris"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/version_1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/texto_grisoscuro_to_grisclaro"
+            android:layout_marginBottom="24dp"
+            android:text="@string/cambio_1" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

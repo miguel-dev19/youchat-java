@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/background_mensaje"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp">
+
+        <LinearLayout
+            android:id="@+id/fondo_msg_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:layout_marginStart="64dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/est_reenviado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:orientation="horizontal">
+                <cu.alexgi.youchat.views_GI.ImageViewMsgDerGI
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/option_chat_reenviar"/>
+                <cu.alexgi.youchat.views_GI.TextViewMsgDerGI
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reenviado"
+                    android:maxLines="1"
+                    android:textSize="@dimen/text_hora"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/theme_card"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize5Percent"
+                    app:cardElevation="0dp"
+                    app:strokeColor="#CCC"
+                    app:strokeWidth="0.8dp"
+                    app:cardBackgroundColor="@color/gris_perfecto">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/img_fondo_style_theme"
+                            android:layout_alignTop="@+id/theme_view"
+                            android:layout_alignBottom="@+id/theme_view"
+                            android:layout_alignStart="@+id/theme_view"
+                            android:layout_alignEnd="@+id/theme_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize5Percent" />
+                        <View
+                            android:layout_alignTop="@+id/theme_view"
+                            android:layout_alignBottom="@+id/theme_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:background="#0D000000"/>
+                        <RelativeLayout
+                            android:id="@+id/theme_view"
+                            android:background="@color/invisible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp">
+                            <com.google.android.material.card.MaterialCardView
+                                android:id="@+id/theme_bar"
+                                android:layout_width="match_parent"
+                                android:layout_height="8dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                app:cardElevation="0dp"
+                                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                                app:strokeWidth="0.2dp"
+                                app:strokeColor="@color/gris_perfecto"/>
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/theme_msg_izq"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@id/theme_bar"
+                                android:layout_marginStart="2dp"
+                                android:layout_gravity="start"
+                                android:src="@drawable/desing_bubble_in" />
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/theme_msg_der"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_below="@id/theme_msg_izq"
+                                android:layout_marginEnd="2dp"
+                                android:layout_gravity="end"
+                                android:src="@drawable/desing_bubble_out"/>
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/theme_radio"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_below="@id/theme_msg_der"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="3dp"
+                                android:padding="2dp"
+                                android:src="@drawable/radio_button_checked" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <cu.alexgi.youchat.views_GI.TextViewMsgDerGI
+                    android:id="@+id/tema_nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@+id/theme_card"
+                    android:textSize="15sp"/>
+
+                <cu.alexgi.youchat.views_GI.TextViewMsgDerGI
+                    android:id="@+id/tema_creador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_below="@id/tema_nombre"
+                    android:layout_toEndOf="@+id/theme_card"
+                    android:textSize="15sp"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/fondo_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tema_creador"
+                    android:layout_below="@id/tema_creador"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="#00FFFFFF"
+                    app:cardElevation="0dp"
+                    app:contentPadding="6dp"
+                    app:strokeWidth="2dp">
+                    <TextView
+                        android:id="@+id/theme_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="6dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:letterSpacing="0.1"
+                        android:text="AGREGAR"
+                        android:textSize="14sp"
+                        android:textAllCaps="true"/>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <!--<cu.alexgi.youchat.views_GI.ExtendedFABMsgDerGI
+                    android:id="@+id/btn_agregar_tema"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tema_creador"
+                    android:layout_below="@id/tema_creador"
+                    android:layout_centerHorizontal="true"
+                    android:text="Agregar"
+                    android:textSize="@dimen/size_text_button"
+                    android:textAlignment="center"
+                    app:elevation="0dp"
+                    android:elevation="0dp"
+                    app:backgroundTint="@color/fondo_blanco"
+                    android:layout_margin="8dp"
+                    android:textColor="#fff" />-->
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <cu.alexgi.youchat.views_GI.TextViewMsgDerGI
+                    android:id="@+id/hora_img_der"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:maxLines="1"
+                    android:textColor="@color/texto_grisoscuro_to_grisclaro"
+                    android:textSize="@dimen/text_hora" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/estadoImg"
+                    android:layout_width="@dimen/img_estado"
+                    android:layout_height="@dimen/img_estado"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/corner_der"
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="-3.5dp"
+            android:src="@drawable/corner_der"/>
+    </LinearLayout>
+</RelativeLayout>
+

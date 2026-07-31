@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--Root container-->
+    <RelativeLayout
+        android:id="@+id/root_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <!--View while view is collapsed-->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/collapse_view"
+            android:layout_width="wrap_content"
+            android:visibility="visible"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize10Percent"
+            app:cardBackgroundColor="?attr/colorAccent"
+            app:contentPaddingTop="4dp"
+            app:contentPaddingBottom="4dp"
+            app:contentPaddingLeft="8dp"
+            app:contentPaddingRight="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_subida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/arrow_up_2"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="20.00 kb"
+                    android:textSize="13sp"
+                    android:textColor="@color/texto_negro_to_gris"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_bajada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/arrow_down_2"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:text="20.00 kb"
+                    android:textSize="13sp"
+                    android:textColor="@color/texto_negro_to_gris"/>
+
+            </LinearLayout>
+            <!--Icon of floating widget -->
+            <!--<ImageView
+                android:id="@+id/collapsed_iv"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/camera"
+                tools:ignore="ContentDescription"/>-->
+
+            <!--Close button-->
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--View while view is expanded-->
+        <!--<LinearLayout
+            android:id="@+id/expanded_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F8BBD0"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            &lt;!&ndash;Album image for the song currently playing.&ndash;&gt;
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/play"
+                tools:ignore="ContentDescription"/>
+
+            &lt;!&ndash;Previous button&ndash;&gt;
+            <ImageView
+                android:id="@+id/prev_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/arrow_left"
+                tools:ignore="ContentDescription"/>
+
+            &lt;!&ndash;Play button&ndash;&gt;
+            <ImageView
+                android:id="@+id/play_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/audio_play"
+                tools:ignore="ContentDescription"/>
+
+            &lt;!&ndash;Next button&ndash;&gt;
+            <ImageView
+                android:id="@+id/next_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/arrow_left"
+                tools:ignore="ContentDescription"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/close_button"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_close"/>
+
+                <ImageView
+                    android:id="@+id/open_button"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/lock"/>
+            </RelativeLayout>
+        </LinearLayout>-->
+    </RelativeLayout>
+</FrameLayout>

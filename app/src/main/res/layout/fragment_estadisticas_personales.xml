@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+        android:id="@+id/tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Nada para mostrar"
+        android:textColor="@color/texto_grisoscuro_to_grisclaro"
+        android:textSize="19sp"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+</FrameLayout>

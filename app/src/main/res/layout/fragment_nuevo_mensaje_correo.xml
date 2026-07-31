@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:orientation="vertical"
+    tools:context=".NuevoMensajeCorreoFragment">
+
+    <cu.alexgi.youchat.views_GI.LinearLayoutBarGI
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/fondo_blanco"
+        android:elevation="4dp"
+        android:orientation="horizontal">
+        <cu.alexgi.youchat.views_GI.ImageViewBarGI
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            app:tint="@color/texto_negro_to_gris"
+            android:src="@drawable/arrow_left" />
+        <cu.alexgi.youchat.views_GI.TextViewBarGI
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nuevo correo"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textColor="@color/texto_negro_to_gris"
+            android:textSize="20sp" />
+        <cu.alexgi.youchat.views_GI.ImageViewBarGI
+            android:id="@+id/enviar_correo"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center_vertical"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:rotation="45"
+            app:tint="@color/texto_negro_to_gris"
+            android:src="@drawable/send" />
+    </cu.alexgi.youchat.views_GI.LinearLayoutBarGI>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <cu.alexgi.youchat.views_GI.CardViewGI
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="3dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margen"
+                    android:layout_marginEnd="@dimen/margen"
+                    android:padding="8dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:text="De: "/>
+                        <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+                            android:id="@+id/tv_nc_de"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="2dp"
+                            android:textSize="15sp"
+                            android:inputType="textMultiLine"
+                            android:text="octaviog@nauta.cu"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:text="Para: "/>
+                        <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+                            android:id="@+id/tv_nc_para"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="2dp"
+                            android:textSize="15sp"
+                            android:inputType="textMultiLine"
+                            android:text="octaviog@nauta.cu\nalexgi@nauta.cu"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <cu.alexgi.youchat.views_GI.TextViewFontGenGI
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:text="Asunto: "/>
+                        <cu.alexgi.youchat.views_GI.EditTextFontGenGI
+                            android:id="@+id/tv_nc_asunto"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="2dp"
+                            android:textSize="15sp"
+                            android:hint="Entre el asunto"
+                            android:inputType="textMultiLine"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </cu.alexgi.youchat.views_GI.CardViewGI>
+
+            <cu.alexgi.youchat.views_GI.CardViewGI
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="3dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margen"
+                    android:layout_marginEnd="@dimen/margen"
+                    android:padding="8dp"
+                    android:orientation="vertical">
+                    <cu.alexgi.youchat.views_GI.TextViewFontResGI
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contenido:"
+                        android:textStyle="bold"
+                        android:textSize="19sp"/>
+                    <cu.alexgi.youchat.views_GI.EditTextFontGenGI
+                        android:id="@+id/tv_contenido"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:hint="Entre el contenido del mensaje"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+            </cu.alexgi.youchat.views_GI.CardViewGI>
+
+            <cu.alexgi.youchat.views_GI.CardViewGI
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="3dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margen"
+                    android:layout_marginEnd="@dimen/margen"
+                    android:padding="8dp"
+                    android:orientation="vertical">
+                    <cu.alexgi.youchat.views_GI.TextViewFontResGI
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textStyle="bold"
+                        android:text="Adjuntos:"
+                        android:textSize="19sp"/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/list_adjuntos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <cu.alexgi.youchat.views_GI.ExtendedFABGI
+                        android:id="@+id/efab_add_adjunto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="AÑADIR ADJUNTO"
+                        android:textSize="@dimen/size_text_button"
+                        app:icon="@drawable/menu_add"
+                        android:textColor="@color/texto_blanco_to_gris"
+                        app:backgroundTint="?attr/colorAccent"
+                        app:iconTint="@color/texto_blanco_to_gris"/>
+                </LinearLayout>
+            </cu.alexgi.youchat.views_GI.CardViewGI>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
