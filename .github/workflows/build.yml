@@ -15,21 +15,22 @@ jobs:
     - name: Checkout código
       uses: actions/checkout@v4
     
-    - name: Configurar JDK 8
+    - name: Configurar JDK 17 para sdkmanager
       uses: actions/setup-java@v4
       with:
-        java-version: '8'
+        java-version: '17'
         distribution: 'temurin'
     
     - name: Configurar Android SDK
       uses: android-actions/setup-android@v3
       with:
-        api-level: 28
-        build-tools: '28.0.3'
-        target: 'default'
+        packages: 'platforms;android-28 build-tools;28.0.3 platform-tools'
     
-    - name: Aceptar licencias de Android SDK
-      run: yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses
+    - name: Cambiar a JDK 8 para compilar
+      uses: actions/setup-java@v4
+      with:
+        java-version: '8'
+        distribution: 'temurin'
     
     - name: Cache de Gradle
       uses: actions/cache@v4
