@@ -651,4 +651,38 @@ public class BDConstantes {
             +COMENTARIO_POST_CAMPO_FECHA+" TEXT,"
             +COMENTARIO_POST_CAMPO_ORDEN+" TEXT)";
 
+/////////////////////////////////////////////////GRUPOS CHAT///////////////////////////////////////////////////
+public static final String TABLA_GRUPOS_CHAT = "grupos_chat";
+
+public static final String GRUPO_CHAT_ID = "id_grupo";
+public static final String GRUPO_CHAT_NOMBRE = "nombre_grupo";
+public static final String GRUPO_CHAT_DESCRIPCION = "descripcion_grupo";
+public static final String GRUPO_CHAT_CREADOR = "creador_grupo";
+public static final String GRUPO_CHAT_FOTO = "foto_grupo";
+public static final String GRUPO_CHAT_FECHA = "fecha_creacion";
+public static final String GRUPO_CHAT_TIPO = "tipo_grupo";
+
+public static final String CREAR_TABLA_GRUPOS_CHAT = "CREATE TABLE IF NOT EXISTS " + TABLA_GRUPOS_CHAT + "("
+        + GRUPO_CHAT_ID + " TEXT PRIMARY KEY,"
+        + GRUPO_CHAT_NOMBRE + " TEXT,"
+        + GRUPO_CHAT_DESCRIPCION + " TEXT,"
+        + GRUPO_CHAT_CREADOR + " TEXT,"
+        + GRUPO_CHAT_FOTO + " TEXT,"
+        + GRUPO_CHAT_FECHA + " TEXT,"
+        + GRUPO_CHAT_TIPO + " INTEGER DEFAULT 1)";
+
+/////////////////////////////////////////////////MIEMBROS GRUPO///////////////////////////////////////////////////
+public static final String TABLA_MIEMBROS_GRUPO = "miembros_grupo";
+
+public static final String MIEMBRO_GRUPO_ID = "id_grupo";
+public static final String MIEMBRO_GRUPO_CORREO = "correo_miembro";
+public static final String MIEMBRO_GRUPO_ADMIN = "es_admin";
+public static final String MIEMBRO_GRUPO_FECHA_UNION = "fecha_union";
+
+public static final String CREAR_TABLA_MIEMBROS_GRUPO = "CREATE TABLE IF NOT EXISTS " + TABLA_MIEMBROS_GRUPO + "("
+        + MIEMBRO_GRUPO_ID + " TEXT,"
+        + MIEMBRO_GRUPO_CORREO + " TEXT,"
+        + MIEMBRO_GRUPO_ADMIN + " INTEGER DEFAULT 0,"
+        + MIEMBRO_GRUPO_FECHA_UNION + " TEXT,"
+        + "PRIMARY KEY (" + MIEMBRO_GRUPO_ID + ", " + MIEMBRO_GRUPO_CORREO + "))";
 }

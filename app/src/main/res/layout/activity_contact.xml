@@ -70,7 +70,7 @@
             <LinearLayout
                 android:id="@+id/ll_buscar_contacto"
                 android:orientation="horizontal"
-                android:visibility="gone"
+                android:visibility="visible"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/shape_item_search"
@@ -109,7 +109,7 @@
         </cu.alexgi.youchat.views_GI.LinearLayoutBarGI>
 
     <cu.alexgi.youchat.views_GI.TextViewFontGenGI
-        android:visibility="gone"
+        android:visibility="visible"
         android:id="@+id/list_empty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -127,7 +127,7 @@
 
 
         <RelativeLayout
-            android:visibility="gone"
+            android:visibility="visible"
             android:id="@+id/menuP_contacto"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -200,7 +200,7 @@
                             android:textSize="15sp"/>
                     </LinearLayout>
                     <LinearLayout
-                        android:visibility="gone"
+                        android:visibility="visible"
                         android:id="@+id/contacto_nuevo_grupo"
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
@@ -211,7 +211,8 @@
                             android:layout_width="35dp"
                             android:layout_height="35dp"
                             app:tint="@color/texto_negro_to_gris"
-                            android:padding="3dp" />
+                            android:src="@drawable/chat_4_line"
+                            android:padding="6dp" />
                         <cu.alexgi.youchat.views_GI.TextViewFontGenGI
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"

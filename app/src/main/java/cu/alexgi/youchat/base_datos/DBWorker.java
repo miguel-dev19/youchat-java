@@ -3465,4 +3465,314 @@ public class DBWorker {
         String [] parametros={idPost};
         db.delete(BDConstantes.TABLA_COMENTARIO_POST,BDConstantes.COMENTARIO_POST_CAMPO_ID_POST+"=?",parametros);
     }
+    
+    //////////////////////////////////////////GRUPOS CHAT////////////////////////////////////
+
+/**
+ * Crea las tablas de grupos si no existen
+ */
+public synchronized void crearTablasGrupos() {
+    db.execSQL(BDConstantes.CREAR_TABLA_GRUPOS_CHAT);
+    db.execSQL(BDConstantes.CREAR_TABLA_MIEMBROS_GRUPO);
+}
+
+/**
+ * Inserta un nuevo grupo en la base de datos
+ */
+public synchronized void insertarGrupo(ItemGrupo grupo) {
+    if (!existeGrupo(grupo.getIdGrupo())) {
+        ContentValues values = new ContentValues();
+        values.put(BDConstantes.GRUPO_CHAT_ID, grupo.getIdGrupo());
+        values.put(BDConstantes.GRUPO_CHAT_NOMBRE, grupo.getNombre());
+        values.put(BDConstantes.GRUPO_CHAT_DESCRIPCION, grupo.getDescripcion());
+        values.put(BDConstantes.GRUPO_CHAT_CREADOR, grupo.getCreador());
+        values.put(BDConstantes.GRUPO_CHAT_FOTO, grupo.getFotoGrupo());
+        values.put(BDConstantes.GRUPO_CHAT_FECHA, grupo.getFechaCreacion());
+        values.put(BDConstantes.GRUPO_CHAT_TIPO, grupo.getTipoGrupo());
+        
+        db.insert(BDConstantes.TABLA_GRUPOS_CHAT, BDConstantes.GRUPO_CHAT_ID, values);
+    }
+}
+
+/**
+ * Verifica si un grupo existe
+ */
+public boolean existeGrupo(String idGrupo) {
+    String[] parametros = {idGrupo};
+    String[] campos = {BDConstantes.GRUPO_CHAT_ID};
+    
+    Cursor cursor;
+    boolean exist = false;
+    try {
+        cursor = db.query(BDConstantes.TABLA_GRUPOS_CHAT, campos,
+                BDConstantes.GRUPO_CHAT_ID + "=? LIMIT 1", parametros, null, null, null);
+        if (cursor.getCount() > 0) exist = cursor.moveToFirst();
+        cursor.close();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    return exist;
+}
+
+/**
+ * Obtiene un grupo por su ID
+ */
+public ItemGrupo obtenerGrupo(String idGrupo) {
+    ItemGrupo grupo = null;
+    String[] parametros = {idGrupo};
+    String[] campos = {"*"};
+    
+    Cursor cursor;
+    try {
+        cursor = db.query(BDConstantes.TABLA_GRUPOS_CHAT, campos,
+                BDConstantes.GRUPO_CHAT_ID + "=? LIMIT 1", parametros, null, null, null);
+        if (cursor.getCount() > 0) {
+            cursor.moveToFirst();
+            grupo = new ItemGrupo();
+            grupo.setIdGrupo(cursor.getString(0));
+            grupo.setNombre(cursor.getString(1));
+            grupo.setDescripcion(cursor.getString(2));
+            grupo.setCreador(cursor.getString(3));
+            grupo.setFotoGrupo(cursor.getString(4));
+            grupo.setFechaCreacion(cursor.getString(5));
+            grupo.setTipoGrupo(cursor.getInt(6));
+        }
+        cursor.close();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    return grupo;
+}
+
+/**
+ * Actualiza el nombre del grupo
+ */
+public synchronized void actualizarNombreGrupo(String idGrupo, String nuevoNombre) {
+    String[] parametros = {idGrupo};
+    ContentValues values = new ContentValues();
+    values.put(BDConstantes.GRUPO_CHAT_NOMBRE, nuevoNombre);
+    db.update(BDConstantes.TABLA_GRUPOS_CHAT, values, 
+            BDConstantes.GRUPO_CHAT_ID + "=?", parametros);
+}
+
+/**
+ * Actualiza la descripción del grupo
+ */
+public synchronized void actualizarDescripcionGrupo(String idGrupo, String descripcion) {
+    String[] parametros = {idGrupo};
+    ContentValues values = new ContentValues();
+    values.put(BDConstantes.GRUPO_CHAT_DESCRIPCION, descripcion);
+    db.update(BDConstantes.TABLA_GRUPOS_CHAT, values, 
+            BDConstantes.GRUPO_CHAT_ID + "=?", parametros);
+}
+
+/**
+ * Actualiza la foto del grupo
+ */
+public synchronized void actualizarFotoGrupo(String idGrupo, String rutaFoto) {
+    String[] parametros = {idGrupo};
+    ContentValues values = new ContentValues();
+    values.put(BDConstantes.GRUPO_CHAT_FOTO, rutaFoto);
+    db.update(BDConstantes.TABLA_GRUPOS_CHAT, values, 
+            BDConstantes.GRUPO_CHAT_ID + "=?", parametros);
+}
+
+/**
+ * Agrega un miembro al grupo
+ */
+public synchronized void agregarMiembroGrupo(String idGrupo, String correo, boolean esAdmin) {
+    if (!existeMiembroGrupo(idGrupo, correo)) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss", java.util.Locale.getDefault());
+        String fechaUnion = sdf.format(new java.util.Date());
+        
+        ContentValues values = new ContentValues();
+        values.put(BDConstantes.MIEMBRO_GRUPO_ID, idGrupo);
+        values.put(BDConstantes.MIEMBRO_GRUPO_CORREO, correo);
+        values.put(BDConstantes.MIEMBRO_GRUPO_ADMIN, esAdmin ? 1 : 0);
+        values.put(BDConstantes.MIEMBRO_GRUPO_FECHA_UNION, fechaUnion);
+        
+        db.insert(BDConstantes.TABLA_MIEMBROS_GRUPO, BDConstantes.MIEMBRO_GRUPO_ID, values);
+    }
+}
+
+/**
+ * Verifica si un miembro existe en el grupo
+ */
+public boolean existeMiembroGrupo(String idGrupo, String correo) {
+    String[] parametros = {idGrupo, correo};
+    String[] campos = {BDConstantes.MIEMBRO_GRUPO_CORREO};
+    
+    Cursor cursor;
+    boolean exist = false;
+    try {
+        cursor = db.query(BDConstantes.TABLA_MIEMBROS_GRUPO, campos,
+                BDConstantes.MIEMBRO_GRUPO_ID + "=? AND " + BDConstantes.MIEMBRO_GRUPO_CORREO + "=? LIMIT 1",
+                parametros, null, null, null);
+        if (cursor.getCount() > 0) exist = cursor.moveToFirst();
+        cursor.close();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    return exist;
+}
+
+/**
+ * Obtiene todos los miembros de un grupo
+ */
+public ArrayList<String> obtenerMiembrosGrupo(String idGrupo) {
+    ArrayList<String> miembros = new ArrayList<>();
+    String[] parametros = {idGrupo};
+    String[] campos = {BDConstantes.MIEMBRO_GRUPO_CORREO};
+    
+    Cursor cursor;
+    try {
+        cursor = db.query(BDConstantes.TABLA_MIEMBROS_GRUPO, campos,
+                BDConstantes.MIEMBRO_GRUPO_ID + "=? ORDER BY " + BDConstantes.MIEMBRO_GRUPO_ADMIN + " DESC",
+                parametros, null, null, null);
+        if (cursor.getCount() > 0) {
+            while (cursor.moveToNext()) {
+                miembros.add(cursor.getString(0));
+            }
+        }
+        cursor.close();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    return miembros;
+}
+
+/**
+ * Obtiene los admins de un grupo
+ */
+public ArrayList<String> obtenerAdminsGrupo(String idGrupo) {
+    ArrayList<String> admins = new ArrayList<>();
+    String[] parametros = {idGrupo, "1"};
+    String[] campos = {BDConstantes.MIEMBRO_GRUPO_CORREO};
+    
+    Cursor cursor;
+    try {
+        cursor = db.query(BDConstantes.TABLA_MIEMBROS_GRUPO, campos,
+                BDConstantes.MIEMBRO_GRUPO_ID + "=? AND " + BDConstantes.MIEMBRO_GRUPO_ADMIN + "=?",
+                parametros, null, null, null);
+        if (cursor.getCount() > 0) {
+            while (cursor.moveToNext()) {
+                admins.add(cursor.getString(0));
+            }
+        }
+        cursor.close();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    return admins;
+}
+
+/**
+ * Verifica si un miembro es admin del grupo
+ */
+public boolean esAdminGrupo(String idGrupo, String correo) {
+    String[] parametros = {idGrupo, correo, "1"};
+    String[] campos = {BDConstantes.MIEMBRO_GRUPO_CORREO};
+    
+    Cursor cursor;
+    boolean esAdmin = false;
+    try {
+        cursor = db.query(BDConstantes.TABLA_MIEMBROS_GRUPO, campos,
+                BDConstantes.MIEMBRO_GRUPO_ID + "=? AND " + BDConstantes.MIEMBRO_GRUPO_CORREO + "=? AND " 
+                + BDConstantes.MIEMBRO_GRUPO_ADMIN + "=? LIMIT 1",
+                parametros, null, null, null);
+        if (cursor.getCount() > 0) esAdmin = cursor.moveToFirst();
+        cursor.close();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    return esAdmin;
+}
+
+/**
+ * Convierte un miembro en admin
+ */
+public synchronized void hacerAdminGrupo(String idGrupo, String correo) {
+    String[] parametros = {idGrupo, correo};
+    ContentValues values = new ContentValues();
+    values.put(BDConstantes.MIEMBRO_GRUPO_ADMIN, 1);
+    db.update(BDConstantes.TABLA_MIEMBROS_GRUPO, values,
+            BDConstantes.MIEMBRO_GRUPO_ID + "=? AND " + BDConstantes.MIEMBRO_GRUPO_CORREO + "=?",
+            parametros);
+}
+
+/**
+ * Elimina un miembro del grupo
+ */
+public synchronized void eliminarMiembroGrupo(String idGrupo, String correo) {
+    String[] parametros = {idGrupo, correo};
+    db.delete(BDConstantes.TABLA_MIEMBROS_GRUPO,
+            BDConstantes.MIEMBRO_GRUPO_ID + "=? AND " + BDConstantes.MIEMBRO_GRUPO_CORREO + "=?",
+            parametros);
+}
+
+/**
+ * Obtiene el total de miembros de un grupo
+ */
+public int obtenerCantMiembrosGrupo(String idGrupo) {
+    String[] parametros = {idGrupo};
+    String[] campos = {BDConstantes.MIEMBRO_GRUPO_CORREO};
+    
+    Cursor cursor;
+    int cant = 0;
+    try {
+        cursor = db.query(BDConstantes.TABLA_MIEMBROS_GRUPO, campos,
+                BDConstantes.MIEMBRO_GRUPO_ID + "=?", parametros, null, null, null);
+        cant = cursor.getCount();
+        cursor.close();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    return cant;
+}
+
+/**
+ * Elimina un grupo y todos sus miembros
+ */
+public synchronized void eliminarGrupo(String idGrupo) {
+    String[] parametros = {idGrupo};
+    db.delete(BDConstantes.TABLA_MIEMBROS_GRUPO, BDConstantes.MIEMBRO_GRUPO_ID + "=?", parametros);
+    db.delete(BDConstantes.TABLA_GRUPOS_CHAT, BDConstantes.GRUPO_CHAT_ID + "=?", parametros);
+    // También eliminar los chats del grupo
+    db.delete(BDConstantes.TABLA_CHAT, BDConstantes.CHAT_CAMPO_CORREO + "=?", parametros);
+}
+
+/**
+ * Obtiene todos los grupos donde un usuario es miembro
+ */
+public ArrayList<ItemGrupo> obtenerGruposDeUsuario(String correo) {
+    ArrayList<ItemGrupo> grupos = new ArrayList<>();
+    
+    Cursor cursor;
+    try {
+        String query = "SELECT g.* FROM " + BDConstantes.TABLA_GRUPOS_CHAT + " g " +
+                      "INNER JOIN " + BDConstantes.TABLA_MIEMBROS_GRUPO + " m " +
+                      "ON g." + BDConstantes.GRUPO_CHAT_ID + " = m." + BDConstantes.MIEMBRO_GRUPO_ID + " " +
+                      "WHERE m." + BDConstantes.MIEMBRO_GRUPO_CORREO + " = ? " +
+                      "ORDER BY g." + BDConstantes.GRUPO_CHAT_NOMBRE + " ASC";
+        
+        cursor = db.rawQuery(query, new String[]{correo});
+        if (cursor.getCount() > 0) {
+            while (cursor.moveToNext()) {
+                ItemGrupo grupo = new ItemGrupo();
+                grupo.setIdGrupo(cursor.getString(0));
+                grupo.setNombre(cursor.getString(1));
+                grupo.setDescripcion(cursor.getString(2));
+                grupo.setCreador(cursor.getString(3));
+                grupo.setFotoGrupo(cursor.getString(4));
+                grupo.setFechaCreacion(cursor.getString(5));
+                grupo.setTipoGrupo(cursor.getInt(6));
+                grupos.add(grupo);
+            }
+        }
+        cursor.close();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    return grupos;
+}
 }

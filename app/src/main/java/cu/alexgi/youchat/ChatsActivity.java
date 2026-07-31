@@ -123,6 +123,7 @@ import cu.alexgi.youchat.chatUtils.ViewUtil;
 import cu.alexgi.youchat.chatUtils.camera.QuickAttachmentDrawer;
 import cu.alexgi.youchat.items.ItemChat;
 import cu.alexgi.youchat.items.ItemContacto;
+import cu.alexgi.youchat.items.ItemGrupo;
 import cu.alexgi.youchat.items.ItemEstado;
 import cu.alexgi.youchat.items.ItemImg;
 import cu.alexgi.youchat.items.ItemUsuario;
@@ -882,7 +883,9 @@ public class ChatsActivity extends BaseSwipeBackFragment
                 },500);
                 if(adaptadorChat.estaPlayAudio()) adaptadorChat.detenerPlayAudio();
                 mibundle.putBoolean("vieneDeChat", true);
-                if(mAddFragmentListener!=null) mAddFragmentListener.onAddFragment(ChatsActivity.this, ViewPerfilActivity.newInstance(mibundle));
+                if (contacto != null && contacto.esGrupo()) {
+                    abrirInfoGrupo();
+                } else if(mAddFragmentListener!=null) mAddFragmentListener.onAddFragment(ChatsActivity.this, ViewPerfilActivity.newInstance(mibundle));
 //                navController.navigate(R.id.viewPerfilActivity,mibundle);
             }
         });
@@ -1241,6 +1244,16 @@ public class ChatsActivity extends BaseSwipeBackFragment
             correo = mibundle.getString("correo", "");
             ItemContacto contacto = dbWorker.obtenerContacto(correo);
             if (contacto != null) {
+                if (contacto.esGrupo() || contacto.esCanal()) {
+                    grupoActual = dbWorker.obtenerGrupo(correo);
+                    if (grupoActual != null) {
+                        if (apodo.equals("") || apodo.equals(correo))
+                            apodo = grupoActual.getNombre();
+                        ruta_img_perfil = grupoActual.getFotoGrupo();
+                    }
+                    option_agregar_contacto.setVisibility(View.GONE);
+                    item_bloquear.setVisibility(View.GONE);
+                }
                 if(!correo.contains(",")){
                     if (apodo.equals("") || apodo.equals(correo))
                         apodo = contacto.getNombreMostrar();
@@ -2329,6 +2342,7 @@ public class ChatsActivity extends BaseSwipeBackFragment
                 ItemChat newChat=new ItemChat( id,
                         6, 1, correo, texto_enviar,  "",
                         hora, fecha, id_msg_answer, aut_user, false, fechaEntera,false,"",0,true);
+                if (contacto != null && contacto.esGrupo()) newChat.setEmisor(aut_user);
 
                 if(YouChatApplication.estaAndandoChatService())
                     YouChatApplication.chatService.enviarMensaje(newChat,SendMsg.CATEGORY_CHAT);
@@ -2361,6 +2375,7 @@ public class ChatsActivity extends BaseSwipeBackFragment
                         texto_enviar,
                         "",
                         hora, fecha, "", aut_user, false, fechaEntera,false,"",0,true);
+                if (contacto != null && contacto.esGrupo()) newChat.setEmisor(aut_user);
 
                 if(YouChatApplication.estaAndandoChatService())
                     YouChatApplication.chatService.enviarMensaje(newChat,SendMsg.CATEGORY_CHAT);
@@ -5132,6 +5147,15 @@ public class ChatsActivity extends BaseSwipeBackFragment
             });
             transImage.exit(locationOnScreen[0], locationOnScreen[1],
                     locationOnScreen[2], locationOnScreen[3]);
+        }
+    }
+
+    public void abrirInfoGrupo() {
+        if (grupoActual != null && mAddFragmentListener != null) {
+            Bundle bundle = new Bundle();
+            bundle.putString("id_grupo", grupoActual.getIdGrupo());
+            mAddFragmentListener.onAddFragment(ChatsActivity.this, 
+                InfoGrupoActivity.newInstance(bundle));
         }
     }
 }

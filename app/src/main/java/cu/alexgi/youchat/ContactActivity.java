@@ -149,6 +149,17 @@ public class ContactActivity extends BaseSwipeBackFragment {
                 startActivity(Intent.createChooser(mShareIntent,"Invitar amigos a YouChat"));
             }
         });
+
+        contacto_nuevo_grupo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cerrarMenu();
+                if (mAddFragmentListener != null) {
+                    mAddFragmentListener.onAddFragment(ContactActivity.this, 
+                        CrearGrupoActivity.newInstance());
+                }
+            }
+        });
         cant_contacto = view.findViewById(R.id.cant_contacto);
         rl_barra_contacto = view.findViewById(R.id.rl_barra_contacto);
         ll_buscar_contacto = view.findViewById(R.id.ll_buscar_contacto);
