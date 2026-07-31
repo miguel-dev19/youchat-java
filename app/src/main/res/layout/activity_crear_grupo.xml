@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="?android:attr/colorBackground">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_crear_grupo"
+        android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" android:elevation="4dp"
+        app:title="Nuevo grupo" app:titleTextColor="@android:color/white">
+        <cu.alexgi.youchat.views_GI.ImageViewBarGI
+            android:id="@+id/back" android:layout_width="45dp" android:layout_height="45dp"
+            android:padding="8dp" android:src="@drawable/arrow_left"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:gravity="center" android:orientation="vertical" android:paddingBottom="16dp">
+                <cu.alexgi.youchat.CircleImageView
+                    android:id="@+id/foto_grupo" android:layout_width="100dp" android:layout_height="100dp"
+                    android:src="@drawable/contacts"
+                    app:civ_border_color="?attr/colorAccent" app:civ_border_width="2dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Toca para cambiar foto" android:textSize="12sp"
+                    android:textColor="?attr/colorAccent" android:padding="8dp"/>
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Nombre del grupo">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_nombre_grupo" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:maxLines="1" android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="Descripción (opcional)" android:layout_marginTop="8dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_descripcion_grupo" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:maxLines="3" android:inputType="textMultiLine"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="@android:color/darker_gray" android:alpha="0.3f"
+                android:layout_marginTop="16dp" android:layout_marginBottom="8dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center_vertical" android:padding="8dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="Seleccionar miembros"
+                    android:textSize="16sp" android:textStyle="bold"/>
+                <TextView android:id="@+id/tv_cant_seleccionados" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="0 seleccionados"
+                    android:textSize="14sp" android:textColor="?attr/colorAccent"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lista_contactos" android:layout_width="match_parent"
+                android:layout_height="400dp" android:nestedScrollingEnabled="true"/>
+        </LinearLayout>
+    </ScrollView>
+    <cu.alexgi.youchat.views_GI.FABGI
+        android:id="@+id/fab_crear" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end" android:layout_margin="16dp"
+        app:fabCustomSize="56dp" app:srcCompat="@drawable/chat"
+        app:backgroundTint="?attr/colorAccent" app:tint="#fff"/>
+</LinearLayout>

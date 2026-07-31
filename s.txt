@@ -1,0 +1,2406 @@
+.
+├── app
+│   ├── build.gradle
+│   ├── libs
+│   │   ├── activation.jar
+│   │   ├── additionnal.jar
+│   │   └── mail.jar
+│   ├── proguard-rules.pro
+│   ├── release
+│   │   └── output.json
+│   ├── src
+│   │   ├── androidTest
+│   │   │   └── java
+│   │   │       └── cu
+│   │   │           └── alexgi
+│   │   │               └── youchat
+│   │   │                   └── ExampleInstrumentedTest.java
+│   │   ├── debug
+│   │   │   └── res
+│   │   │       └── animator
+│   │   │           ├── bottom_pause_to_play_animation.xml
+│   │   │           ├── bottom_play_to_pause_animation.xml
+│   │   │           ├── rotate_90_animation.xml
+│   │   │           ├── rotate_minus_90_animation.xml
+│   │   │           ├── upper_pause_to_play_animation.xml
+│   │   │           └── upper_play_to_pause_animation.xml
+│   │   ├── main
+│   │   │   ├── AndroidManifest.xml
+│   │   │   ├── assets
+│   │   │   │   ├── filters
+│   │   │   │   │   ├── auto_fix.png
+│   │   │   │   │   ├── b_n_w.png
+│   │   │   │   │   ├── brightness.png
+│   │   │   │   │   ├── contrast.png
+│   │   │   │   │   ├── cross_process.png
+│   │   │   │   │   ├── documentary.png
+│   │   │   │   │   ├── dual_tone.png
+│   │   │   │   │   ├── fill_light.png
+│   │   │   │   │   ├── fish_eye.png
+│   │   │   │   │   ├── grain.png
+│   │   │   │   │   ├── gray_scale.png
+│   │   │   │   │   ├── lomish.png
+│   │   │   │   │   ├── negative.png
+│   │   │   │   │   ├── original.jpg
+│   │   │   │   │   ├── posterize.png
+│   │   │   │   │   ├── saturate.png
+│   │   │   │   │   ├── sepia.png
+│   │   │   │   │   ├── sharpen.png
+│   │   │   │   │   ├── temprature.png
+│   │   │   │   │   ├── tint.png
+│   │   │   │   │   └── vignette.png
+│   │   │   │   └── fonts
+│   │   │   │       ├── Burnstown Dam.otf
+│   │   │   │       ├── Inkfree.ttf
+│   │   │   │       ├── Norican Regular.ttf
+│   │   │   │       ├── Oswald Heavy.ttf
+│   │   │   │       ├── Roboto Medium.ttf
+│   │   │   │       ├── Thunder Pants.otf
+│   │   │   │       ├── comicz.ttf
+│   │   │   │       └── mw_bold.ttf
+│   │   │   ├── java
+│   │   │   │   ├── com
+│   │   │   │   │   ├── b44t
+│   │   │   │   │   │   └── messenger
+│   │   │   │   │   │       ├── DcArray.java
+│   │   │   │   │   │       ├── DcChat.java
+│   │   │   │   │   │       ├── DcChatlist.java
+│   │   │   │   │   │       ├── DcContact.java
+│   │   │   │   │   │       ├── DcContext.java
+│   │   │   │   │   │       ├── DcEventCenter.java
+│   │   │   │   │   │       ├── DcLot.java
+│   │   │   │   │   │       ├── DcMediaGalleryElement.java
+│   │   │   │   │   │       ├── DcMsg.java
+│   │   │   │   │   │       └── DcProvider.java
+│   │   │   │   │   ├── google
+│   │   │   │   │   │   └── android
+│   │   │   │   │   │       └── flexbox
+│   │   │   │   │   │           ├── AlignContent.java
+│   │   │   │   │   │           ├── AlignItems.java
+│   │   │   │   │   │           ├── AlignSelf.java
+│   │   │   │   │   │           ├── FlexContainer.java
+│   │   │   │   │   │           ├── FlexDirection.java
+│   │   │   │   │   │           ├── FlexItem.java
+│   │   │   │   │   │           ├── FlexLine.java
+│   │   │   │   │   │           ├── FlexWrap.java
+│   │   │   │   │   │           ├── FlexboxHelper.java
+│   │   │   │   │   │           ├── FlexboxItemDecoration.java
+│   │   │   │   │   │           ├── FlexboxLayout.java
+│   │   │   │   │   │           ├── FlexboxLayoutManager.java
+│   │   │   │   │   │           └── JustifyContent.java
+│   │   │   │   │   ├── theartofdev
+│   │   │   │   │   │   └── edmodo
+│   │   │   │   │   │       └── cropper
+│   │   │   │   │   │           ├── BitmapCroppingWorkerTask.java
+│   │   │   │   │   │           ├── BitmapLoadingWorkerTask.java
+│   │   │   │   │   │           ├── BitmapUtils.java
+│   │   │   │   │   │           ├── CropImage.java
+│   │   │   │   │   │           ├── CropImageActivity.java
+│   │   │   │   │   │           ├── CropImageAnimation.java
+│   │   │   │   │   │           ├── CropImageOptions.java
+│   │   │   │   │   │           ├── CropImageView.java
+│   │   │   │   │   │           ├── CropOverlayView.java
+│   │   │   │   │   │           ├── CropWindowHandler.java
+│   │   │   │   │   │           └── CropWindowMoveHandler.java
+│   │   │   │   │   ├── vanniktech
+│   │   │   │   │   │   └── emoji
+│   │   │   │   │   │       ├── EmojiArrayAdapter.java
+│   │   │   │   │   │       ├── EmojiAutoCompleteTextView.java
+│   │   │   │   │   │       ├── EmojiButton.java
+│   │   │   │   │   │       ├── EmojiCheckbox.java
+│   │   │   │   │   │       ├── EmojiDisplayable.java
+│   │   │   │   │   │       ├── EmojiEditText.java
+│   │   │   │   │   │       ├── EmojiEditable.java
+│   │   │   │   │   │       ├── EmojiGridView.java
+│   │   │   │   │   │       ├── EmojiImageView.java
+│   │   │   │   │   │       ├── EmojiInformation.java
+│   │   │   │   │   │       ├── EmojiLayoutFactory.java
+│   │   │   │   │   │       ├── EmojiManager.java
+│   │   │   │   │   │       ├── EmojiMultiAutoCompleteTextView.java
+│   │   │   │   │   │       ├── EmojiPagerAdapter.java
+│   │   │   │   │   │       ├── EmojiPopup.java
+│   │   │   │   │   │       ├── EmojiProvider.java
+│   │   │   │   │   │       ├── EmojiRange.java
+│   │   │   │   │   │       ├── EmojiReplacer.java
+│   │   │   │   │   │       ├── EmojiResultReceiver.java
+│   │   │   │   │   │       ├── EmojiSpan.java
+│   │   │   │   │   │       ├── EmojiTextView.java
+│   │   │   │   │   │       ├── EmojiUtils.java
+│   │   │   │   │   │       ├── EmojiVariantPopup.java
+│   │   │   │   │   │       ├── EmojiView.java
+│   │   │   │   │   │       ├── ImageLoadingTask.java
+│   │   │   │   │   │       ├── MaximalNumberOfEmojisInputFilter.java
+│   │   │   │   │   │       ├── OnlyEmojisInputFilter.java
+│   │   │   │   │   │       ├── RecentEmoji.java
+│   │   │   │   │   │       ├── RecentEmojiGridView.java
+│   │   │   │   │   │       ├── RecentEmojiManager.java
+│   │   │   │   │   │       ├── SingleEmojiTrait.java
+│   │   │   │   │   │       ├── Utils.java
+│   │   │   │   │   │       ├── VariantEmoji.java
+│   │   │   │   │   │       ├── VariantEmojiManager.java
+│   │   │   │   │   │       ├── emoji
+│   │   │   │   │   │       │   ├── CacheKey.java
+│   │   │   │   │   │       │   ├── Emoji.java
+│   │   │   │   │   │       │   └── EmojiCategory.java
+│   │   │   │   │   │       ├── facebook
+│   │   │   │   │   │       │   ├── FacebookEmoji.java
+│   │   │   │   │   │       │   ├── FacebookEmojiProvider.java
+│   │   │   │   │   │       │   └── category
+│   │   │   │   │   │       │       ├── ActivitiesCategory.java
+│   │   │   │   │   │       │       ├── ActivitiesCategoryChunk0.java
+│   │   │   │   │   │       │       ├── AnimalsAndNatureCategory.java
+│   │   │   │   │   │       │       ├── AnimalsAndNatureCategoryChunk0.java
+│   │   │   │   │   │       │       ├── CategoryUtils.java
+│   │   │   │   │   │       │       ├── FlagsCategory.java
+│   │   │   │   │   │       │       ├── FlagsCategoryChunk0.java
+│   │   │   │   │   │       │       ├── FlagsCategoryChunk1.java
+│   │   │   │   │   │       │       ├── FoodAndDrinkCategory.java
+│   │   │   │   │   │       │       ├── FoodAndDrinkCategoryChunk0.java
+│   │   │   │   │   │       │       ├── ObjectsCategory.java
+│   │   │   │   │   │       │       ├── ObjectsCategoryChunk0.java
+│   │   │   │   │   │       │       ├── SmileysAndPeopleCategory.java
+│   │   │   │   │   │       │       ├── SmileysAndPeopleCategoryChunk0.java
+│   │   │   │   │   │       │       ├── SmileysAndPeopleCategoryChunk1.java
+│   │   │   │   │   │       │       ├── SymbolsCategory.java
+│   │   │   │   │   │       │       ├── SymbolsCategoryChunk0.java
+│   │   │   │   │   │       │       ├── TravelAndPlacesCategory.java
+│   │   │   │   │   │       │       └── TravelAndPlacesCategoryChunk0.java
+│   │   │   │   │   │       ├── listeners
+│   │   │   │   │   │       │   ├── OnEmojiBackspaceClickListener.java
+│   │   │   │   │   │       │   ├── OnEmojiClickListener.java
+│   │   │   │   │   │       │   ├── OnEmojiLongClickListener.java
+│   │   │   │   │   │       │   ├── OnEmojiPopupDismissListener.java
+│   │   │   │   │   │       │   ├── OnEmojiPopupShownListener.java
+│   │   │   │   │   │       │   ├── OnSoftKeyboardCloseListener.java
+│   │   │   │   │   │       │   ├── OnSoftKeyboardOpenListener.java
+│   │   │   │   │   │       │   └── RepeatListener.java
+│   │   │   │   │   │       └── material
+│   │   │   │   │   │           ├── EmojiMaterialButton.java
+│   │   │   │   │   │           ├── EmojiMaterialCheckBox.java
+│   │   │   │   │   │           ├── EmojiMaterialRadioButton.java
+│   │   │   │   │   │           ├── MaterialEmojiLayoutFactory.java
+│   │   │   │   │   │           └── Utils.java
+│   │   │   │   │   ├── yanzhenjie
+│   │   │   │   │   │   └── album
+│   │   │   │   │   │       ├── Action.java
+│   │   │   │   │   │       ├── Album.java
+│   │   │   │   │   │       ├── AlbumConfig.java
+│   │   │   │   │   │       ├── AlbumFile.java
+│   │   │   │   │   │       ├── AlbumFolder.java
+│   │   │   │   │   │       ├── AlbumLoader.java
+│   │   │   │   │   │       ├── Filter.java
+│   │   │   │   │   │       ├── ItemAction.java
+│   │   │   │   │   │       ├── api
+│   │   │   │   │   │       │   ├── AlbumMultipleWrapper.java
+│   │   │   │   │   │       │   ├── AlbumSingleWrapper.java
+│   │   │   │   │   │       │   ├── BasicAlbumWrapper.java
+│   │   │   │   │   │       │   ├── BasicCameraWrapper.java
+│   │   │   │   │   │       │   ├── BasicChoiceAlbumWrapper.java
+│   │   │   │   │   │       │   ├── BasicChoiceVideoWrapper.java
+│   │   │   │   │   │       │   ├── BasicChoiceWrapper.java
+│   │   │   │   │   │       │   ├── BasicGalleryWrapper.java
+│   │   │   │   │   │       │   ├── GalleryAlbumWrapper.java
+│   │   │   │   │   │       │   ├── GalleryWrapper.java
+│   │   │   │   │   │       │   ├── ImageCameraWrapper.java
+│   │   │   │   │   │       │   ├── ImageMultipleWrapper.java
+│   │   │   │   │   │       │   ├── ImageSingleWrapper.java
+│   │   │   │   │   │       │   ├── VideoCameraWrapper.java
+│   │   │   │   │   │       │   ├── VideoMultipleWrapper.java
+│   │   │   │   │   │       │   ├── VideoSingleWrapper.java
+│   │   │   │   │   │       │   ├── camera
+│   │   │   │   │   │       │   │   ├── AlbumCamera.java
+│   │   │   │   │   │       │   │   └── Camera.java
+│   │   │   │   │   │       │   ├── choice
+│   │   │   │   │   │       │   │   ├── AlbumChoice.java
+│   │   │   │   │   │       │   │   ├── Choice.java
+│   │   │   │   │   │       │   │   ├── ImageChoice.java
+│   │   │   │   │   │       │   │   └── VideoChoice.java
+│   │   │   │   │   │       │   └── widget
+│   │   │   │   │   │       │       └── Widget.java
+│   │   │   │   │   │       ├── app
+│   │   │   │   │   │       │   ├── Contract.java
+│   │   │   │   │   │       │   ├── album
+│   │   │   │   │   │       │   │   ├── AlbumActivity.java
+│   │   │   │   │   │       │   │   ├── AlbumAdapter.java
+│   │   │   │   │   │       │   │   ├── AlbumView.java
+│   │   │   │   │   │       │   │   ├── FolderAdapter.java
+│   │   │   │   │   │       │   │   ├── FolderDialog.java
+│   │   │   │   │   │       │   │   ├── GalleryActivity.java
+│   │   │   │   │   │       │   │   ├── NullView.java
+│   │   │   │   │   │       │   │   └── data
+│   │   │   │   │   │       │   │       ├── MediaReadTask.java
+│   │   │   │   │   │       │   │       ├── MediaReader.java
+│   │   │   │   │   │       │   │       ├── PathConversion.java
+│   │   │   │   │   │       │   │       ├── PathConvertTask.java
+│   │   │   │   │   │       │   │       ├── ThumbnailBuildTask.java
+│   │   │   │   │   │       │   │       └── ThumbnailBuilder.java
+│   │   │   │   │   │       │   ├── camera
+│   │   │   │   │   │       │   │   └── CameraActivity.java
+│   │   │   │   │   │       │   └── gallery
+│   │   │   │   │   │       │       ├── GalleryActivity.java
+│   │   │   │   │   │       │       ├── GalleryAlbumActivity.java
+│   │   │   │   │   │       │       ├── GalleryView.java
+│   │   │   │   │   │       │       └── PreviewAdapter.java
+│   │   │   │   │   │       ├── impl
+│   │   │   │   │   │       │   ├── DoubleClickWrapper.java
+│   │   │   │   │   │       │   ├── OnCheckedClickListener.java
+│   │   │   │   │   │       │   └── OnItemClickListener.java
+│   │   │   │   │   │       ├── mvp
+│   │   │   │   │   │       │   ├── ActivitySource.java
+│   │   │   │   │   │       │   ├── BaseActivity.java
+│   │   │   │   │   │       │   ├── BaseFragment.java
+│   │   │   │   │   │       │   ├── BasePresenter.java
+│   │   │   │   │   │       │   ├── BaseView.java
+│   │   │   │   │   │       │   ├── Bye.java
+│   │   │   │   │   │       │   ├── Source.java
+│   │   │   │   │   │       │   └── ViewSource.java
+│   │   │   │   │   │       ├── provider
+│   │   │   │   │   │       │   └── CameraFileProvider.java
+│   │   │   │   │   │       ├── util
+│   │   │   │   │   │       │   ├── AlbumUtils.java
+│   │   │   │   │   │       │   └── SystemBar.java
+│   │   │   │   │   │       └── widget
+│   │   │   │   │   │           ├── ColorProgressBar.java
+│   │   │   │   │   │           ├── LoadingDialog.java
+│   │   │   │   │   │           ├── SquareCardView.java
+│   │   │   │   │   │           ├── SquareFrameLayout.java
+│   │   │   │   │   │           ├── SquareImageView.java
+│   │   │   │   │   │           ├── SquareRelativeLayout.java
+│   │   │   │   │   │           ├── TransferLayout.java
+│   │   │   │   │   │           ├── divider
+│   │   │   │   │   │           │   ├── Api20ItemDivider.java
+│   │   │   │   │   │           │   ├── Api21ItemDivider.java
+│   │   │   │   │   │           │   ├── ColorDrawer.java
+│   │   │   │   │   │           │   ├── Divider.java
+│   │   │   │   │   │           │   └── Drawer.java
+│   │   │   │   │   │           └── photoview
+│   │   │   │   │   │               ├── AttacherImageView.java
+│   │   │   │   │   │               ├── Compat.java
+│   │   │   │   │   │               ├── DefaultOnDoubleTapListener.java
+│   │   │   │   │   │               ├── FixViewPager.java
+│   │   │   │   │   │               ├── IPhotoView.java
+│   │   │   │   │   │               ├── PhotoViewAttacher.java
+│   │   │   │   │   │               ├── gestures
+│   │   │   │   │   │               │   ├── CupcakeGestureDetector.java
+│   │   │   │   │   │               │   ├── EclairGestureDetector.java
+│   │   │   │   │   │               │   ├── FroyoGestureDetector.java
+│   │   │   │   │   │               │   ├── GestureDetector.java
+│   │   │   │   │   │               │   ├── OnGestureListener.java
+│   │   │   │   │   │               │   └── VersionedGestureDetector.java
+│   │   │   │   │   │               └── scrollerproxy
+│   │   │   │   │   │                   ├── GingerScroller.java
+│   │   │   │   │   │                   ├── IcsScroller.java
+│   │   │   │   │   │                   ├── PreGingerScroller.java
+│   │   │   │   │   │                   └── ScrollerProxy.java
+│   │   │   │   │   └── zoonref
+│   │   │   │   │       └── viewbehavior
+│   │   │   │   │           ├── AnimationViewBehavior.java
+│   │   │   │   │           ├── PercentageChildView.java
+│   │   │   │   │           ├── PercentageViewBehavior.java
+│   │   │   │   │           └── SimpleViewBehavior.java
+│   │   │   │   ├── cu
+│   │   │   │   │   └── alexgi
+│   │   │   │   │       └── youchat
+│   │   │   │   │           ├── Acerca_de_Activity.java
+│   │   │   │   │           ├── AddThemeFragment.java
+│   │   │   │   │           ├── AdminEstadosActivity.java
+│   │   │   │   │           ├── AjustesActivity.java
+│   │   │   │   │           ├── AjustesBuzonFragment.java
+│   │   │   │   │           ├── AzulFragment.java
+│   │   │   │   │           ├── BandejaFragment.java
+│   │   │   │   │           ├── BlancoFragment.java
+│   │   │   │   │           ├── BloqueadosActivity.java
+│   │   │   │   │           ├── BloqueadosPostFragment.java
+│   │   │   │   │           ├── BlurBuilder.java
+│   │   │   │   │           ├── BottomSheetDialogFragment
+│   │   │   │   │           │   ├── BottomSheetDialogFragment_Atajos.java
+│   │   │   │   │           │   ├── BottomSheetDialogFragment_Ayuda.java
+│   │   │   │   │           │   ├── BottomSheetDialogFragment_Ayuda_ajustes.java
+│   │   │   │   │           │   ├── BottomSheetDialogFragment_Cambios.java
+│   │   │   │   │           │   ├── BottomSheetDialogFragment_Contacts.java
+│   │   │   │   │           │   ├── BottomSheetDialogFragment_Photo_perfil.java
+│   │   │   │   │           │   ├── BottomSheetDialogFragment_Tarjeta.java
+│   │   │   │   │           │   ├── BottomSheetDialogFragment_User_Estadisticas.java
+│   │   │   │   │           │   ├── BottomSheetDialogFragment_comentario_post.java
+│   │   │   │   │           │   ├── BottomSheetDialogFragment_elegir_fondo.java
+│   │   │   │   │           │   ├── BottomSheetDialogFragment_elegir_tema.java
+│   │   │   │   │           │   ├── BottomSheetDialogFragment_fondo_post_tarjeta.java
+│   │   │   │   │           │   ├── BottomSheetDialogFragment_info_contact.java
+│   │   │   │   │           │   ├── BottomSheetDialogFragment_opciones_post.java
+│   │   │   │   │           │   ├── BottomSheetDialogFragment_reacciones_estado.java
+│   │   │   │   │           │   ├── BottomSheetDialogFragment_tema_info.java
+│   │   │   │   │           │   └── BottomSheetDialogFragment_usuario_publico.java
+│   │   │   │   │           ├── Charts
+│   │   │   │   │           │   ├── animation
+│   │   │   │   │           │   │   ├── ChartAnimator.java
+│   │   │   │   │           │   │   └── Easing.java
+│   │   │   │   │           │   ├── buffer
+│   │   │   │   │           │   │   ├── AbstractBuffer.java
+│   │   │   │   │           │   │   ├── BarBuffer.java
+│   │   │   │   │           │   │   └── HorizontalBarBuffer.java
+│   │   │   │   │           │   ├── charts
+│   │   │   │   │           │   │   ├── BarChart.java
+│   │   │   │   │           │   │   ├── BarLineChartBase.java
+│   │   │   │   │           │   │   ├── BubbleChart.java
+│   │   │   │   │           │   │   ├── CandleStickChart.java
+│   │   │   │   │           │   │   ├── Chart.java
+│   │   │   │   │           │   │   ├── CombinedChart.java
+│   │   │   │   │           │   │   ├── HorizontalBarChart.java
+│   │   │   │   │           │   │   ├── LineChart.java
+│   │   │   │   │           │   │   ├── PieChart.java
+│   │   │   │   │           │   │   ├── PieRadarChartBase.java
+│   │   │   │   │           │   │   ├── RadarChart.java
+│   │   │   │   │           │   │   └── ScatterChart.java
+│   │   │   │   │           │   ├── components
+│   │   │   │   │           │   │   ├── AxisBase.java
+│   │   │   │   │           │   │   ├── ComponentBase.java
+│   │   │   │   │           │   │   ├── Description.java
+│   │   │   │   │           │   │   ├── IMarker.java
+│   │   │   │   │           │   │   ├── Legend.java
+│   │   │   │   │           │   │   ├── LegendEntry.java
+│   │   │   │   │           │   │   ├── LimitLine.java
+│   │   │   │   │           │   │   ├── MarkerImage.java
+│   │   │   │   │           │   │   ├── MarkerView.java
+│   │   │   │   │           │   │   ├── XAxis.java
+│   │   │   │   │           │   │   └── YAxis.java
+│   │   │   │   │           │   ├── data
+│   │   │   │   │           │   │   ├── BarData.java
+│   │   │   │   │           │   │   ├── BarDataSet.java
+│   │   │   │   │           │   │   ├── BarEntry.java
+│   │   │   │   │           │   │   ├── BarLineScatterCandleBubbleData.java
+│   │   │   │   │           │   │   ├── BarLineScatterCandleBubbleDataSet.java
+│   │   │   │   │           │   │   ├── BaseDataSet.java
+│   │   │   │   │           │   │   ├── BaseEntry.java
+│   │   │   │   │           │   │   ├── BubbleData.java
+│   │   │   │   │           │   │   ├── BubbleDataSet.java
+│   │   │   │   │           │   │   ├── BubbleEntry.java
+│   │   │   │   │           │   │   ├── CandleData.java
+│   │   │   │   │           │   │   ├── CandleDataSet.java
+│   │   │   │   │           │   │   ├── CandleEntry.java
+│   │   │   │   │           │   │   ├── ChartData.java
+│   │   │   │   │           │   │   ├── CombinedData.java
+│   │   │   │   │           │   │   ├── DataSet.java
+│   │   │   │   │           │   │   ├── Entry.java
+│   │   │   │   │           │   │   ├── LineData.java
+│   │   │   │   │           │   │   ├── LineDataSet.java
+│   │   │   │   │           │   │   ├── LineRadarDataSet.java
+│   │   │   │   │           │   │   ├── LineScatterCandleRadarDataSet.java
+│   │   │   │   │           │   │   ├── PieData.java
+│   │   │   │   │           │   │   ├── PieDataSet.java
+│   │   │   │   │           │   │   ├── PieEntry.java
+│   │   │   │   │           │   │   ├── RadarData.java
+│   │   │   │   │           │   │   ├── RadarDataSet.java
+│   │   │   │   │           │   │   ├── RadarEntry.java
+│   │   │   │   │           │   │   ├── ScatterData.java
+│   │   │   │   │           │   │   ├── ScatterDataSet.java
+│   │   │   │   │           │   │   └── filter
+│   │   │   │   │           │   │       ├── Approximator.java
+│   │   │   │   │           │   │       └── ApproximatorN.java
+│   │   │   │   │           │   ├── exception
+│   │   │   │   │           │   │   └── DrawingDataSetNotCreatedException.java
+│   │   │   │   │           │   ├── formatter
+│   │   │   │   │           │   │   ├── ColorFormatter.java
+│   │   │   │   │           │   │   ├── DefaultAxisValueFormatter.java
+│   │   │   │   │           │   │   ├── DefaultFillFormatter.java
+│   │   │   │   │           │   │   ├── DefaultValueFormatter.java
+│   │   │   │   │           │   │   ├── IAxisValueFormatter.java
+│   │   │   │   │           │   │   ├── IFillFormatter.java
+│   │   │   │   │           │   │   ├── IValueFormatter.java
+│   │   │   │   │           │   │   ├── IndexAxisValueFormatter.java
+│   │   │   │   │           │   │   ├── LargeValueFormatter.java
+│   │   │   │   │           │   │   ├── PercentFormatter.java
+│   │   │   │   │           │   │   └── StackedValueFormatter.java
+│   │   │   │   │           │   ├── highlight
+│   │   │   │   │           │   │   ├── BarHighlighter.java
+│   │   │   │   │           │   │   ├── ChartHighlighter.java
+│   │   │   │   │           │   │   ├── CombinedHighlighter.java
+│   │   │   │   │           │   │   ├── Highlight.java
+│   │   │   │   │           │   │   ├── HorizontalBarHighlighter.java
+│   │   │   │   │           │   │   ├── IHighlighter.java
+│   │   │   │   │           │   │   ├── PieHighlighter.java
+│   │   │   │   │           │   │   ├── PieRadarHighlighter.java
+│   │   │   │   │           │   │   ├── RadarHighlighter.java
+│   │   │   │   │           │   │   └── Range.java
+│   │   │   │   │           │   ├── interfaces
+│   │   │   │   │           │   │   ├── dataprovider
+│   │   │   │   │           │   │   │   ├── BarDataProvider.java
+│   │   │   │   │           │   │   │   ├── BarLineScatterCandleBubbleDataProvider.java
+│   │   │   │   │           │   │   │   ├── BubbleDataProvider.java
+│   │   │   │   │           │   │   │   ├── CandleDataProvider.java
+│   │   │   │   │           │   │   │   ├── ChartInterface.java
+│   │   │   │   │           │   │   │   ├── CombinedDataProvider.java
+│   │   │   │   │           │   │   │   ├── LineDataProvider.java
+│   │   │   │   │           │   │   │   └── ScatterDataProvider.java
+│   │   │   │   │           │   │   └── datasets
+│   │   │   │   │           │   │       ├── IBarDataSet.java
+│   │   │   │   │           │   │       ├── IBarLineScatterCandleBubbleDataSet.java
+│   │   │   │   │           │   │       ├── IBubbleDataSet.java
+│   │   │   │   │           │   │       ├── ICandleDataSet.java
+│   │   │   │   │           │   │       ├── IDataSet.java
+│   │   │   │   │           │   │       ├── ILineDataSet.java
+│   │   │   │   │           │   │       ├── ILineRadarDataSet.java
+│   │   │   │   │           │   │       ├── ILineScatterCandleRadarDataSet.java
+│   │   │   │   │           │   │       ├── IPieDataSet.java
+│   │   │   │   │           │   │       ├── IRadarDataSet.java
+│   │   │   │   │           │   │       └── IScatterDataSet.java
+│   │   │   │   │           │   ├── jobs
+│   │   │   │   │           │   │   ├── AnimatedMoveViewJob.java
+│   │   │   │   │           │   │   ├── AnimatedViewPortJob.java
+│   │   │   │   │           │   │   ├── AnimatedZoomJob.java
+│   │   │   │   │           │   │   ├── MoveViewJob.java
+│   │   │   │   │           │   │   ├── ViewPortJob.java
+│   │   │   │   │           │   │   └── ZoomJob.java
+│   │   │   │   │           │   ├── listener
+│   │   │   │   │           │   │   ├── BarLineChartTouchListener.java
+│   │   │   │   │           │   │   ├── ChartTouchListener.java
+│   │   │   │   │           │   │   ├── OnChartGestureListener.java
+│   │   │   │   │           │   │   ├── OnChartValueSelectedListener.java
+│   │   │   │   │           │   │   ├── OnDrawLineChartTouchListener.java
+│   │   │   │   │           │   │   ├── OnDrawListener.java
+│   │   │   │   │           │   │   └── PieRadarChartTouchListener.java
+│   │   │   │   │           │   ├── matrix
+│   │   │   │   │           │   │   └── Vector3.java
+│   │   │   │   │           │   ├── model
+│   │   │   │   │           │   │   └── GradientColor.java
+│   │   │   │   │           │   ├── renderer
+│   │   │   │   │           │   │   ├── AxisRenderer.java
+│   │   │   │   │           │   │   ├── BarChartRenderer.java
+│   │   │   │   │           │   │   ├── BarLineScatterCandleBubbleRenderer.java
+│   │   │   │   │           │   │   ├── BubbleChartRenderer.java
+│   │   │   │   │           │   │   ├── CandleStickChartRenderer.java
+│   │   │   │   │           │   │   ├── CombinedChartRenderer.java
+│   │   │   │   │           │   │   ├── DataRenderer.java
+│   │   │   │   │           │   │   ├── HorizontalBarChartRenderer.java
+│   │   │   │   │           │   │   ├── LegendRenderer.java
+│   │   │   │   │           │   │   ├── LineChartRenderer.java
+│   │   │   │   │           │   │   ├── LineRadarRenderer.java
+│   │   │   │   │           │   │   ├── LineScatterCandleRadarRenderer.java
+│   │   │   │   │           │   │   ├── PieChartRenderer.java
+│   │   │   │   │           │   │   ├── RadarChartRenderer.java
+│   │   │   │   │           │   │   ├── Renderer.java
+│   │   │   │   │           │   │   ├── ScatterChartRenderer.java
+│   │   │   │   │           │   │   ├── XAxisRenderer.java
+│   │   │   │   │           │   │   ├── XAxisRendererHorizontalBarChart.java
+│   │   │   │   │           │   │   ├── XAxisRendererRadarChart.java
+│   │   │   │   │           │   │   ├── YAxisRenderer.java
+│   │   │   │   │           │   │   ├── YAxisRendererHorizontalBarChart.java
+│   │   │   │   │           │   │   ├── YAxisRendererRadarChart.java
+│   │   │   │   │           │   │   └── scatter
+│   │   │   │   │           │   │       ├── ChevronDownShapeRenderer.java
+│   │   │   │   │           │   │       ├── ChevronUpShapeRenderer.java
+│   │   │   │   │           │   │       ├── CircleShapeRenderer.java
+│   │   │   │   │           │   │       ├── CrossShapeRenderer.java
+│   │   │   │   │           │   │       ├── IShapeRenderer.java
+│   │   │   │   │           │   │       ├── SquareShapeRenderer.java
+│   │   │   │   │           │   │       ├── TriangleShapeRenderer.java
+│   │   │   │   │           │   │       └── XShapeRenderer.java
+│   │   │   │   │           │   └── utils
+│   │   │   │   │           │       ├── ColorTemplate.java
+│   │   │   │   │           │       ├── EntryXComparator.java
+│   │   │   │   │           │       ├── FSize.java
+│   │   │   │   │           │       ├── FileUtils.java
+│   │   │   │   │           │       ├── Fill.java
+│   │   │   │   │           │       ├── HorizontalViewPortHandler.java
+│   │   │   │   │           │       ├── MPPointD.java
+│   │   │   │   │           │       ├── MPPointF.java
+│   │   │   │   │           │       ├── ObjectPool.java
+│   │   │   │   │           │       ├── Transformer.java
+│   │   │   │   │           │       ├── TransformerHorizontalBarChart.java
+│   │   │   │   │           │       ├── Utils.java
+│   │   │   │   │           │       └── ViewPortHandler.java
+│   │   │   │   │           ├── ChatService.java
+│   │   │   │   │           ├── ChatsActivity.java
+│   │   │   │   │           ├── ChatsActivityCorreo.java
+│   │   │   │   │           ├── CircleImageView.java
+│   │   │   │   │           ├── CircularStatusView.java
+│   │   │   │   │           ├── ContactActivity.java
+│   │   │   │   │           ├── ContactFragmentCorreo.java
+│   │   │   │   │           ├── Convertidor.java
+│   │   │   │   │           ├── CopiaSeguridadFragment.java
+│   │   │   │   │           ├── CrearGrupoActivity.java
+│   │   │   │   │           ├── Dots
+│   │   │   │   │           │   ├── ViewLoadingDotsBounce.java
+│   │   │   │   │           │   ├── ViewLoadingDotsFade.java
+│   │   │   │   │           │   └── ViewLoadingDotsGrow.java
+│   │   │   │   │           ├── DownloadProgressBar.java
+│   │   │   │   │           ├── EditPerfilActivity.java
+│   │   │   │   │           ├── EstadisticasFragment.java
+│   │   │   │   │           ├── EstadisticasGeneralesFragment.java
+│   │   │   │   │           ├── EstadisticasPersonalesFragment.java
+│   │   │   │   │           ├── EstadoConexion.java
+│   │   │   │   │           ├── EstadosFragment.java
+│   │   │   │   │           ├── EstadosViewPagerFragment.java
+│   │   │   │   │           ├── EstadosViewPagerLayout.java
+│   │   │   │   │           ├── FeedBack.java
+│   │   │   │   │           ├── FileExplorer
+│   │   │   │   │           │   ├── ActivityListener.java
+│   │   │   │   │           │   ├── AdapterListener.java
+│   │   │   │   │           │   ├── FileModel.java
+│   │   │   │   │           │   ├── FileModelType.java
+│   │   │   │   │           │   ├── SimpleFileExplorerActivity.java
+│   │   │   │   │           │   ├── SimpleFileExplorerAdapter.java
+│   │   │   │   │           │   ├── SimpleFileExplorerFragment.java
+│   │   │   │   │           │   ├── SimpleFileExplorerViewHolder.java
+│   │   │   │   │           │   └── SimpleFileResources.java
+│   │   │   │   │           ├── FondoActivity.java
+│   │   │   │   │           ├── HistorialPostFragment.java
+│   │   │   │   │           ├── ImageActivity.java
+│   │   │   │   │           ├── ImagePager.java
+│   │   │   │   │           ├── InfoGrupoActivity.java
+│   │   │   │   │           ├── IntentServiceDesImgPostGlobales.java
+│   │   │   │   │           ├── IntentServiceEstPostGlobales.java
+│   │   │   │   │           ├── LinkUtils.java
+│   │   │   │   │           ├── LoginActivity.java
+│   │   │   │   │           ├── MainActivity.java
+│   │   │   │   │           ├── MediaLoader.java
+│   │   │   │   │           ├── MessageReceiver.java
+│   │   │   │   │           ├── MuchosErroresActivity.java
+│   │   │   │   │           ├── NuevoEstadoTextoActivity.java
+│   │   │   │   │           ├── NuevoMensajeCorreoFragment.java
+│   │   │   │   │           ├── OnDownloadNowListener.java
+│   │   │   │   │           ├── PageTransformer.java
+│   │   │   │   │           ├── Permisos.java
+│   │   │   │   │           ├── PersonalizarChat.java
+│   │   │   │   │           ├── Popups
+│   │   │   │   │           │   ├── PopupMsgChat.java
+│   │   │   │   │           │   ├── PopupMsgChatCorreo.java
+│   │   │   │   │           │   ├── PopupOpcionesEstados.java
+│   │   │   │   │           │   ├── PopupOpcionesSeguidor.java
+│   │   │   │   │           │   ├── PopupOptionEstados.java
+│   │   │   │   │           │   └── PopupReaccionEstados.java
+│   │   │   │   │           ├── PostFragment.java
+│   │   │   │   │           ├── PrincipalActivity.java
+│   │   │   │   │           ├── PrincipalFragment.java
+│   │   │   │   │           ├── PublicarPostFragment.java
+│   │   │   │   │           ├── ReenviarActivity.java
+│   │   │   │   │           ├── RojoFragment.java
+│   │   │   │   │           ├── SeguidoresActivity.java
+│   │   │   │   │           ├── SeguidoresFragment.java
+│   │   │   │   │           ├── SeguidosFragment.java
+│   │   │   │   │           ├── SendMsg.java
+│   │   │   │   │           ├── StickerManager.java
+│   │   │   │   │           ├── SwipeAnimation.java
+│   │   │   │   │           ├── SwipeController.java
+│   │   │   │   │           ├── SwipeControllerCorreo.java
+│   │   │   │   │           ├── SwipeControllerCorreoInverso.java
+│   │   │   │   │           ├── SwipeControllerInverso.java
+│   │   │   │   │           ├── TopCropImageView.java
+│   │   │   │   │           ├── TopCropImageViewEstado.java
+│   │   │   │   │           ├── UnZip.kt
+│   │   │   │   │           ├── UsuariosPublicosFragment.java
+│   │   │   │   │           ├── Utils.java
+│   │   │   │   │           ├── ViewImageActivity.java
+│   │   │   │   │           ├── ViewImageActivity2.java
+│   │   │   │   │           ├── ViewPagerActivity.java
+│   │   │   │   │           ├── ViewPagerPhotoView
+│   │   │   │   │           │   ├── CommonUtil.java
+│   │   │   │   │           │   ├── PhotoViewPager.java
+│   │   │   │   │           │   ├── TransBigImageView.java
+│   │   │   │   │           │   └── TransSmallImageView.java
+│   │   │   │   │           ├── ViewPerfilActivity.java
+│   │   │   │   │           ├── ViewStickersFragment.java
+│   │   │   │   │           ├── ViewYouPerfilActivity.java
+│   │   │   │   │           ├── VistaMensajeCorreoFragment.java
+│   │   │   │   │           ├── Web_view_fragment.java
+│   │   │   │   │           ├── WelcomePerfilActivity.java
+│   │   │   │   │           ├── WorkerService.java
+│   │   │   │   │           ├── WorkerServiceCopiaSeguridad.java
+│   │   │   │   │           ├── WorkerServiceVaciarBandeja.java
+│   │   │   │   │           ├── YouChatApplication.java
+│   │   │   │   │           ├── adapters
+│   │   │   │   │           │   ├── AdaptadorColorFondoEstado.java
+│   │   │   │   │           │   ├── AdaptadorColorTarjeta.java
+│   │   │   │   │           │   ├── AdaptadorColorTema.java
+│   │   │   │   │           │   ├── AdaptadorDatosAdjuntoCorreo.java
+│   │   │   │   │           │   ├── AdaptadorDatosAdjuntoCorreoEnviar.java
+│   │   │   │   │           │   ├── AdaptadorDatosAlbum.java
+│   │   │   │   │           │   ├── AdaptadorDatosAtajos.java
+│   │   │   │   │           │   ├── AdaptadorDatosBloqueado.java
+│   │   │   │   │           │   ├── AdaptadorDatosBloqueadoPost.java
+│   │   │   │   │           │   ├── AdaptadorDatosChat.java
+│   │   │   │   │           │   ├── AdaptadorDatosChatCorreo.java
+│   │   │   │   │           │   ├── AdaptadorDatosClip.java
+│   │   │   │   │           │   ├── AdaptadorDatosComentarioPost.java
+│   │   │   │   │           │   ├── AdaptadorDatosContacto.java
+│   │   │   │   │           │   ├── AdaptadorDatosContactoCorreo.java
+│   │   │   │   │           │   ├── AdaptadorDatosContactoCorreoSeleccionado.java
+│   │   │   │   │           │   ├── AdaptadorDatosContactoEnviar.java
+│   │   │   │   │           │   ├── AdaptadorDatosContactoPublico.java
+│   │   │   │   │           │   ├── AdaptadorDatosEstado.java
+│   │   │   │   │           │   ├── AdaptadorDatosEstadoViews.java
+│   │   │   │   │           │   ├── AdaptadorDatosEstilosTemas.java
+│   │   │   │   │           │   ├── AdaptadorDatosEstilosTemasCompartir.java
+│   │   │   │   │           │   ├── AdaptadorDatosFondo.java
+│   │   │   │   │           │   ├── AdaptadorDatosFondoEstadoTexto.java
+│   │   │   │   │           │   ├── AdaptadorDatosFondoPostTarjeta.java
+│   │   │   │   │           │   ├── AdaptadorDatosImgEditorCarrucel.java
+│   │   │   │   │           │   ├── AdaptadorDatosListaStickers.java
+│   │   │   │   │           │   ├── AdaptadorDatosMensajeCorreo.java
+│   │   │   │   │           │   ├── AdaptadorDatosMiEstado.java
+│   │   │   │   │           │   ├── AdaptadorDatosMiembroGrupo.java
+│   │   │   │   │           │   ├── AdaptadorDatosPost.java
+│   │   │   │   │           │   ├── AdaptadorDatosReaccionEstado.java
+│   │   │   │   │           │   ├── AdaptadorDatosSeguido.java
+│   │   │   │   │           │   ├── AdaptadorDatosSeguidor.java
+│   │   │   │   │           │   ├── AdaptadorDatosStickerPubPost.java
+│   │   │   │   │           │   ├── AdaptadorDatosStickers.java
+│   │   │   │   │           │   ├── AdaptadorDatosUsuario.java
+│   │   │   │   │           │   ├── AdaptadorDatosUsuarioCorreo.java
+│   │   │   │   │           │   ├── AdaptadorDatosUsuarioEstadisticas.java
+│   │   │   │   │           │   └── AdaptadorDatosUsuarioReenviar.java
+│   │   │   │   │           ├── audiowave
+│   │   │   │   │           │   ├── AudioWaveView.kt
+│   │   │   │   │           │   ├── Graphics.kt
+│   │   │   │   │           │   ├── Listeners.kt
+│   │   │   │   │           │   ├── Sampler.kt
+│   │   │   │   │           │   └── WaveformOptions.kt
+│   │   │   │   │           ├── base_datos
+│   │   │   │   │           │   ├── BDConstantes.java
+│   │   │   │   │           │   ├── ConexionBD.java
+│   │   │   │   │           │   ├── DBWorker.java
+│   │   │   │   │           │   └── DBWorkerCopy.java
+│   │   │   │   │           ├── base_datos2
+│   │   │   │   │           │   ├── BDConstantes2.java
+│   │   │   │   │           │   ├── ConexionBD2.java
+│   │   │   │   │           │   └── DBWorker2.java
+│   │   │   │   │           ├── chatUtils
+│   │   │   │   │           │   ├── Absent.java
+│   │   │   │   │           │   ├── AnimatingToggle.java
+│   │   │   │   │           │   ├── AttachmentDatabase.java
+│   │   │   │   │           │   ├── AttachmentTypeSelector.java
+│   │   │   │   │           │   ├── BitmapUtil.java
+│   │   │   │   │           │   ├── DynamicLanguage.java
+│   │   │   │   │           │   ├── Function.java
+│   │   │   │   │           │   ├── HidingLinearLayout.java
+│   │   │   │   │           │   ├── InputAwareLayout.java
+│   │   │   │   │           │   ├── InputPanel.java
+│   │   │   │   │           │   ├── KeyboardAwareLinearLayout.java
+│   │   │   │   │           │   ├── MediaUtil.java
+│   │   │   │   │           │   ├── Optional.java
+│   │   │   │   │           │   ├── Preconditions.java
+│   │   │   │   │           │   ├── Prefs.java
+│   │   │   │   │           │   ├── Present.java
+│   │   │   │   │           │   ├── RecentPhotoViewRail.java
+│   │   │   │   │           │   ├── SendButton.java
+│   │   │   │   │           │   ├── ServiceUtil.java
+│   │   │   │   │           │   ├── SquareFrameLayout.java
+│   │   │   │   │           │   ├── Supplier.java
+│   │   │   │   │           │   ├── TransportOption.java
+│   │   │   │   │           │   ├── TransportOptions.java
+│   │   │   │   │           │   ├── TransportOptionsAdapter.java
+│   │   │   │   │           │   ├── TransportOptionsPopup.java
+│   │   │   │   │           │   ├── Util.java
+│   │   │   │   │           │   ├── ViewUtil.java
+│   │   │   │   │           │   ├── attachments
+│   │   │   │   │           │   │   ├── Attachment.java
+│   │   │   │   │           │   │   ├── DcAttachment.java
+│   │   │   │   │           │   │   └── UriAttachment.java
+│   │   │   │   │           │   ├── camera
+│   │   │   │   │           │   │   ├── CameraSurfaceView.java
+│   │   │   │   │           │   │   ├── CameraUtils.java
+│   │   │   │   │           │   │   ├── CameraView.java
+│   │   │   │   │           │   │   └── QuickAttachmentDrawer.java
+│   │   │   │   │           │   ├── concurrent
+│   │   │   │   │           │   │   ├── ListenableFuture.java
+│   │   │   │   │           │   │   └── SettableFuture.java
+│   │   │   │   │           │   ├── database
+│   │   │   │   │           │   │   ├── CursorRecyclerViewAdapter.java
+│   │   │   │   │           │   │   └── RecentPhotosLoader.java
+│   │   │   │   │           │   ├── jobmanager
+│   │   │   │   │           │   │   ├── Job.java
+│   │   │   │   │           │   │   ├── JobConsumer.java
+│   │   │   │   │           │   │   ├── JobManager.java
+│   │   │   │   │           │   │   ├── JobParameters.java
+│   │   │   │   │           │   │   ├── JobQueue.java
+│   │   │   │   │           │   │   └── requirements
+│   │   │   │   │           │   │       ├── Requirement.java
+│   │   │   │   │           │   │       ├── RequirementListener.java
+│   │   │   │   │           │   │       └── RequirementProvider.java
+│   │   │   │   │           │   ├── mms
+│   │   │   │   │           │   │   ├── ImageSlide.java
+│   │   │   │   │           │   │   └── Slide.java
+│   │   │   │   │           │   └── views
+│   │   │   │   │           │       └── Stub.java
+│   │   │   │   │           ├── colorpicker
+│   │   │   │   │           │   ├── AlphaPatternDrawable.java
+│   │   │   │   │           │   ├── ColorPaletteAdapter.java
+│   │   │   │   │           │   ├── ColorPanelView.java
+│   │   │   │   │           │   ├── ColorPickerDialog.java
+│   │   │   │   │           │   ├── ColorPickerDialogListener.java
+│   │   │   │   │           │   ├── ColorPickerView.java
+│   │   │   │   │           │   ├── ColorPreference.java
+│   │   │   │   │           │   ├── ColorPreferenceCompat.java
+│   │   │   │   │           │   ├── ColorShape.java
+│   │   │   │   │           │   ├── DrawingUtils.java
+│   │   │   │   │           │   └── NestedGridView.java
+│   │   │   │   │           ├── cropper
+│   │   │   │   │           │   ├── CropActivity.java
+│   │   │   │   │           │   ├── CropDemoPreset.java
+│   │   │   │   │           │   ├── CropImageViewOptions.java
+│   │   │   │   │           │   └── MainFragment.java
+│   │   │   │   │           ├── downloader
+│   │   │   │   │           │   ├── Constants.java
+│   │   │   │   │           │   ├── Error.java
+│   │   │   │   │           │   ├── OnCancelListener.java
+│   │   │   │   │           │   ├── OnDownloadListener.java
+│   │   │   │   │           │   ├── OnPauseListener.java
+│   │   │   │   │           │   ├── OnProgressListener.java
+│   │   │   │   │           │   ├── OnStartOrResumeListener.java
+│   │   │   │   │           │   ├── PRDownloader.java
+│   │   │   │   │           │   ├── PRDownloaderConfig.java
+│   │   │   │   │           │   ├── Priority.java
+│   │   │   │   │           │   ├── Progress.java
+│   │   │   │   │           │   ├── Response.java
+│   │   │   │   │           │   ├── Status.java
+│   │   │   │   │           │   ├── core
+│   │   │   │   │           │   │   ├── Core.java
+│   │   │   │   │           │   │   ├── DefaultExecutorSupplier.java
+│   │   │   │   │           │   │   ├── DownloadExecutor.java
+│   │   │   │   │           │   │   ├── DownloadFutureTask.java
+│   │   │   │   │           │   │   ├── ExecutorSupplier.java
+│   │   │   │   │           │   │   ├── MainThreadExecutor.java
+│   │   │   │   │           │   │   └── PriorityThreadFactory.java
+│   │   │   │   │           │   ├── database
+│   │   │   │   │           │   │   ├── AppDbHelper.java
+│   │   │   │   │           │   │   ├── DatabaseOpenHelper.java
+│   │   │   │   │           │   │   ├── DbHelper.java
+│   │   │   │   │           │   │   ├── DownloadModel.java
+│   │   │   │   │           │   │   └── NoOpsDbHelper.java
+│   │   │   │   │           │   ├── handler
+│   │   │   │   │           │   │   └── ProgressHandler.java
+│   │   │   │   │           │   ├── httpclient
+│   │   │   │   │           │   │   ├── DefaultHttpClient.java
+│   │   │   │   │           │   │   └── HttpClient.java
+│   │   │   │   │           │   ├── internal
+│   │   │   │   │           │   │   ├── ComponentHolder.java
+│   │   │   │   │           │   │   ├── DownloadRequestQueue.java
+│   │   │   │   │           │   │   ├── DownloadRunnable.java
+│   │   │   │   │           │   │   ├── DownloadTask.java
+│   │   │   │   │           │   │   ├── SynchronousCall.java
+│   │   │   │   │           │   │   └── stream
+│   │   │   │   │           │   │       ├── FileDownloadOutputStream.java
+│   │   │   │   │           │   │       └── FileDownloadRandomAccessFile.java
+│   │   │   │   │           │   ├── request
+│   │   │   │   │           │   │   ├── DownloadRequest.java
+│   │   │   │   │           │   │   ├── DownloadRequestBuilder.java
+│   │   │   │   │           │   │   └── RequestBuilder.java
+│   │   │   │   │           │   └── utils
+│   │   │   │   │           │       └── Utils.java
+│   │   │   │   │           ├── items
+│   │   │   │   │           │   ├── ItemAdjuntoCorreo.java
+│   │   │   │   │           │   ├── ItemAtajo.java
+│   │   │   │   │           │   ├── ItemChat.java
+│   │   │   │   │           │   ├── ItemComentarioPost.java
+│   │   │   │   │           │   ├── ItemContacto.java
+│   │   │   │   │           │   ├── ItemContactoPublico.java
+│   │   │   │   │           │   ├── ItemDesImgPost.java
+│   │   │   │   │           │   ├── ItemDetallesTarjeta.java
+│   │   │   │   │           │   ├── ItemDividerUser.java
+│   │   │   │   │           │   ├── ItemEstadisticaPersonal.java
+│   │   │   │   │           │   ├── ItemEstado.java
+│   │   │   │   │           │   ├── ItemFolderSticker.java
+│   │   │   │   │           │   ├── ItemFondo.java
+│   │   │   │   │           │   ├── ItemGrupo.java
+│   │   │   │   │           │   ├── ItemImg.java
+│   │   │   │   │           │   ├── ItemListaSticker.java
+│   │   │   │   │           │   ├── ItemMensajeCorreo.java
+│   │   │   │   │           │   ├── ItemNotificacion.java
+│   │   │   │   │           │   ├── ItemPost.java
+│   │   │   │   │           │   ├── ItemReaccionEstado.java
+│   │   │   │   │           │   ├── ItemSticker.java
+│   │   │   │   │           │   ├── ItemTemas.java
+│   │   │   │   │           │   ├── ItemUsuario.java
+│   │   │   │   │           │   ├── ItemUsuarioCorreo.java
+│   │   │   │   │           │   └── ItemVistaEstado.java
+│   │   │   │   │           ├── photoView
+│   │   │   │   │           │   ├── CircleImageViewPV.java
+│   │   │   │   │           │   └── photoViewLibrary
+│   │   │   │   │           │       ├── Info.java
+│   │   │   │   │           │       ├── PhotoView.java
+│   │   │   │   │           │       └── RotateGestureDetector.java
+│   │   │   │   │           ├── photoeditorpro
+│   │   │   │   │           │   ├── ColorPickerAdapter.java
+│   │   │   │   │           │   ├── EditImageActivity.java
+│   │   │   │   │           │   ├── EmojiBSFragment.java
+│   │   │   │   │           │   ├── PropertiesBSFragment.java
+│   │   │   │   │           │   ├── StickerBSFragment.java
+│   │   │   │   │           │   ├── TextEditorDialogFragment.java
+│   │   │   │   │           │   ├── base
+│   │   │   │   │           │   │   ├── BaseActivity.java
+│   │   │   │   │           │   │   └── BaseFragment.java
+│   │   │   │   │           │   ├── filters
+│   │   │   │   │           │   │   ├── FilterListener.java
+│   │   │   │   │           │   │   └── FilterViewAdapter.java
+│   │   │   │   │           │   └── tools
+│   │   │   │   │           │       ├── EditingToolsAdapter.java
+│   │   │   │   │           │       └── ToolType.java
+│   │   │   │   │           ├── photoutil
+│   │   │   │   │           │   ├── CameraPhoto.java
+│   │   │   │   │           │   ├── GalleryMultiPhoto.java
+│   │   │   │   │           │   ├── GalleryPhoto.java
+│   │   │   │   │           │   ├── ImageBase64.java
+│   │   │   │   │           │   ├── ImageLoader.java
+│   │   │   │   │           │   └── RealPathUtil.java
+│   │   │   │   │           ├── progressbar
+│   │   │   │   │           │   ├── CircularProgressView.kt
+│   │   │   │   │           │   └── DownloadProgressView.kt
+│   │   │   │   │           ├── sticky_headers_data
+│   │   │   │   │           │   ├── HeaderPositionCalculator.java
+│   │   │   │   │           │   ├── ItemVisibilityAdapter.java
+│   │   │   │   │           │   ├── StickyRecyclerHeadersAdapter.java
+│   │   │   │   │           │   ├── StickyRecyclerHeadersDecoration.java
+│   │   │   │   │           │   ├── caching
+│   │   │   │   │           │   │   ├── HeaderProvider.java
+│   │   │   │   │           │   │   └── HeaderViewCache.java
+│   │   │   │   │           │   ├── calculation
+│   │   │   │   │           │   │   └── DimensionCalculator.java
+│   │   │   │   │           │   ├── rendering
+│   │   │   │   │           │   │   └── HeaderRenderer.java
+│   │   │   │   │           │   └── util
+│   │   │   │   │           │       ├── LinearLayoutOrientationProvider.java
+│   │   │   │   │           │       └── OrientationProvider.java
+│   │   │   │   │           ├── storiesprogressview
+│   │   │   │   │           │   ├── PausableProgressBar.java
+│   │   │   │   │           │   ├── StoriesData.java
+│   │   │   │   │           │   └── StoriesProgressView.java
+│   │   │   │   │           ├── swipebackfragment
+│   │   │   │   │           │   ├── BaseSwipeBackFragment.java
+│   │   │   │   │           │   ├── SwipeBackActivity.java
+│   │   │   │   │           │   ├── SwipeBackFragment.java
+│   │   │   │   │           │   └── SwipeBackLayout.java
+│   │   │   │   │           ├── views_GI
+│   │   │   │   │           │   ├── AudioWaveViewDerGI.java
+│   │   │   │   │           │   ├── AudioWaveViewIzqGI.java
+│   │   │   │   │           │   ├── CardViewBarChatGI.java
+│   │   │   │   │           │   ├── CardViewButtonGI.java
+│   │   │   │   │           │   ├── CardViewDialogGI.java
+│   │   │   │   │           │   ├── CardViewFechaGI.java
+│   │   │   │   │           │   ├── CardViewGI.java
+│   │   │   │   │           │   ├── CardViewToastGI.java
+│   │   │   │   │           │   ├── CheckBoxGI.java
+│   │   │   │   │           │   ├── CircleImageViewGloboChatDerGI.java
+│   │   │   │   │           │   ├── CircleImageViewGloboChatGI.java
+│   │   │   │   │           │   ├── CircleImageViewGloboChatIzqGI.java
+│   │   │   │   │           │   ├── EditTextFontGenGI.java
+│   │   │   │   │           │   ├── ExtendedFABGI.java
+│   │   │   │   │           │   ├── ExtendedFABMsgDerGI.java
+│   │   │   │   │           │   ├── ExtendedFABMsgIzqGI.java
+│   │   │   │   │           │   ├── FABGI.java
+│   │   │   │   │           │   ├── FrameFileGI.java
+│   │   │   │   │           │   ├── ImageViewBarChatGI.java
+│   │   │   │   │           │   ├── ImageViewBarGI.java
+│   │   │   │   │           │   ├── ImageViewIconGenGI.java
+│   │   │   │   │           │   ├── ImageViewIconTextGI.java
+│   │   │   │   │           │   ├── ImageViewMsgDerGI.java
+│   │   │   │   │           │   ├── ImageViewMsgIzqGI.java
+│   │   │   │   │           │   ├── LinearLayoutBarGI.java
+│   │   │   │   │           │   ├── LinearLayoutUserGI.java
+│   │   │   │   │           │   ├── RadioButtonGI.java
+│   │   │   │   │           │   ├── SliderGI.java
+│   │   │   │   │           │   ├── SwitchGI.java
+│   │   │   │   │           │   ├── TabLayoutGI.java
+│   │   │   │   │           │   ├── TextGI.java
+│   │   │   │   │           │   ├── TextViewBarChatGI.java
+│   │   │   │   │           │   ├── TextViewBarGI.java
+│   │   │   │   │           │   ├── TextViewBtnGI.java
+│   │   │   │   │           │   ├── TextViewFontGenGI.java
+│   │   │   │   │           │   ├── TextViewFontGenOscuroGI.java
+│   │   │   │   │           │   ├── TextViewFontResGI.java
+│   │   │   │   │           │   ├── TextViewMsgDerGI.java
+│   │   │   │   │           │   ├── TextViewMsgIzqGI.java
+│   │   │   │   │           │   ├── TextViewMsgNombreIzqGI.java
+│   │   │   │   │           │   └── TextViewPostGI.java
+│   │   │   │   │           ├── zip4j
+│   │   │   │   │           │   ├── README.md
+│   │   │   │   │           │   ├── ZipFile.java
+│   │   │   │   │           │   ├── crypto
+│   │   │   │   │           │   │   ├── AESDecrypter.java
+│   │   │   │   │           │   │   ├── AESEncrypter.java
+│   │   │   │   │           │   │   ├── AesCipherUtil.java
+│   │   │   │   │           │   │   ├── Decrypter.java
+│   │   │   │   │           │   │   ├── Encrypter.java
+│   │   │   │   │           │   │   ├── PBKDF2
+│   │   │   │   │           │   │   │   ├── BinTools.java
+│   │   │   │   │           │   │   │   ├── MacBasedPRF.java
+│   │   │   │   │           │   │   │   ├── PBKDF2Engine.java
+│   │   │   │   │           │   │   │   ├── PBKDF2HexFormatter.java
+│   │   │   │   │           │   │   │   ├── PBKDF2Parameters.java
+│   │   │   │   │           │   │   │   └── PRF.java
+│   │   │   │   │           │   │   ├── StandardDecrypter.java
+│   │   │   │   │           │   │   ├── StandardEncrypter.java
+│   │   │   │   │           │   │   └── engine
+│   │   │   │   │           │   │       ├── AESEngine.java
+│   │   │   │   │           │   │       └── ZipCryptoEngine.java
+│   │   │   │   │           │   ├── exception
+│   │   │   │   │           │   │   └── ZipException.java
+│   │   │   │   │           │   ├── headers
+│   │   │   │   │           │   │   ├── FileHeaderFactory.java
+│   │   │   │   │           │   │   ├── HeaderReader.java
+│   │   │   │   │           │   │   ├── HeaderSignature.java
+│   │   │   │   │           │   │   ├── HeaderUtil.java
+│   │   │   │   │           │   │   ├── HeaderWriter.java
+│   │   │   │   │           │   │   ├── VersionMadeBy.java
+│   │   │   │   │           │   │   └── VersionNeededToExtract.java
+│   │   │   │   │           │   ├── io
+│   │   │   │   │           │   │   ├── inputstream
+│   │   │   │   │           │   │   │   ├── AesCipherInputStream.java
+│   │   │   │   │           │   │   │   ├── CipherInputStream.java
+│   │   │   │   │           │   │   │   ├── DecompressedInputStream.java
+│   │   │   │   │           │   │   │   ├── InflaterInputStream.java
+│   │   │   │   │           │   │   │   ├── NoCipherInputStream.java
+│   │   │   │   │           │   │   │   ├── NumberedSplitInputStream.java
+│   │   │   │   │           │   │   │   ├── NumberedSplitRandomAccessFile.java
+│   │   │   │   │           │   │   │   ├── SplitInputStream.java
+│   │   │   │   │           │   │   │   ├── StoreInputStream.java
+│   │   │   │   │           │   │   │   ├── ZipEntryInputStream.java
+│   │   │   │   │           │   │   │   ├── ZipInputStream.java
+│   │   │   │   │           │   │   │   ├── ZipStandardCipherInputStream.java
+│   │   │   │   │           │   │   │   └── ZipStandardSplitInputStream.java
+│   │   │   │   │           │   │   └── outputstream
+│   │   │   │   │           │   │       ├── AesCipherOutputStream.java
+│   │   │   │   │           │   │       ├── CipherOutputStream.java
+│   │   │   │   │           │   │       ├── CompressedOutputStream.java
+│   │   │   │   │           │   │       ├── CountingOutputStream.java
+│   │   │   │   │           │   │       ├── DeflaterOutputStream.java
+│   │   │   │   │           │   │       ├── NoCipherOutputStream.java
+│   │   │   │   │           │   │       ├── OutputStreamWithSplitZipSupport.java
+│   │   │   │   │           │   │       ├── SplitOutputStream.java
+│   │   │   │   │           │   │       ├── StoreOutputStream.java
+│   │   │   │   │           │   │       ├── ZipEntryOutputStream.java
+│   │   │   │   │           │   │       ├── ZipOutputStream.java
+│   │   │   │   │           │   │       └── ZipStandardCipherOutputStream.java
+│   │   │   │   │           │   ├── model
+│   │   │   │   │           │   │   ├── AESExtraDataRecord.java
+│   │   │   │   │           │   │   ├── AbstractFileHeader.java
+│   │   │   │   │           │   │   ├── ArchiveExtraDataRecord.java
+│   │   │   │   │           │   │   ├── CentralDirectory.java
+│   │   │   │   │           │   │   ├── DataDescriptor.java
+│   │   │   │   │           │   │   ├── DigitalSignature.java
+│   │   │   │   │           │   │   ├── EndOfCentralDirectoryRecord.java
+│   │   │   │   │           │   │   ├── ExcludeFileFilter.java
+│   │   │   │   │           │   │   ├── ExtraDataRecord.java
+│   │   │   │   │           │   │   ├── FileHeader.java
+│   │   │   │   │           │   │   ├── LocalFileHeader.java
+│   │   │   │   │           │   │   ├── UnzipParameters.java
+│   │   │   │   │           │   │   ├── Zip4jConfig.java
+│   │   │   │   │           │   │   ├── Zip64EndOfCentralDirectoryLocator.java
+│   │   │   │   │           │   │   ├── Zip64EndOfCentralDirectoryRecord.java
+│   │   │   │   │           │   │   ├── Zip64ExtendedInfo.java
+│   │   │   │   │           │   │   ├── ZipHeader.java
+│   │   │   │   │           │   │   ├── ZipModel.java
+│   │   │   │   │           │   │   ├── ZipParameters.java
+│   │   │   │   │           │   │   └── enums
+│   │   │   │   │           │   │       ├── AesKeyStrength.java
+│   │   │   │   │           │   │       ├── AesVersion.java
+│   │   │   │   │           │   │       ├── CompressionLevel.java
+│   │   │   │   │           │   │       ├── CompressionMethod.java
+│   │   │   │   │           │   │       ├── EncryptionMethod.java
+│   │   │   │   │           │   │       └── RandomAccessFileMode.java
+│   │   │   │   │           │   ├── progress
+│   │   │   │   │           │   │   └── ProgressMonitor.java
+│   │   │   │   │           │   ├── tasks
+│   │   │   │   │           │   │   ├── AbstractAddFileToZipTask.java
+│   │   │   │   │           │   │   ├── AbstractExtractFileTask.java
+│   │   │   │   │           │   │   ├── AbstractModifyFileTask.java
+│   │   │   │   │           │   │   ├── AbstractZipTaskParameters.java
+│   │   │   │   │           │   │   ├── AddFilesToZipTask.java
+│   │   │   │   │           │   │   ├── AddFolderToZipTask.java
+│   │   │   │   │           │   │   ├── AddStreamToZipTask.java
+│   │   │   │   │           │   │   ├── AsyncZipTask.java
+│   │   │   │   │           │   │   ├── ExtractAllFilesTask.java
+│   │   │   │   │           │   │   ├── ExtractFileTask.java
+│   │   │   │   │           │   │   ├── MergeSplitZipFileTask.java
+│   │   │   │   │           │   │   ├── RemoveFilesFromZipTask.java
+│   │   │   │   │           │   │   ├── RenameFilesTask.java
+│   │   │   │   │           │   │   └── SetCommentTask.java
+│   │   │   │   │           │   └── util
+│   │   │   │   │           │       ├── BitUtils.java
+│   │   │   │   │           │       ├── CrcUtil.java
+│   │   │   │   │           │       ├── FileUtils.java
+│   │   │   │   │           │       ├── InternalZipConstants.java
+│   │   │   │   │           │       ├── RawIO.java
+│   │   │   │   │           │       ├── UnzipUtil.java
+│   │   │   │   │           │       ├── Zip4jUtil.java
+│   │   │   │   │           │       └── ZipVersionUtils.java
+│   │   │   │   │           └── zoominimageview
+│   │   │   │   │               ├── README.md
+│   │   │   │   │               ├── ZoomInImageView.java
+│   │   │   │   │               ├── ZoomInImageViewAttacher.java
+│   │   │   │   │               ├── animation
+│   │   │   │   │               │   ├── AnimCompat.java
+│   │   │   │   │               │   └── SpringInterpolator.java
+│   │   │   │   │               ├── gestures
+│   │   │   │   │               │   ├── OnScaleAndMoveGestureListener.java
+│   │   │   │   │               │   └── ScaleAndMoveDetector.java
+│   │   │   │   │               └── window
+│   │   │   │   │                   └── WindowManagerUtil.java
+│   │   │   │   └── ja
+│   │   │   │       └── burhanrashid52
+│   │   │   │           └── photoeditor
+│   │   │   │               ├── BitmapUtil.java
+│   │   │   │               ├── BrushDrawingView.java
+│   │   │   │               ├── BrushViewChangeListener.java
+│   │   │   │               ├── CustomEffect.java
+│   │   │   │               ├── FilterImageView.java
+│   │   │   │               ├── GLToolbox.java
+│   │   │   │               ├── ImageFilterView.java
+│   │   │   │               ├── LinePath.java
+│   │   │   │               ├── MultiTouchListener.java
+│   │   │   │               ├── OnPhotoEditorListener.java
+│   │   │   │               ├── OnSaveBitmap.java
+│   │   │   │               ├── PhotoEditor.java
+│   │   │   │               ├── PhotoEditorView.java
+│   │   │   │               ├── PhotoFilter.java
+│   │   │   │               ├── SaveSettings.java
+│   │   │   │               ├── ScaleGestureDetector.java
+│   │   │   │               ├── TextStyleBuilder.java
+│   │   │   │               ├── TextureRenderer.java
+│   │   │   │               ├── Vector2D.java
+│   │   │   │               └── ViewType.java
+│   │   │   └── res
+│   │   │       ├── anim
+│   │   │       │   ├── anim_emoji_me_asombra.xml
+│   │   │       │   ├── anim_emoji_me_divierte.xml
+│   │   │       │   ├── anim_emoji_me_encanta.xml
+│   │   │       │   ├── anim_emoji_me_sonroja.xml
+│   │   │       │   ├── anim_rebote.xml
+│   │   │       │   ├── animation_reac_show.xml
+│   │   │       │   ├── animation_toggle_in.xml
+│   │   │       │   ├── animation_toggle_out.xml
+│   │   │       │   ├── blink.xml
+│   │   │       │   ├── emoji_default_in_animation.xml
+│   │   │       │   ├── emoji_default_out_animation.xml
+│   │   │       │   ├── fade_btn_1.xml
+│   │   │       │   ├── fade_btn_2.xml
+│   │   │       │   ├── fade_btn_3.xml
+│   │   │       │   ├── fade_in.xml
+│   │   │       │   ├── fade_in_fast.xml
+│   │   │       │   ├── fade_in_system.xml
+│   │   │       │   ├── fade_out.xml
+│   │   │       │   ├── fade_out_fast.xml
+│   │   │       │   ├── fade_out_system.xml
+│   │   │       │   ├── fade_rec.xml
+│   │   │       │   ├── hide_button_chat.xml
+│   │   │       │   ├── hide_chat.xml
+│   │   │       │   ├── hide_layout_answer.xml
+│   │   │       │   ├── hide_layout_carrucel.xml
+│   │   │       │   ├── hide_layout_contact.xml
+│   │   │       │   ├── hide_layout_filtro.xml
+│   │   │       │   ├── hide_layout_preview_image_chat.xml
+│   │   │       │   ├── hide_layout_search.xml
+│   │   │       │   ├── hide_menu.xml
+│   │   │       │   ├── hide_search.xml
+│   │   │       │   ├── jump.xml
+│   │   │       │   ├── jump_fast.xml
+│   │   │       │   ├── left_in.xml
+│   │   │       │   ├── left_in_fast.xml
+│   │   │       │   ├── left_out.xml
+│   │   │       │   ├── left_out_fast.xml
+│   │   │       │   ├── move_left_in_activity.xml
+│   │   │       │   ├── move_left_out_activity.xml
+│   │   │       │   ├── move_right_in_activity.xml
+│   │   │       │   ├── move_right_out_activity.xml
+│   │   │       │   ├── no_anim.xml
+│   │   │       │   ├── popup_in.xml
+│   │   │       │   ├── popup_out.xml
+│   │   │       │   ├── right_in.xml
+│   │   │       │   ├── right_in_fast.xml
+│   │   │       │   ├── right_out.xml
+│   │   │       │   ├── right_out_fast.xml
+│   │   │       │   ├── rotate_delete.xml
+│   │   │       │   ├── rotate_photo.xml
+│   │   │       │   ├── rotate_reaccion.xml
+│   │   │       │   ├── scale_send.xml
+│   │   │       │   ├── show_button_chat.xml
+│   │   │       │   ├── show_chat.xml
+│   │   │       │   ├── show_layout_answer.xml
+│   │   │       │   ├── show_layout_carrucel.xml
+│   │   │       │   ├── show_layout_contact.xml
+│   │   │       │   ├── show_layout_filtro.xml
+│   │   │       │   ├── show_layout_search.xml
+│   │   │       │   ├── show_menu.xml
+│   │   │       │   ├── show_search.xml
+│   │   │       │   ├── up_down_show_text_estado.xml
+│   │   │       │   ├── viewpager_economic.xml
+│   │   │       │   ├── viewpager_next.xml
+│   │   │       │   ├── viewpager_secure.xml
+│   │   │       │   ├── viewpager_speed.xml
+│   │   │       │   ├── zoom_add_correo.xml
+│   │   │       │   ├── zoom_foward_in.xml
+│   │   │       │   └── zoom_foward_out.xml
+│   │   │       ├── drawable
+│   │   │       │   ├── alias.png
+│   │   │       │   ├── anclar.png
+│   │   │       │   ├── anclar_no.png
+│   │   │       │   ├── arroba.png
+│   │   │       │   ├── attachment_selector_shadow.xml
+│   │   │       │   ├── audio_pause.xml
+│   │   │       │   ├── audio_play.xml
+│   │   │       │   ├── audio_stop.xml
+│   │   │       │   ├── back.png
+│   │   │       │   ├── back2.png
+│   │   │       │   ├── background_1.jpg
+│   │   │       │   ├── background_2.jpg
+│   │   │       │   ├── background_3.jpg
+│   │   │       │   ├── background_4.jpg
+│   │   │       │   ├── background_5.jpg
+│   │   │       │   ├── background_6.jpg
+│   │   │       │   ├── background_7.jpg
+│   │   │       │   ├── background_8.jpg
+│   │   │       │   ├── btn_contacto12.png
+│   │   │       │   ├── btn_contacto2.png
+│   │   │       │   ├── cal10.jpg
+│   │   │       │   ├── cal100.jpg
+│   │   │       │   ├── cal20.jpg
+│   │   │       │   ├── cal30.jpg
+│   │   │       │   ├── cal40.jpg
+│   │   │       │   ├── cal50.jpg
+│   │   │       │   ├── cal60.jpg
+│   │   │       │   ├── cal70.jpg
+│   │   │       │   ├── cal80.jpg
+│   │   │       │   ├── cal90.jpg
+│   │   │       │   ├── camera_btn.png
+│   │   │       │   ├── camera_collapse_outline.png
+│   │   │       │   ├── camera_estado.xml
+│   │   │       │   ├── camera_expand_outline.png
+│   │   │       │   ├── camera_flash_auto.png
+│   │   │       │   ├── camera_flash_off.png
+│   │   │       │   ├── camera_flash_on.png
+│   │   │       │   ├── camera_revert1.png
+│   │   │       │   ├── camera_revert2.png
+│   │   │       │   ├── chat_1_line.png
+│   │   │       │   ├── chat_2_line.png
+│   │   │       │   ├── chat_der.png
+│   │   │       │   ├── chat_history_line.png
+│   │   │       │   ├── chat_izq.png
+│   │   │       │   ├── circle_universal_overlay.xml
+│   │   │       │   ├── contacto_placeholder2.png
+│   │   │       │   ├── contacts.png
+│   │   │       │   ├── copy_duplicate.png
+│   │   │       │   ├── corner_der.png
+│   │   │       │   ├── corner_izq.png
+│   │   │       │   ├── cpv_alpha.png
+│   │   │       │   ├── cpv_btn_background.xml
+│   │   │       │   ├── cpv_btn_background_pressed.xml
+│   │   │       │   ├── cpv_ic_arrow_right_black_24dp.xml
+│   │   │       │   ├── cpv_preset_checked.xml
+│   │   │       │   ├── crop_image_menu_flip.png
+│   │   │       │   ├── crop_image_menu_rotate_left.png
+│   │   │       │   ├── crop_image_menu_rotate_right.png
+│   │   │       │   ├── default_avatar.png
+│   │   │       │   ├── deltachat_circle_touch_highlight_background.xml
+│   │   │       │   ├── desbloquear.png
+│   │   │       │   ├── desing_bubble_in.png
+│   │   │       │   ├── desing_bubble_out.png
+│   │   │       │   ├── dropshadow1.xml
+│   │   │       │   ├── dustbin_cover_ic.png
+│   │   │       │   ├── dustbin_wheel_ic.png
+│   │   │       │   ├── edit_circle_line.png
+│   │   │       │   ├── emoji_default_background_drawable.xml
+│   │   │       │   ├── empty_chat.png
+│   │   │       │   ├── fab_chat_down.png
+│   │   │       │   ├── flip_hori.png
+│   │   │       │   ├── flip_veri.png
+│   │   │       │   ├── geocovid.png
+│   │   │       │   ├── ib_camera.png
+│   │   │       │   ├── ic_arrow.xml
+│   │   │       │   ├── ic_back_white.png
+│   │   │       │   ├── ic_brush.png
+│   │   │       │   ├── ic_brush2.xml
+│   │   │       │   ├── ic_cam_back.png
+│   │   │       │   ├── ic_cam_crop_rotate.png
+│   │   │       │   ├── ic_cam_delete.png
+│   │   │       │   ├── ic_cam_draw.png
+│   │   │       │   ├── ic_camera.xml
+│   │   │       │   ├── ic_circle_fill_white_48dp.png
+│   │   │       │   ├── ic_clear.xml
+│   │   │       │   ├── ic_close.xml
+│   │   │       │   ├── ic_eraser.xml
+│   │   │       │   ├── ic_gallery.xml
+│   │   │       │   ├── ic_launcher_background.xml
+│   │   │       │   ├── ic_launcher_foreground.xml
+│   │   │       │   ├── ic_lock.png
+│   │   │       │   ├── ic_photo_filter.png
+│   │   │       │   ├── ic_photo_filter3.xml
+│   │   │       │   ├── ic_redo.xml
+│   │   │       │   ├── ic_save.xml
+│   │   │       │   ├── ic_share.xml
+│   │   │       │   ├── ic_sticker.png
+│   │   │       │   ├── ic_text2.xml
+│   │   │       │   ├── ic_undo.xml
+│   │   │       │   ├── ic_video_white.png
+│   │   │       │   ├── icon_block2.png
+│   │   │       │   ├── icon_chat_answer2.png
+│   │   │       │   ├── icon_contact1.png
+│   │   │       │   ├── icon_genero2.xml
+│   │   │       │   ├── icon_progress.png
+│   │   │       │   ├── icon_province2.xml
+│   │   │       │   ├── iconyc8.png
+│   │   │       │   ├── iconycoficial.png
+│   │   │       │   ├── iconycvector9.png
+│   │   │       │   ├── iconycvector9_2_1.png
+│   │   │       │   ├── image_placeholder.png
+│   │   │       │   ├── input_emoji.png
+│   │   │       │   ├── input_keyboard.png
+│   │   │       │   ├── input_keyboard3.png
+│   │   │       │   ├── input_method_line.png
+│   │   │       │   ├── input_mic.png
+│   │   │       │   ├── input_mic_pressed.png
+│   │   │       │   ├── input_send.png
+│   │   │       │   ├── item_calendario2.xml
+│   │   │       │   ├── item_menu.png
+│   │   │       │   ├── item_menu2.xml
+│   │   │       │   ├── keyboard_return.png
+│   │   │       │   ├── layout_bottom_2_line.png
+│   │   │       │   ├── layout_masonry_fill.png
+│   │   │       │   ├── layout_masonry_line.png
+│   │   │       │   ├── layout_top.png
+│   │   │       │   ├── link_apklis.png
+│   │   │       │   ├── link_telegram.png
+│   │   │       │   ├── link_youtube.png
+│   │   │       │   ├── logo_deltalab.png
+│   │   │       │   ├── logo_dimelo.png
+│   │   │       │   ├── logo_lettersocial.png
+│   │   │       │   ├── magic_line.png
+│   │   │       │   ├── menu_add.png
+│   │   │       │   ├── menu_bars.xml
+│   │   │       │   ├── msg_1_der.xml
+│   │   │       │   ├── msg_1_der_short.xml
+│   │   │       │   ├── msg_1_izq.xml
+│   │   │       │   ├── msg_1_izq_short.xml
+│   │   │       │   ├── msg_2_der.xml
+│   │   │       │   ├── msg_2_der_short.xml
+│   │   │       │   ├── msg_2_izq.xml
+│   │   │       │   ├── msg_2_izq_short.xml
+│   │   │       │   ├── msg_3_der.xml
+│   │   │       │   ├── msg_3_der_short.xml
+│   │   │       │   ├── msg_3_izq.xml
+│   │   │       │   ├── msg_3_izq_short.xml
+│   │   │       │   ├── msg_4_der.xml
+│   │   │       │   ├── msg_4_der_short.xml
+│   │   │       │   ├── msg_4_izq.xml
+│   │   │       │   ├── msg_4_izq_short.xml
+│   │   │       │   ├── msg_text_framed.png
+│   │   │       │   ├── msg_text_outlined.png
+│   │   │       │   ├── msg_text_regular.png
+│   │   │       │   ├── muted.xml
+│   │   │       │   ├── noti1.png
+│   │   │       │   ├── noti10.png
+│   │   │       │   ├── noti11.png
+│   │   │       │   ├── noti12.png
+│   │   │       │   ├── noti13.png
+│   │   │       │   ├── noti14.png
+│   │   │       │   ├── noti15.png
+│   │   │       │   ├── noti16.png
+│   │   │       │   ├── noti2.png
+│   │   │       │   ├── noti3.png
+│   │   │       │   ├── noti4.png
+│   │   │       │   ├── noti5.png
+│   │   │       │   ├── noti6.png
+│   │   │       │   ├── noti7.png
+│   │   │       │   ├── noti8.png
+│   │   │       │   ├── noti9.png
+│   │   │       │   ├── option_actperfil.png
+│   │   │       │   ├── option_animacion.png
+│   │   │       │   ├── option_bloquear.png
+│   │   │       │   ├── option_chat_answer.png
+│   │   │       │   ├── option_chat_reenviar.png
+│   │   │       │   ├── option_chat_retry.png
+│   │   │       │   ├── option_copia_seguridad.png
+│   │   │       │   ├── option_dinamico.png
+│   │   │       │   ├── option_donar.png
+│   │   │       │   ├── option_estadistica.png
+│   │   │       │   ├── option_fondo.png
+│   │   │       │   ├── option_inbox.png
+│   │   │       │   ├── option_linea.png
+│   │   │       │   ├── option_preguntas.png
+│   │   │       │   ├── option_sun.png
+│   │   │       │   ├── option_tema.png
+│   │   │       │   ├── option_user_publico.png
+│   │   │       │   ├── original.jpg
+│   │   │       │   ├── paint_fill.png
+│   │   │       │   ├── photo_outline.png
+│   │   │       │   ├── placeholder.png
+│   │   │       │   ├── profile_line.png
+│   │   │       │   ├── quick_camera_shutter_ring1.xml
+│   │   │       │   ├── radio_button_checked.xml
+│   │   │       │   ├── radio_button_unchecked.xml
+│   │   │       │   ├── reac0.png
+│   │   │       │   ├── refresh_icon2.png
+│   │   │       │   ├── reintentar_subir_estado.png
+│   │   │       │   ├── remove_edit.png
+│   │   │       │   ├── remove_seguir.png
+│   │   │       │   ├── round_crop.xml
+│   │   │       │   ├── round_sort.xml
+│   │   │       │   ├── rounded_border_text_view.xml
+│   │   │       │   ├── rounded_border_tv.xml
+│   │   │       │   ├── send_error.png
+│   │   │       │   ├── send_ok.png
+│   │   │       │   ├── send_wait.png
+│   │   │       │   ├── shadow.xml
+│   │   │       │   ├── shadow_left.png
+│   │   │       │   ├── shadow_right.png
+│   │   │       │   ├── shape_audio.xml
+│   │   │       │   ├── shape_back_descarga.xml
+│   │   │       │   ├── shape_fill.png
+│   │   │       │   ├── shape_fondo_estado_texto_1.xml
+│   │   │       │   ├── shape_fondo_estado_texto_10.xml
+│   │   │       │   ├── shape_fondo_estado_texto_2.xml
+│   │   │       │   ├── shape_fondo_estado_texto_3.xml
+│   │   │       │   ├── shape_fondo_estado_texto_4.xml
+│   │   │       │   ├── shape_fondo_estado_texto_5.xml
+│   │   │       │   ├── shape_fondo_estado_texto_6.xml
+│   │   │       │   ├── shape_fondo_estado_texto_7.xml
+│   │   │       │   ├── shape_fondo_estado_texto_8.xml
+│   │   │       │   ├── shape_fondo_estado_texto_9.xml
+│   │   │       │   ├── shape_fondo_estado_texto_circular_1.xml
+│   │   │       │   ├── shape_fondo_estado_texto_circular_10.xml
+│   │   │       │   ├── shape_fondo_estado_texto_circular_2.xml
+│   │   │       │   ├── shape_fondo_estado_texto_circular_3.xml
+│   │   │       │   ├── shape_fondo_estado_texto_circular_4.xml
+│   │   │       │   ├── shape_fondo_estado_texto_circular_5.xml
+│   │   │       │   ├── shape_fondo_estado_texto_circular_6.xml
+│   │   │       │   ├── shape_fondo_estado_texto_circular_7.xml
+│   │   │       │   ├── shape_fondo_estado_texto_circular_8.xml
+│   │   │       │   ├── shape_fondo_estado_texto_circular_9.xml
+│   │   │       │   ├── shape_gradient.xml
+│   │   │       │   ├── shape_icon_accent.xml
+│   │   │       │   ├── shape_icono_acerca_de.xml
+│   │   │       │   ├── shape_icono_error.xml
+│   │   │       │   ├── shape_icono_inbox.xml
+│   │   │       │   ├── shape_icono_saldo.xml
+│   │   │       │   ├── shape_item_flipimage.xml
+│   │   │       │   ├── shape_item_search.xml
+│   │   │       │   ├── shape_item_search_select.xml
+│   │   │       │   ├── shape_label_fab.xml
+│   │   │       │   ├── shape_mensaje_answer.xml
+│   │   │       │   ├── shape_mensaje_answer_view.xml
+│   │   │       │   ├── shape_mensaje_der.xml
+│   │   │       │   ├── shape_mensaje_fecha.xml
+│   │   │       │   ├── shape_mensaje_izq.xml
+│   │   │       │   ├── shape_mensaje_sticker.xml
+│   │   │       │   ├── shape_status_view.xml
+│   │   │       │   ├── sliding_back_shadow.xml
+│   │   │       │   ├── splash_background.xml
+│   │   │       │   ├── sticker_empty_focus.png
+│   │   │       │   ├── sticker_empty_focus_gris.png
+│   │   │       │   ├── t_box_line.png
+│   │   │       │   ├── tab_indicator.xml
+│   │   │       │   ├── theme_moon.png
+│   │   │       │   ├── theme_sun.png
+│   │   │       │   └── triangle_right.xml
+│   │   │       ├── drawable-hdpi
+│   │   │       │   ├── activity.png
+│   │   │       │   ├── activity_white.png
+│   │   │       │   ├── add_user.png
+│   │   │       │   ├── arrow_down_2.png
+│   │   │       │   ├── arrow_left.png
+│   │   │       │   ├── arrow_left_2.png
+│   │   │       │   ├── arrow_right.png
+│   │   │       │   ├── arrow_right_2.png
+│   │   │       │   ├── arrow_up_2.png
+│   │   │       │   ├── arrow_up_circle.png
+│   │   │       │   ├── attach_outline.png
+│   │   │       │   ├── award_line.png
+│   │   │       │   ├── bag_2.png
+│   │   │       │   ├── buy.png
+│   │   │       │   ├── calendar.png
+│   │   │       │   ├── call.png
+│   │   │       │   ├── calling.png
+│   │   │       │   ├── camera.png
+│   │   │       │   ├── category.png
+│   │   │       │   ├── chart.png
+│   │   │       │   ├── chat.png
+│   │   │       │   ├── chat_4_line.png
+│   │   │       │   ├── chat_private_line.png
+│   │   │       │   ├── close_square.png
+│   │   │       │   ├── danger.png
+│   │   │       │   ├── delete.png
+│   │   │       │   ├── delete_bin_6_line.png
+│   │   │       │   ├── document.png
+│   │   │       │   ├── download.png
+│   │   │       │   ├── edit.png
+│   │   │       │   ├── edit_square.png
+│   │   │       │   ├── emoji.png
+│   │   │       │   ├── file_copy_2_line.png
+│   │   │       │   ├── filter_2.png
+│   │   │       │   ├── folder.png
+│   │   │       │   ├── graph.png
+│   │   │       │   ├── heart.png
+│   │   │       │   ├── hide.png
+│   │   │       │   ├── ic_masks_sticker1.png
+│   │   │       │   ├── image.png
+│   │   │       │   ├── inbox_line.png
+│   │   │       │   ├── info_circle.png
+│   │   │       │   ├── launch_link_open.png
+│   │   │       │   ├── location.png
+│   │   │       │   ├── lock.png
+│   │   │       │   ├── login.png
+│   │   │       │   ├── logout.png
+│   │   │       │   ├── mai_send.png
+│   │   │       │   ├── mail_add.png
+│   │   │       │   ├── mail_check.png
+│   │   │       │   ├── mail_close.png
+│   │   │       │   ├── mail_download.png
+│   │   │       │   ├── mail_forbid.png
+│   │   │       │   ├── mail_line.png
+│   │   │       │   ├── mail_lock.png
+│   │   │       │   ├── mail_settings.png
+│   │   │       │   ├── mail_star.png
+│   │   │       │   ├── mail_unread.png
+│   │   │       │   ├── message.png
+│   │   │       │   ├── more_circle.png
+│   │   │       │   ├── more_square.png
+│   │   │       │   ├── msg_est_enviado.png
+│   │   │       │   ├── msg_est_error.png
+│   │   │       │   ├── msg_est_recibido.png
+│   │   │       │   ├── notification.png
+│   │   │       │   ├── paper.png
+│   │   │       │   ├── paper_download.png
+│   │   │       │   ├── paper_fail.png
+│   │   │       │   ├── paper_negative.png
+│   │   │       │   ├── paper_plus.png
+│   │   │       │   ├── paper_upload.png
+│   │   │       │   ├── pin_chats2.png
+│   │   │       │   ├── plus.png
+│   │   │       │   ├── profile.png
+│   │   │       │   ├── profile_white.png
+│   │   │       │   ├── refresh_icon.png
+│   │   │       │   ├── reply_all_line.png
+│   │   │       │   ├── reply_line.png
+│   │   │       │   ├── scan.png
+│   │   │       │   ├── screenshot_2_line.png
+│   │   │       │   ├── search.png
+│   │   │       │   ├── send.png
+│   │   │       │   ├── send_white.png
+│   │   │       │   ├── setting.png
+│   │   │       │   ├── share_line.png
+│   │   │       │   ├── shield_done.png
+│   │   │       │   ├── shield_fail.png
+│   │   │       │   ├── show.png
+│   │   │       │   ├── sort_black.png
+│   │   │       │   ├── star.png
+│   │   │       │   ├── star_line.png
+│   │   │       │   ├── status_white.png
+│   │   │       │   ├── swap.png
+│   │   │       │   ├── tab_chats.png
+│   │   │       │   ├── tick_square.png
+│   │   │       │   ├── ticket_star.png
+│   │   │       │   ├── time_circle.png
+│   │   │       │   ├── unlock.png
+│   │   │       │   ├── user_2.png
+│   │   │       │   ├── user_3.png
+│   │   │       │   ├── verified_profile.png
+│   │   │       │   ├── vip_crown_line.png
+│   │   │       │   ├── vip_diamond_line.png
+│   │   │       │   ├── voice.png
+│   │   │       │   ├── volume_down.png
+│   │   │       │   ├── volume_off.png
+│   │   │       │   ├── volume_up.png
+│   │   │       │   ├── wallet.png
+│   │   │       │   └── work.png
+│   │   │       ├── drawable-mdpi
+│   │   │       │   ├── activity.png
+│   │   │       │   ├── activity_white.png
+│   │   │       │   ├── add_user.png
+│   │   │       │   ├── arrow_down_2.png
+│   │   │       │   ├── arrow_left.png
+│   │   │       │   ├── arrow_left_2.png
+│   │   │       │   ├── arrow_right.png
+│   │   │       │   ├── arrow_right_2.png
+│   │   │       │   ├── arrow_up_2.png
+│   │   │       │   ├── arrow_up_circle.png
+│   │   │       │   ├── attach_outline.png
+│   │   │       │   ├── award_line.png
+│   │   │       │   ├── bag_2.png
+│   │   │       │   ├── buy.png
+│   │   │       │   ├── calendar.png
+│   │   │       │   ├── call.png
+│   │   │       │   ├── calling.png
+│   │   │       │   ├── camera.png
+│   │   │       │   ├── category.png
+│   │   │       │   ├── chart.png
+│   │   │       │   ├── chat.png
+│   │   │       │   ├── chat_4_line.png
+│   │   │       │   ├── chat_private_line.png
+│   │   │       │   ├── close_square.png
+│   │   │       │   ├── danger.png
+│   │   │       │   ├── delete.png
+│   │   │       │   ├── delete_bin_6_line.png
+│   │   │       │   ├── document.png
+│   │   │       │   ├── download.png
+│   │   │       │   ├── edit.png
+│   │   │       │   ├── edit_square.png
+│   │   │       │   ├── emoji.png
+│   │   │       │   ├── file_copy_2_line.png
+│   │   │       │   ├── filter_2.png
+│   │   │       │   ├── folder.png
+│   │   │       │   ├── graph.png
+│   │   │       │   ├── heart.png
+│   │   │       │   ├── hide.png
+│   │   │       │   ├── icon_sticker.png
+│   │   │       │   ├── image.png
+│   │   │       │   ├── inbox_line.png
+│   │   │       │   ├── info_circle.png
+│   │   │       │   ├── input_alias.png
+│   │   │       │   ├── input_pass.png
+│   │   │       │   ├── launch_link_open.png
+│   │   │       │   ├── location.png
+│   │   │       │   ├── lock.png
+│   │   │       │   ├── login.png
+│   │   │       │   ├── logout.png
+│   │   │       │   ├── mai_send.png
+│   │   │       │   ├── mail_add.png
+│   │   │       │   ├── mail_check.png
+│   │   │       │   ├── mail_close.png
+│   │   │       │   ├── mail_download.png
+│   │   │       │   ├── mail_forbid.png
+│   │   │       │   ├── mail_line.png
+│   │   │       │   ├── mail_lock.png
+│   │   │       │   ├── mail_settings.png
+│   │   │       │   ├── mail_star.png
+│   │   │       │   ├── mail_unread.png
+│   │   │       │   ├── message.png
+│   │   │       │   ├── more_circle.png
+│   │   │       │   ├── more_square.png
+│   │   │       │   ├── msg_est_enviado.png
+│   │   │       │   ├── msg_est_error.png
+│   │   │       │   ├── msg_est_recibido.png
+│   │   │       │   ├── notification.png
+│   │   │       │   ├── paper.png
+│   │   │       │   ├── paper_download.png
+│   │   │       │   ├── paper_fail.png
+│   │   │       │   ├── paper_negative.png
+│   │   │       │   ├── paper_plus.png
+│   │   │       │   ├── paper_upload.png
+│   │   │       │   ├── pin_chats2.png
+│   │   │       │   ├── plus.png
+│   │   │       │   ├── profile.png
+│   │   │       │   ├── profile_white.png
+│   │   │       │   ├── refresh_icon.png
+│   │   │       │   ├── reply_all_line.png
+│   │   │       │   ├── reply_line.png
+│   │   │       │   ├── scan.png
+│   │   │       │   ├── screenshot_2_line.png
+│   │   │       │   ├── search.png
+│   │   │       │   ├── send.png
+│   │   │       │   ├── send_white.png
+│   │   │       │   ├── setting.png
+│   │   │       │   ├── share_line.png
+│   │   │       │   ├── shield_done.png
+│   │   │       │   ├── shield_fail.png
+│   │   │       │   ├── show.png
+│   │   │       │   ├── sort_black.png
+│   │   │       │   ├── star.png
+│   │   │       │   ├── star_line.png
+│   │   │       │   ├── status.png
+│   │   │       │   ├── swap.png
+│   │   │       │   ├── tab_chats.png
+│   │   │       │   ├── tick_square.png
+│   │   │       │   ├── ticket_star.png
+│   │   │       │   ├── time_circle.png
+│   │   │       │   ├── unlock.png
+│   │   │       │   ├── user_2.png
+│   │   │       │   ├── user_3.png
+│   │   │       │   ├── verified_profile.png
+│   │   │       │   ├── vip_crown_line.png
+│   │   │       │   ├── vip_diamond_line.png
+│   │   │       │   ├── voice.png
+│   │   │       │   ├── volume_down.png
+│   │   │       │   ├── volume_off.png
+│   │   │       │   ├── volume_up.png
+│   │   │       │   ├── wallet.png
+│   │   │       │   └── work.png
+│   │   │       ├── drawable-nodpi
+│   │   │       │   ├── emoji_backspace.png
+│   │   │       │   ├── emoji_facebook_category_activities.png
+│   │   │       │   ├── emoji_facebook_category_animalsandnature.png
+│   │   │       │   ├── emoji_facebook_category_flags.png
+│   │   │       │   ├── emoji_facebook_category_foodanddrink.png
+│   │   │       │   ├── emoji_facebook_category_objects.png
+│   │   │       │   ├── emoji_facebook_category_smileysandpeople.png
+│   │   │       │   ├── emoji_facebook_category_symbols.png
+│   │   │       │   ├── emoji_facebook_category_travelandplaces.png
+│   │   │       │   ├── emoji_facebook_sheet_0.png
+│   │   │       │   ├── emoji_facebook_sheet_1.png
+│   │   │       │   ├── emoji_facebook_sheet_10.png
+│   │   │       │   ├── emoji_facebook_sheet_11.png
+│   │   │       │   ├── emoji_facebook_sheet_12.png
+│   │   │       │   ├── emoji_facebook_sheet_13.png
+│   │   │       │   ├── emoji_facebook_sheet_14.png
+│   │   │       │   ├── emoji_facebook_sheet_15.png
+│   │   │       │   ├── emoji_facebook_sheet_16.png
+│   │   │       │   ├── emoji_facebook_sheet_17.png
+│   │   │       │   ├── emoji_facebook_sheet_18.png
+│   │   │       │   ├── emoji_facebook_sheet_19.png
+│   │   │       │   ├── emoji_facebook_sheet_2.png
+│   │   │       │   ├── emoji_facebook_sheet_20.png
+│   │   │       │   ├── emoji_facebook_sheet_21.png
+│   │   │       │   ├── emoji_facebook_sheet_22.png
+│   │   │       │   ├── emoji_facebook_sheet_23.png
+│   │   │       │   ├── emoji_facebook_sheet_24.png
+│   │   │       │   ├── emoji_facebook_sheet_25.png
+│   │   │       │   ├── emoji_facebook_sheet_26.png
+│   │   │       │   ├── emoji_facebook_sheet_27.png
+│   │   │       │   ├── emoji_facebook_sheet_28.png
+│   │   │       │   ├── emoji_facebook_sheet_29.png
+│   │   │       │   ├── emoji_facebook_sheet_3.png
+│   │   │       │   ├── emoji_facebook_sheet_30.png
+│   │   │       │   ├── emoji_facebook_sheet_31.png
+│   │   │       │   ├── emoji_facebook_sheet_32.png
+│   │   │       │   ├── emoji_facebook_sheet_33.png
+│   │   │       │   ├── emoji_facebook_sheet_34.png
+│   │   │       │   ├── emoji_facebook_sheet_35.png
+│   │   │       │   ├── emoji_facebook_sheet_36.png
+│   │   │       │   ├── emoji_facebook_sheet_37.png
+│   │   │       │   ├── emoji_facebook_sheet_38.png
+│   │   │       │   ├── emoji_facebook_sheet_39.png
+│   │   │       │   ├── emoji_facebook_sheet_4.png
+│   │   │       │   ├── emoji_facebook_sheet_40.png
+│   │   │       │   ├── emoji_facebook_sheet_41.png
+│   │   │       │   ├── emoji_facebook_sheet_42.png
+│   │   │       │   ├── emoji_facebook_sheet_43.png
+│   │   │       │   ├── emoji_facebook_sheet_44.png
+│   │   │       │   ├── emoji_facebook_sheet_45.png
+│   │   │       │   ├── emoji_facebook_sheet_46.png
+│   │   │       │   ├── emoji_facebook_sheet_47.png
+│   │   │       │   ├── emoji_facebook_sheet_48.png
+│   │   │       │   ├── emoji_facebook_sheet_49.png
+│   │   │       │   ├── emoji_facebook_sheet_5.png
+│   │   │       │   ├── emoji_facebook_sheet_50.png
+│   │   │       │   ├── emoji_facebook_sheet_51.png
+│   │   │       │   ├── emoji_facebook_sheet_52.png
+│   │   │       │   ├── emoji_facebook_sheet_53.png
+│   │   │       │   ├── emoji_facebook_sheet_54.png
+│   │   │       │   ├── emoji_facebook_sheet_55.png
+│   │   │       │   ├── emoji_facebook_sheet_6.png
+│   │   │       │   ├── emoji_facebook_sheet_7.png
+│   │   │       │   ├── emoji_facebook_sheet_8.png
+│   │   │       │   ├── emoji_facebook_sheet_9.png
+│   │   │       │   ├── emoji_recent.png
+│   │   │       │   ├── file_icon_drawer_apk.png
+│   │   │       │   ├── file_icon_drawer_archive.png
+│   │   │       │   ├── file_icon_drawer_audio.png
+│   │   │       │   ├── file_icon_drawer_video.png
+│   │   │       │   ├── file_icon_font.png
+│   │   │       │   ├── file_icon_gif.png
+│   │   │       │   ├── file_icon_image.png
+│   │   │       │   ├── file_icon_markup.png
+│   │   │       │   ├── file_icon_pdf.png
+│   │   │       │   ├── file_icon_rar.png
+│   │   │       │   ├── file_icon_read.png
+│   │   │       │   ├── ic1_broken_image.xml
+│   │   │       │   ├── ic1_camera_btn.xml
+│   │   │       │   ├── ic1_camera_tile.xml
+│   │   │       │   ├── ic1_clear.xml
+│   │   │       │   ├── ic1_done_btn.xml
+│   │   │       │   ├── ic1_gallery_btn.xml
+│   │   │       │   ├── ic1_gallery_tile.xml
+│   │   │       │   └── ic1_selection.xml
+│   │   │       ├── drawable-xhdpi
+│   │   │       │   ├── activity.png
+│   │   │       │   ├── activity_white.png
+│   │   │       │   ├── add_user.png
+│   │   │       │   ├── arrow_down_2.png
+│   │   │       │   ├── arrow_left.png
+│   │   │       │   ├── arrow_left_2.png
+│   │   │       │   ├── arrow_right.png
+│   │   │       │   ├── arrow_right_2.png
+│   │   │       │   ├── arrow_up_2.png
+│   │   │       │   ├── arrow_up_circle.png
+│   │   │       │   ├── attach_outline.png
+│   │   │       │   ├── award_line.png
+│   │   │       │   ├── bag_2.png
+│   │   │       │   ├── buy.png
+│   │   │       │   ├── calendar.png
+│   │   │       │   ├── call.png
+│   │   │       │   ├── calling.png
+│   │   │       │   ├── camera.png
+│   │   │       │   ├── category.png
+│   │   │       │   ├── chart.png
+│   │   │       │   ├── chat.png
+│   │   │       │   ├── chat_4_line.png
+│   │   │       │   ├── chat_private_line.png
+│   │   │       │   ├── close_square.png
+│   │   │       │   ├── danger.png
+│   │   │       │   ├── delete.png
+│   │   │       │   ├── delete_bin_6_line.png
+│   │   │       │   ├── document.png
+│   │   │       │   ├── download.png
+│   │   │       │   ├── edit.png
+│   │   │       │   ├── edit_square.png
+│   │   │       │   ├── emoji.png
+│   │   │       │   ├── file_copy_2_line.png
+│   │   │       │   ├── filter_2.png
+│   │   │       │   ├── folder.png
+│   │   │       │   ├── graph.png
+│   │   │       │   ├── heart.png
+│   │   │       │   ├── hide.png
+│   │   │       │   ├── ic_masks_sticker1.png
+│   │   │       │   ├── image.png
+│   │   │       │   ├── inbox_line.png
+│   │   │       │   ├── info_circle.png
+│   │   │       │   ├── launch_link_open.png
+│   │   │       │   ├── location.png
+│   │   │       │   ├── lock.png
+│   │   │       │   ├── login.png
+│   │   │       │   ├── logout.png
+│   │   │       │   ├── mai_send.png
+│   │   │       │   ├── mail_add.png
+│   │   │       │   ├── mail_check.png
+│   │   │       │   ├── mail_close.png
+│   │   │       │   ├── mail_download.png
+│   │   │       │   ├── mail_forbid.png
+│   │   │       │   ├── mail_line.png
+│   │   │       │   ├── mail_lock.png
+│   │   │       │   ├── mail_settings.png
+│   │   │       │   ├── mail_star.png
+│   │   │       │   ├── mail_unread.png
+│   │   │       │   ├── message.png
+│   │   │       │   ├── more_circle.png
+│   │   │       │   ├── more_square.png
+│   │   │       │   ├── msg_est_enviado.png
+│   │   │       │   ├── msg_est_error.png
+│   │   │       │   ├── msg_est_recibido.png
+│   │   │       │   ├── notification.png
+│   │   │       │   ├── notification_icon.png
+│   │   │       │   ├── notification_off.png
+│   │   │       │   ├── paper.png
+│   │   │       │   ├── paper_download.png
+│   │   │       │   ├── paper_fail.png
+│   │   │       │   ├── paper_negative.png
+│   │   │       │   ├── paper_plus.png
+│   │   │       │   ├── paper_upload.png
+│   │   │       │   ├── pin_chats2.png
+│   │   │       │   ├── plus.png
+│   │   │       │   ├── profile.png
+│   │   │       │   ├── profile_white.png
+│   │   │       │   ├── refresh_icon.png
+│   │   │       │   ├── reply_all_line.png
+│   │   │       │   ├── reply_line.png
+│   │   │       │   ├── scan.png
+│   │   │       │   ├── screenshot_2_line.png
+│   │   │       │   ├── search.png
+│   │   │       │   ├── send.png
+│   │   │       │   ├── send_white.png
+│   │   │       │   ├── setting.png
+│   │   │       │   ├── share_line.png
+│   │   │       │   ├── shield_done.png
+│   │   │       │   ├── shield_fail.png
+│   │   │       │   ├── show.png
+│   │   │       │   ├── sort_black.png
+│   │   │       │   ├── star.png
+│   │   │       │   ├── star_line.png
+│   │   │       │   ├── status.png
+│   │   │       │   ├── swap.png
+│   │   │       │   ├── tab_chats.png
+│   │   │       │   ├── tick_square.png
+│   │   │       │   ├── ticket_star.png
+│   │   │       │   ├── time_circle.png
+│   │   │       │   ├── unlock.png
+│   │   │       │   ├── user_2.png
+│   │   │       │   ├── user_3.png
+│   │   │       │   ├── verified_profile.png
+│   │   │       │   ├── vip_crown_line.png
+│   │   │       │   ├── vip_diamond_line.png
+│   │   │       │   ├── voice.png
+│   │   │       │   ├── volume_down.png
+│   │   │       │   ├── volume_off.png
+│   │   │       │   ├── volume_up.png
+│   │   │       │   ├── wallet.png
+│   │   │       │   └── work.png
+│   │   │       ├── drawable-xxhdpi
+│   │   │       │   ├── activity.png
+│   │   │       │   ├── activity_white.png
+│   │   │       │   ├── add_user.png
+│   │   │       │   ├── arrow_down_2.png
+│   │   │       │   ├── arrow_left.png
+│   │   │       │   ├── arrow_left_2.png
+│   │   │       │   ├── arrow_right.png
+│   │   │       │   ├── arrow_right_2.png
+│   │   │       │   ├── arrow_up_2.png
+│   │   │       │   ├── arrow_up_circle.png
+│   │   │       │   ├── attach_outline.png
+│   │   │       │   ├── award_line.png
+│   │   │       │   ├── bag_2.png
+│   │   │       │   ├── buy.png
+│   │   │       │   ├── calendar.png
+│   │   │       │   ├── call.png
+│   │   │       │   ├── calling.png
+│   │   │       │   ├── camera.png
+│   │   │       │   ├── category.png
+│   │   │       │   ├── chart.png
+│   │   │       │   ├── chat.png
+│   │   │       │   ├── chat_4_line.png
+│   │   │       │   ├── chat_private_line.png
+│   │   │       │   ├── close_square.png
+│   │   │       │   ├── danger.png
+│   │   │       │   ├── delete.png
+│   │   │       │   ├── delete_bin_6_line.png
+│   │   │       │   ├── document.png
+│   │   │       │   ├── download.png
+│   │   │       │   ├── edit.png
+│   │   │       │   ├── edit_square.png
+│   │   │       │   ├── emoji.png
+│   │   │       │   ├── file_copy_2_line.png
+│   │   │       │   ├── filter_2.png
+│   │   │       │   ├── folder.png
+│   │   │       │   ├── graph.png
+│   │   │       │   ├── heart.png
+│   │   │       │   ├── hide.png
+│   │   │       │   ├── ic_masks_sticker1.png
+│   │   │       │   ├── image.png
+│   │   │       │   ├── inbox_line.png
+│   │   │       │   ├── info_circle.png
+│   │   │       │   ├── launch_link_open.png
+│   │   │       │   ├── location.png
+│   │   │       │   ├── lock.png
+│   │   │       │   ├── login.png
+│   │   │       │   ├── logout.png
+│   │   │       │   ├── mai_send.png
+│   │   │       │   ├── mail_add.png
+│   │   │       │   ├── mail_check.png
+│   │   │       │   ├── mail_close.png
+│   │   │       │   ├── mail_download.png
+│   │   │       │   ├── mail_forbid.png
+│   │   │       │   ├── mail_line.png
+│   │   │       │   ├── mail_lock.png
+│   │   │       │   ├── mail_settings.png
+│   │   │       │   ├── mail_star.png
+│   │   │       │   ├── mail_unread.png
+│   │   │       │   ├── message.png
+│   │   │       │   ├── more_circle.png
+│   │   │       │   ├── more_square.png
+│   │   │       │   ├── msg_est_enviado.png
+│   │   │       │   ├── msg_est_error.png
+│   │   │       │   ├── msg_est_recibido.png
+│   │   │       │   ├── notification.png
+│   │   │       │   ├── notification_icon.png
+│   │   │       │   ├── paper.png
+│   │   │       │   ├── paper_download.png
+│   │   │       │   ├── paper_fail.png
+│   │   │       │   ├── paper_negative.png
+│   │   │       │   ├── paper_plus.png
+│   │   │       │   ├── paper_upload.png
+│   │   │       │   ├── pin_chats2.png
+│   │   │       │   ├── plus.png
+│   │   │       │   ├── profile.png
+│   │   │       │   ├── profile_white.png
+│   │   │       │   ├── refresh_icon.png
+│   │   │       │   ├── reply_all_line.png
+│   │   │       │   ├── reply_line.png
+│   │   │       │   ├── scan.png
+│   │   │       │   ├── screenshot_2_line.png
+│   │   │       │   ├── search.png
+│   │   │       │   ├── send.png
+│   │   │       │   ├── send_white.png
+│   │   │       │   ├── setting.png
+│   │   │       │   ├── share_line.png
+│   │   │       │   ├── shield_done.png
+│   │   │       │   ├── shield_fail.png
+│   │   │       │   ├── show.png
+│   │   │       │   ├── sort_black.png
+│   │   │       │   ├── star.png
+│   │   │       │   ├── star_line.png
+│   │   │       │   ├── status.png
+│   │   │       │   ├── swap.png
+│   │   │       │   ├── tab_chats.png
+│   │   │       │   ├── tick_square.png
+│   │   │       │   ├── ticket_star.png
+│   │   │       │   ├── time_circle.png
+│   │   │       │   ├── unlock.png
+│   │   │       │   ├── user_2.png
+│   │   │       │   ├── user_3.png
+│   │   │       │   ├── verified_profile.png
+│   │   │       │   ├── vip_crown_line.png
+│   │   │       │   ├── vip_diamond_line.png
+│   │   │       │   ├── voice.png
+│   │   │       │   ├── volume_down.png
+│   │   │       │   ├── volume_off.png
+│   │   │       │   ├── volume_up.png
+│   │   │       │   ├── wallet.png
+│   │   │       │   └── work.png
+│   │   │       ├── drawable-xxxhdpi
+│   │   │       │   ├── activity.png
+│   │   │       │   ├── activity_white.png
+│   │   │       │   ├── add_user.png
+│   │   │       │   ├── arrow_down_2.png
+│   │   │       │   ├── arrow_left.png
+│   │   │       │   ├── arrow_left_2.png
+│   │   │       │   ├── arrow_right.png
+│   │   │       │   ├── arrow_right_2.png
+│   │   │       │   ├── arrow_up_2.png
+│   │   │       │   ├── arrow_up_circle.png
+│   │   │       │   ├── attach_outline.png
+│   │   │       │   ├── award_line.png
+│   │   │       │   ├── bag_2.png
+│   │   │       │   ├── buy.png
+│   │   │       │   ├── calendar.png
+│   │   │       │   ├── call.png
+│   │   │       │   ├── calling.png
+│   │   │       │   ├── camera.png
+│   │   │       │   ├── category.png
+│   │   │       │   ├── chart.png
+│   │   │       │   ├── chat.png
+│   │   │       │   ├── chat_4_line.png
+│   │   │       │   ├── chat_private_line.png
+│   │   │       │   ├── close_square.png
+│   │   │       │   ├── danger.png
+│   │   │       │   ├── delete.png
+│   │   │       │   ├── delete_bin_6_line.png
+│   │   │       │   ├── document.png
+│   │   │       │   ├── download.png
+│   │   │       │   ├── edit.png
+│   │   │       │   ├── edit_square.png
+│   │   │       │   ├── emoji.png
+│   │   │       │   ├── file_copy_2_line.png
+│   │   │       │   ├── filter_2.png
+│   │   │       │   ├── folder.png
+│   │   │       │   ├── graph.png
+│   │   │       │   ├── heart.png
+│   │   │       │   ├── hide.png
+│   │   │       │   ├── image.png
+│   │   │       │   ├── inbox_line.png
+│   │   │       │   ├── info_circle.png
+│   │   │       │   ├── launch_link_open.png
+│   │   │       │   ├── location.png
+│   │   │       │   ├── lock.png
+│   │   │       │   ├── login.png
+│   │   │       │   ├── logout.png
+│   │   │       │   ├── mai_send.png
+│   │   │       │   ├── mail_add.png
+│   │   │       │   ├── mail_check.png
+│   │   │       │   ├── mail_close.png
+│   │   │       │   ├── mail_download.png
+│   │   │       │   ├── mail_forbid.png
+│   │   │       │   ├── mail_line.png
+│   │   │       │   ├── mail_lock.png
+│   │   │       │   ├── mail_settings.png
+│   │   │       │   ├── mail_star.png
+│   │   │       │   ├── mail_unread.png
+│   │   │       │   ├── message.png
+│   │   │       │   ├── more_circle.png
+│   │   │       │   ├── more_square.png
+│   │   │       │   ├── notification.png
+│   │   │       │   ├── notification_icon.png
+│   │   │       │   ├── paper.png
+│   │   │       │   ├── paper_download.png
+│   │   │       │   ├── paper_fail.png
+│   │   │       │   ├── paper_negative.png
+│   │   │       │   ├── paper_plus.png
+│   │   │       │   ├── paper_upload.png
+│   │   │       │   ├── pin_chats2.png
+│   │   │       │   ├── plus.png
+│   │   │       │   ├── profile.png
+│   │   │       │   ├── profile_white.png
+│   │   │       │   ├── refresh_icon.png
+│   │   │       │   ├── reply_all_line.png
+│   │   │       │   ├── reply_line.png
+│   │   │       │   ├── scan.png
+│   │   │       │   ├── screenshot_2_line.png
+│   │   │       │   ├── search.png
+│   │   │       │   ├── send.png
+│   │   │       │   ├── send_white.png
+│   │   │       │   ├── setting.png
+│   │   │       │   ├── share_line.png
+│   │   │       │   ├── shield_done.png
+│   │   │       │   ├── shield_fail.png
+│   │   │       │   ├── show.png
+│   │   │       │   ├── sort_black.png
+│   │   │       │   ├── star.png
+│   │   │       │   ├── star_line.png
+│   │   │       │   ├── status.png
+│   │   │       │   ├── swap.png
+│   │   │       │   ├── tab_chats.png
+│   │   │       │   ├── tick_square.png
+│   │   │       │   ├── ticket_star.png
+│   │   │       │   ├── time_circle.png
+│   │   │       │   ├── unlock.png
+│   │   │       │   ├── user_2.png
+│   │   │       │   ├── user_3.png
+│   │   │       │   ├── vip_crown_line.png
+│   │   │       │   ├── vip_diamond_line.png
+│   │   │       │   ├── voice.png
+│   │   │       │   ├── volume_down.png
+│   │   │       │   ├── volume_off.png
+│   │   │       │   ├── volume_up.png
+│   │   │       │   ├── wallet.png
+│   │   │       │   └── work.png
+│   │   │       ├── layout
+│   │   │       │   ├── activity_acerca_de.xml
+│   │   │       │   ├── activity_admin_estados.xml
+│   │   │       │   ├── activity_ajustes.xml
+│   │   │       │   ├── activity_album.xml
+│   │   │       │   ├── activity_bloqueados.xml
+│   │   │       │   ├── activity_chats.xml
+│   │   │       │   ├── activity_chats_correo.xml
+│   │   │       │   ├── activity_contact.xml
+│   │   │       │   ├── activity_cropper.xml
+│   │   │       │   ├── activity_edit_image.xml
+│   │   │       │   ├── activity_edit_perfil.xml
+│   │   │       │   ├── activity_fondo.xml
+│   │   │       │   ├── activity_info_grupo.xml
+│   │   │       │   ├── activity_list_content.xml
+│   │   │       │   ├── activity_login.xml
+│   │   │       │   ├── activity_main.xml
+│   │   │       │   ├── activity_muchos_errores.xml
+│   │   │       │   ├── activity_nuevo_estado_texto.xml
+│   │   │       │   ├── activity_personalizar_chat.xml
+│   │   │       │   ├── activity_principal.xml
+│   │   │       │   ├── activity_reenviar.xml
+│   │   │       │   ├── activity_seguidores.xml
+│   │   │       │   ├── activity_view_image.xml
+│   │   │       │   ├── activity_view_image2.xml
+│   │   │       │   ├── activity_view_perfil.xml
+│   │   │       │   ├── activity_view_you_perfil.xml
+│   │   │       │   ├── activity_viewpager.xml
+│   │   │       │   ├── activity_welcome_perfil.xml
+│   │   │       │   ├── add_text_dialog.xml
+│   │   │       │   ├── album_activity_album_dark.xml
+│   │   │       │   ├── album_activity_album_light.xml
+│   │   │       │   ├── album_activity_gallery.xml
+│   │   │       │   ├── album_content_album.xml
+│   │   │       │   ├── album_dialog_floder.xml
+│   │   │       │   ├── album_dialog_loading.xml
+│   │   │       │   ├── album_item_content_button.xml
+│   │   │       │   ├── album_item_content_image.xml
+│   │   │       │   ├── album_item_content_video.xml
+│   │   │       │   ├── album_item_dialog_folder.xml
+│   │   │       │   ├── album_toolbar_dark.xml
+│   │   │       │   ├── album_toolbar_light.xml
+│   │   │       │   ├── bottom_sheet_dialog_add_sticker.xml
+│   │   │       │   ├── bottom_sheet_dialog_atajos.xml
+│   │   │       │   ├── bottom_sheet_dialog_ayuda.xml
+│   │   │       │   ├── bottom_sheet_dialog_ayuda_ajustes.xml
+│   │   │       │   ├── bottom_sheet_dialog_cambios.xml
+│   │   │       │   ├── bottom_sheet_dialog_comentario_post.xml
+│   │   │       │   ├── bottom_sheet_dialog_contacts.xml
+│   │   │       │   ├── bottom_sheet_dialog_elegir_fondo.xml
+│   │   │       │   ├── bottom_sheet_dialog_elegir_tema.xml
+│   │   │       │   ├── bottom_sheet_dialog_fondo_post_tarjeta.xml
+│   │   │       │   ├── bottom_sheet_dialog_info_contact.xml
+│   │   │       │   ├── bottom_sheet_dialog_info_usuario_publico.xml
+│   │   │       │   ├── bottom_sheet_dialog_opciones_post.xml
+│   │   │       │   ├── bottom_sheet_dialog_photo_perfil.xml
+│   │   │       │   ├── bottom_sheet_dialog_reacciones_estado.xml
+│   │   │       │   ├── bottom_sheet_dialog_responder_post.xml
+│   │   │       │   ├── bottom_sheet_dialog_tarjeta.xml
+│   │   │       │   ├── bottom_sheet_dialog_tema_info.xml
+│   │   │       │   ├── bottom_sheet_dialog_user_estadisticas.xml
+│   │   │       │   ├── color_picker_item_list.xml
+│   │   │       │   ├── content_view_perfil.xml
+│   │   │       │   ├── conversation_input_panel.xml
+│   │   │       │   ├── cpv_color_item_circle.xml
+│   │   │       │   ├── cpv_color_item_square.xml
+│   │   │       │   ├── cpv_dialog_color_picker.xml
+│   │   │       │   ├── cpv_dialog_presets.xml
+│   │   │       │   ├── cpv_preference_circle.xml
+│   │   │       │   ├── cpv_preference_circle_large.xml
+│   │   │       │   ├── cpv_preference_square.xml
+│   │   │       │   ├── cpv_preference_square_large.xml
+│   │   │       │   ├── crop_image_activity.xml
+│   │   │       │   ├── crop_image_view.xml
+│   │   │       │   ├── deltachat_attachment_type_selector.xml
+│   │   │       │   ├── deltachat_recent_photo_view.xml
+│   │   │       │   ├── deltachat_recent_photo_view_item.xml
+│   │   │       │   ├── deltachat_transport_selection_list_item.xml
+│   │   │       │   ├── dialog_alert_progress.xml
+│   │   │       │   ├── dialog_clear_inbox_progress.xml
+│   │   │       │   ├── dialog_confirm.xml
+│   │   │       │   ├── dialog_confirm_animado.xml
+│   │   │       │   ├── dialog_confirm_beta_tester.xml
+│   │   │       │   ├── dialog_confirm_db.xml
+│   │   │       │   ├── dialog_confirm_new_chat.xml
+│   │   │       │   ├── dialog_contactenos.xml
+│   │   │       │   ├── dialog_contactenos_reporte_error.xml
+│   │   │       │   ├── dialog_contactenos_reporte_post.xml
+│   │   │       │   ├── dialog_new_theme.xml
+│   │   │       │   ├── dialog_option_datos.xml
+│   │   │       │   ├── dialog_option_descargar.xml
+│   │   │       │   ├── dialog_option_donar.xml
+│   │   │       │   ├── dialog_option_image_preview.xml
+│   │   │       │   ├── dialog_options_add_atajo.xml
+│   │   │       │   ├── dialog_options_post.xml
+│   │   │       │   ├── dialog_send_msg_estado.xml
+│   │   │       │   ├── dialog_sorpresa.xml
+│   │   │       │   ├── dialog_space_low.xml
+│   │   │       │   ├── dialog_theme_options.xml
+│   │   │       │   ├── download_progress_layout.xml
+│   │   │       │   ├── emoji_adapter_item.xml
+│   │   │       │   ├── emoji_cell_with_image.xml
+│   │   │       │   ├── emoji_cell_with_image_and_text.xml
+│   │   │       │   ├── emoji_popup_window_skin.xml
+│   │   │       │   ├── emoji_view.xml
+│   │   │       │   ├── emoji_view_category.xml
+│   │   │       │   ├── file_explorer_activity.xml
+│   │   │       │   ├── file_explorer_fragment.xml
+│   │   │       │   ├── file_explorer_list.xml
+│   │   │       │   ├── fragment_add_theme.xml
+│   │   │       │   ├── fragment_ajustes_buzon.xml
+│   │   │       │   ├── fragment_azul.xml
+│   │   │       │   ├── fragment_bandeja.xml
+│   │   │       │   ├── fragment_blanco.xml
+│   │   │       │   ├── fragment_bloqueados_post.xml
+│   │   │       │   ├── fragment_bottom_custom_effect_dialog.xml
+│   │   │       │   ├── fragment_bottom_properties_dialog.xml
+│   │   │       │   ├── fragment_bottom_sticker_emoji_dialog.xml
+│   │   │       │   ├── fragment_contact_correo.xml
+│   │   │       │   ├── fragment_copia_seguridad.xml
+│   │   │       │   ├── fragment_estadisticas.xml
+│   │   │       │   ├── fragment_estadisticas_generales.xml
+│   │   │       │   ├── fragment_estadisticas_personales.xml
+│   │   │       │   ├── fragment_estados.xml
+│   │   │       │   ├── fragment_estados_viewpager.xml
+│   │   │       │   ├── fragment_historial_post.xml
+│   │   │       │   ├── fragment_main_rect.xml
+│   │   │       │   ├── fragment_nuevo_mensaje_correo.xml
+│   │   │       │   ├── fragment_post.xml
+│   │   │       │   ├── fragment_principal.xml
+│   │   │       │   ├── fragment_publicar_post.xml
+│   │   │       │   ├── fragment_rojo.xml
+│   │   │       │   ├── fragment_usuarios_publicos.xml
+│   │   │       │   ├── fragment_view_status.xml
+│   │   │       │   ├── fragment_view_stickers.xml
+│   │   │       │   ├── fragment_vista_mensaje_correo.xml
+│   │   │       │   ├── fragment_web_view.xml
+│   │   │       │   ├── item_content_image.xml
+│   │   │       │   ├── item_content_video.xml
+│   │   │       │   ├── layout_adjunto_mensaje_correo.xml
+│   │   │       │   ├── layout_adjunto_mensaje_correo_enviar.xml
+│   │   │       │   ├── layout_atajo.xml
+│   │   │       │   ├── layout_audio_answer_der.xml
+│   │   │       │   ├── layout_audio_answer_izq.xml
+│   │   │       │   ├── layout_audio_der.xml
+│   │   │       │   ├── layout_audio_izq.xml
+│   │   │       │   ├── layout_bloqueado.xml
+│   │   │       │   ├── layout_contact_der.xml
+│   │   │       │   ├── layout_contact_izq.xml
+│   │   │       │   ├── layout_contacto.xml
+│   │   │       │   ├── layout_contacto_divider.xml
+│   │   │       │   ├── layout_contacto_enviar.xml
+│   │   │       │   ├── layout_contacto_espacio.xml
+│   │   │       │   ├── layout_contacto_horizontal.xml
+│   │   │       │   ├── layout_contacto_seleccionable.xml
+│   │   │       │   ├── layout_correo_mensaje.xml
+│   │   │       │   ├── layout_correo_user.xml
+│   │   │       │   ├── layout_estado.xml
+│   │   │       │   ├── layout_estado_divider.xml
+│   │   │       │   ├── layout_estado_viewpager.xml
+│   │   │       │   ├── layout_estado_views.xml
+│   │   │       │   ├── layout_file_der.xml
+│   │   │       │   ├── layout_file_izq.xml
+│   │   │       │   ├── layout_floating_widget.xml
+│   │   │       │   ├── layout_fondo_estado_texto.xml
+│   │   │       │   ├── layout_grid_fondo.xml
+│   │   │       │   ├── layout_imagen_der.xml
+│   │   │       │   ├── layout_imagen_izq.xml
+│   │   │       │   ├── layout_img_carrucel_editor.xml
+│   │   │       │   ├── layout_img_clip.xml
+│   │   │       │   ├── layout_info_reaccion_estado.xml
+│   │   │       │   ├── layout_mensaje_answer_der.xml
+│   │   │       │   ├── layout_mensaje_answer_izq.xml
+│   │   │       │   ├── layout_mensaje_der.xml
+│   │   │       │   ├── layout_mensaje_der_emoji.xml
+│   │   │       │   ├── layout_mensaje_fecha.xml
+│   │   │       │   ├── layout_mensaje_izq.xml
+│   │   │       │   ├── layout_mensaje_izq_emoji.xml
+│   │   │       │   ├── layout_mensaje_post_answer_der.xml
+│   │   │       │   ├── layout_mensaje_post_answer_izq.xml
+│   │   │       │   ├── layout_mensaje_tema_der.xml
+│   │   │       │   ├── layout_mensaje_tema_izq.xml
+│   │   │       │   ├── layout_mi_estado.xml
+│   │   │       │   ├── layout_msg_solicitud_seguir_izq.xml
+│   │   │       │   ├── layout_pick_theme.xml
+│   │   │       │   ├── layout_post.xml
+│   │   │       │   ├── layout_post_comentario.xml
+│   │   │       │   ├── layout_post_footer.xml
+│   │   │       │   ├── layout_post_imagen.xml
+│   │   │       │   ├── layout_post_tarjeta.xml
+│   │   │       │   ├── layout_post_tema.xml
+│   │   │       │   ├── layout_seguidores.xml
+│   │   │       │   ├── layout_spinner.xml
+│   │   │       │   ├── layout_sticker_add.xml
+│   │   │       │   ├── layout_sticker_der.xml
+│   │   │       │   ├── layout_sticker_izq.xml
+│   │   │       │   ├── layout_sticker_list.xml
+│   │   │       │   ├── layout_sticker_post.xml
+│   │   │       │   ├── layout_sticker_tab.xml
+│   │   │       │   ├── layout_tab_image.xml
+│   │   │       │   ├── layout_tarjeta_der.xml
+│   │   │       │   ├── layout_tarjeta_izq.xml
+│   │   │       │   ├── layout_tools_paint.xml
+│   │   │       │   ├── layout_user_estadisticas.xml
+│   │   │       │   ├── layout_usuario.xml
+│   │   │       │   ├── layout_zoominimage.xml
+│   │   │       │   ├── pausable_progress.xml
+│   │   │       │   ├── popup_adapter_item_estado.xml
+│   │   │       │   ├── popup_adapter_item_option_estado.xml
+│   │   │       │   ├── popup_adapter_item_option_message.xml
+│   │   │       │   ├── popup_adapter_item_reaccion_lottie.xml
+│   │   │       │   ├── popup_window_option_estados.xml
+│   │   │       │   ├── popup_window_option_message.xml
+│   │   │       │   ├── popup_window_option_reaccion_estados.xml
+│   │   │       │   ├── quick_attachment_drawer.xml
+│   │   │       │   ├── quick_camera_controls.xml
+│   │   │       │   ├── quick_camera_controls_land.xml
+│   │   │       │   ├── row_editing_tools.xml
+│   │   │       │   ├── row_emoji.xml
+│   │   │       │   ├── row_filter_view.xml
+│   │   │       │   ├── row_sticker.xml
+│   │   │       │   ├── toast_layout.xml
+│   │   │       │   ├── toast_layout_animated.xml
+│   │   │       │   ├── view_header.xml
+│   │   │       │   ├── view_image_pager.xml
+│   │   │       │   ├── view_photo_editor_image.xml
+│   │   │       │   ├── view_photo_editor_text.xml
+│   │   │       │   └── view_post_options.xml
+│   │   │       ├── menu
+│   │   │       │   └── navigation_rail_menu.xml
+│   │   │       ├── menu-port
+│   │   │       │   └── album_menu_album.xml
+│   │   │       ├── mipmap-anydpi-v26
+│   │   │       │   ├── ic_launcher.xml
+│   │   │       │   └── ic_launcher_round.xml
+│   │   │       ├── mipmap-hdpi
+│   │   │       │   ├── ic_launcher.png
+│   │   │       │   ├── ic_launcher_foreground.png
+│   │   │       │   └── ic_launcher_round.png
+│   │   │       ├── mipmap-mdpi
+│   │   │       │   ├── ic_launcher.png
+│   │   │       │   ├── ic_launcher_foreground.png
+│   │   │       │   └── ic_launcher_round.png
+│   │   │       ├── mipmap-xhdpi
+│   │   │       │   ├── ic_launcher.png
+│   │   │       │   ├── ic_launcher_foreground.png
+│   │   │       │   └── ic_launcher_round.png
+│   │   │       ├── mipmap-xxhdpi
+│   │   │       │   ├── ic_launcher.png
+│   │   │       │   ├── ic_launcher_foreground.png
+│   │   │       │   └── ic_launcher_round.png
+│   │   │       ├── mipmap-xxxhdpi
+│   │   │       │   ├── ic_launcher.png
+│   │   │       │   ├── ic_launcher_foreground.png
+│   │   │       │   └── ic_launcher_round.png
+│   │   │       ├── navigation
+│   │   │       │   └── nav_graph.xml
+│   │   │       ├── raw
+│   │   │       │   ├── aaalert.json
+│   │   │       │   ├── aaanimation.json
+│   │   │       │   ├── aafast_chat.json
+│   │   │       │   ├── aalove_letter.json
+│   │   │       │   ├── aasend_e_mail_egpid.json
+│   │   │       │   ├── aasweeping_floor.json
+│   │   │       │   ├── abrir_cajon_estados.m4a
+│   │   │       │   ├── asombra.json
+│   │   │       │   ├── attach_contact.json
+│   │   │       │   ├── attach_file.json
+│   │   │       │   ├── attach_gallery.json
+│   │   │       │   ├── attach_location.json
+│   │   │       │   ├── attach_music.json
+│   │   │       │   ├── attach_poll.json
+│   │   │       │   ├── attention.json
+│   │   │       │   ├── avatar.json
+│   │   │       │   ├── chat_audio_record_delete.json
+│   │   │       │   ├── chats_archive.json
+│   │   │       │   ├── chats_archived.json
+│   │   │       │   ├── chats_hide.json
+│   │   │       │   ├── chats_infotip.json
+│   │   │       │   ├── chats_swipearchive.json
+│   │   │       │   ├── chats_unarchive.json
+│   │   │       │   ├── chats_unhide.json
+│   │   │       │   ├── contact_check.json
+│   │   │       │   ├── day_women
+│   │   │       │   ├── divierte.json
+│   │   │       │   ├── encanta.json
+│   │   │       │   ├── enoja.json
+│   │   │       │   ├── entristece.json
+│   │   │       │   ├── error.json
+│   │   │       │   ├── filter_new.json
+│   │   │       │   ├── filter_no_chats.json
+│   │   │       │   ├── forward.json
+│   │   │       │   ├── gift
+│   │   │       │   ├── grabar.m4a
+│   │   │       │   ├── group_pip_delete_icon.json
+│   │   │       │   ├── halloweenkin6
+│   │   │       │   ├── ic_admin.json
+│   │   │       │   ├── ic_ban.json
+│   │   │       │   ├── ic_delete.json
+│   │   │       │   ├── ic_download.json
+│   │   │       │   ├── ic_mute.json
+│   │   │       │   ├── ic_pin.json
+│   │   │       │   ├── ic_save_to_gallery.json
+│   │   │       │   ├── ic_save_to_music.json
+│   │   │       │   ├── ic_unban.json
+│   │   │       │   ├── ic_unmute.json
+│   │   │       │   ├── ic_unpin.json
+│   │   │       │   ├── like.ogg
+│   │   │       │   ├── like1.json
+│   │   │       │   ├── new_delete_anim.json
+│   │   │       │   ├── new_empty_file.json
+│   │   │       │   ├── new_loader_animation.json
+│   │   │       │   ├── new_login.json
+│   │   │       │   ├── new_typing_in_the_office.json
+│   │   │       │   ├── night_good
+│   │   │       │   ├── passcode_lock_close.json
+│   │   │       │   ├── passcode_lock_open.json
+│   │   │       │   ├── rec_end.m4a
+│   │   │       │   ├── rec_error.mp3
+│   │   │       │   ├── rec_start.m4a
+│   │   │       │   ├── risita.m4a
+│   │   │       │   ├── sonroja.json
+│   │   │       │   ├── sound_in.wav
+│   │   │       │   ├── sound_out.wav
+│   │   │       │   ├── sun.json
+│   │   │       │   ├── swipe_disabled.json
+│   │   │       │   ├── thumb.json
+│   │   │       │   ├── triston.ogg
+│   │   │       │   ├── tsv_setup_email_sent.json
+│   │   │       │   ├── tsv_setup_hint.json
+│   │   │       │   ├── tsv_setup_intro.json
+│   │   │       │   ├── tsv_setup_mail.json
+│   │   │       │   ├── voip_invite.json
+│   │   │       │   ├── voip_muted.json
+│   │   │       │   ├── voip_unmuted.json
+│   │   │       │   ├── wallet_allset.json
+│   │   │       │   ├── wallet_congrats.json
+│   │   │       │   ├── wallet_science.json
+│   │   │       │   └── wow.m4a
+│   │   │       ├── values
+│   │   │       │   ├── attrs.xml
+│   │   │       │   ├── colors.xml
+│   │   │       │   ├── dimens.xml
+│   │   │       │   ├── emoji_styles.xml
+│   │   │       │   ├── ic_launcher_background.xml
+│   │   │       │   ├── ids.xml
+│   │   │       │   ├── strings.xml
+│   │   │       │   ├── styles.xml
+│   │   │       │   ├── text_styles.xml
+│   │   │       │   └── vector_paths.xml
+│   │   │       ├── values-night
+│   │   │       │   └── colors.xml
+│   │   │       ├── values-v19
+│   │   │       │   └── styles.xml
+│   │   │       ├── values-v21
+│   │   │       │   └── styles.xml
+│   │   │       └── xml
+│   │   │           ├── externals_files.xml
+│   │   │           └── file_paths.xml
+│   │   └── test
+│   │       └── java
+│   │           └── cu
+│   │               └── alexgi
+│   │                   └── youchat
+│   │                       └── ExampleUnitTest.java
+│   └── structure.txt
+├── build.gradle
+├── gradle
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+├── s.txt
+└── settings.gradle
+
+178 directories, 2226 files
