@@ -425,12 +425,8 @@
                         android:layout_marginStart="8dp"
                         android:layout_weight="10"
                         android:background="?attr/selectableItemBackground">
-                        <FrameLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-
-                            <cu.alexgi.youchat.CircleImageView
-                                android:id="@+id/mini_img_perfil"
+                        <cu.alexgi.youchat.CircleImageView
+                            android:id="@+id/mini_img_perfil"
                             android:layout_width="45dp"
                             android:layout_height="45dp"
                             android:src="@drawable/profile_white"
