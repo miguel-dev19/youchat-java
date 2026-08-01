@@ -243,7 +243,27 @@
                         android:layout_gravity="center"
                         android:gravity="center_vertical">
 
-                        <cu.alexgi.youchat.CircleImageView
+                        <FrameLayout
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="8dp">
+
+                            <cu.alexgi.youchat.CircleImageView
+
+                                android:id="@+id/mini_img_perfil"
+
+                                android:layout_width="45dp"
+
+                                android:layout_height="45dp"
+
+                                android:src="@drawable/profile_white"
+
+                                android:layout_marginTop="2dp"
+
+                                android:layout_marginBottom="2dp" />
+
+                            <cu.alexgi.youchat.CircleImageView
                             android:id="@+id/play_audio_rec"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
@@ -425,8 +445,48 @@
                         android:layout_marginStart="8dp"
                         android:layout_weight="10"
                         android:background="?attr/selectableItemBackground">
-                        <cu.alexgi.youchat.CircleImageView
-                            android:id="@+id/mini_img_perfil"
+                        <FrameLayout
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="8dp">
+
+                            <cu.alexgi.youchat.CircleImageView
+
+                                android:id="@+id/mini_img_perfil"
+
+                                android:layout_width="45dp"
+
+                                android:layout_height="45dp"
+
+                                android:src="@drawable/profile_white"
+
+                                android:layout_marginTop="2dp"
+
+                                android:layout_marginBottom="2dp" />
+
+                            <FrameLayout
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="8dp">
+
+                            <cu.alexgi.youchat.CircleImageView
+
+                                android:id="@+id/mini_img_perfil"
+
+                                android:layout_width="45dp"
+
+                                android:layout_height="45dp"
+
+                                android:src="@drawable/profile_white"
+
+                                android:layout_marginTop="2dp"
+
+                                android:layout_marginBottom="2dp" />
+
+                            <cu.alexgi.youchat.CircleImageView
+                                android:id="@+id/mini_img_perfil"
                             android:layout_width="45dp"
                             android:layout_height="45dp"
                             android:src="@drawable/profile_white"
@@ -862,7 +922,15 @@
                     android:background="@null"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
-            </FrameLayout>
+                <ImageView
+        android:id="@+id/icono_grupo_chat"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_gravity="bottom|end"
+        android:background="@android:color/transparent"
+        android:src="@drawable/chat_4_line"
+        android:visibility="gone"/>
+</FrameLayout>
 
         </RelativeLayout>
 

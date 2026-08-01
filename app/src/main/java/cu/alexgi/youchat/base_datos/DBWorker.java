@@ -3735,7 +3735,13 @@ public int obtenerCantMiembrosGrupo(String idGrupo) {
 /**
  * Elimina un grupo y todos sus miembros
  */
-public synchronized void eliminarGrupo(String idGrupo) {
+public String obtenerNombreGrupo(String idGrupo) {
+        ItemGrupo grupo = obtenerGrupo(idGrupo);
+        if (grupo != null) return grupo.getNombre();
+        return "";
+    }
+
+    public synchronized void eliminarGrupo(String idGrupo) {
     String[] parametros = {idGrupo};
     db.delete(BDConstantes.TABLA_MIEMBROS_GRUPO, BDConstantes.MIEMBRO_GRUPO_ID + "=?", parametros);
     db.delete(BDConstantes.TABLA_GRUPOS_CHAT, BDConstantes.GRUPO_CHAT_ID + "=?", parametros);

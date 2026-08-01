@@ -60,6 +60,25 @@
                     app:civ_border_color="?attr/colorAccent"
                     app:civ_circle_background_color="?attr/colorAccent"/>
                 </RelativeLayout>
+                <ImageView
+
+                    android:id="@+id/icono_grupo"
+
+                    android:layout_width="20dp"
+
+                    android:layout_height="20dp"
+
+                    android:layout_alignBottom="@+id/preview_chat_image_placeHolder"
+
+                    android:layout_alignEnd="@+id/preview_chat_image_placeHolder"
+
+                    android:background="@android:color/transparent"
+
+                    android:src="@drawable/chat_4_line"
+
+                    android:visibility="gone"
+
+                    android:padding="2dp" />
 
             <LinearLayout
                 android:id="@+id/text_user"

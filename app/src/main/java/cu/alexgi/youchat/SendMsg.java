@@ -647,6 +647,18 @@ public class SendMsg{
 
                 message.addHeader(ItemChat.YOUCHAT,CATEGORY_CHAT);tamMsg+=categoria.length()+1;
                 message.addHeader(ItemChat.KEY_ID,msg.getId());tamMsg+=msg.getId().length()+1;
+                
+                // Cabeceras para grupo
+                String emisor = msg.getEmisor();
+                if (emisor != null && !emisor.isEmpty()) {
+                    message.addHeader("Chat-Group-Emisor", emisor);
+                    tamMsg += emisor.length() + 1;
+                }
+                String nombreGrupo = dbWorker.obtenerNombreGrupo(msg.getCorreo());
+                if (nombreGrupo != null && !nombreGrupo.isEmpty()) {
+                    message.addHeader("Chat-Group-Name", nombreGrupo);
+                    tamMsg += nombreGrupo.length() + 1;
+                }
                 if(YouChatApplication.chat_security){
                     message.addHeader(ItemChat.KEY_ESTA_ENCRIPTADO,"1"); tamMsg+=2;
                 }
