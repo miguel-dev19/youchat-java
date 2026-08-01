@@ -156,7 +156,32 @@
 
                 <!-- Lista de miembros -->
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/info_grupo_lista_miembros"
+                    android:id="@+id/btn_agregar_miembro"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/add_user"
+                android:tint="?attr/colorAccent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Añadir miembros"
+                android:textColor="?attr/colorAccent"
+                android:textSize="16sp"
+                android:paddingStart="16dp"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/info_grupo_lista_miembros"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:nestedScrollingEnabled="false"/>

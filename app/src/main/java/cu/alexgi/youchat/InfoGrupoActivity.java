@@ -189,6 +189,16 @@ public class InfoGrupoActivity extends BaseSwipeBackFragment {
         dialog.show();
     }
 
+    private void mostrarDialogoAgregarMiembros() {
+        if (mAddFragmentListener != null) {
+            Bundle bundle = new Bundle();
+            bundle.putString("id_grupo", idGrupo);
+            bundle.putString("modo", "agregar");
+            mAddFragmentListener.onAddFragment(InfoGrupoActivity.this,
+                CrearGrupoActivity.newInstance());
+        }
+    }
+
     private void mostrarDialogoSalirGrupo() {
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
         View dialogView = LayoutInflater.from(getContext()).inflate(R.layout.dialog_confirm, null);

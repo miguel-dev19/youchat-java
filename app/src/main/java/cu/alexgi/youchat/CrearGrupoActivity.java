@@ -167,15 +167,27 @@ public class CrearGrupoActivity extends BaseSwipeBackFragment {
 
     private void notificarMiembros(String idGrupo, String nombreGrupo) {
         if (YouChatApplication.estaAndandoChatService() && YouChatApplication.chatService.hayConex) {
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmssSSS", Locale.getDefault());
+            
+            // Mensaje de sistema: creador creó el grupo
+            String fechaEntera = sdf.format(new Date());
+            String creadorNombre = dbWorker.obtenerNombre(YouChatApplication.correo);
+            ItemChat msgCreador = new ItemChat(idGrupo, "1");
+            msgCreador.setId("-sys-" + fechaEntera);
+            msgCreador.setHora(Convertidor.conversionHora(fechaEntera));
+            msgCreador.setFecha(Convertidor.conversionFecha(fechaEntera));
+            msgCreador.setEmisor(YouChatApplication.correo);
+            msgCreador.setMensaje(creadorNombre + " creó el grupo \"" + nombreGrupo + "\"");
+            msgCreador.setTipo_mensaje(97); // Tipo mensaje de sistema
+            dbWorker.insertarChat(msgCreador);
+            
             for (String miembro : seleccionados) {
-                // Enviar mensaje de sistema: "Te agregaron al grupo X"
-                SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmssSSS", Locale.getDefault());
-                String fechaEntera = sdf.format(new Date());
-                
+                // Enviar notificación a cada miembro
+                String fechaEntera2 = sdf.format(new Date());
                 ItemChat msgGrupo = new ItemChat(idGrupo, "1");
-                msgGrupo.setId("-grp-" + miembro);
-                msgGrupo.setHora(Convertidor.conversionHora(fechaEntera));
-                msgGrupo.setFecha(Convertidor.conversionFecha(fechaEntera));
+                msgGrupo.setId("-grp-" + miembro + "-" + fechaEntera2);
+                msgGrupo.setHora(Convertidor.conversionHora(fechaEntera2));
+                msgGrupo.setFecha(Convertidor.conversionFecha(fechaEntera2));
                 msgGrupo.setEmisor(YouChatApplication.correo);
                 YouChatApplication.chatService.enviarMensaje(msgGrupo, SendMsg.CATEGORY_CHAT);
             }
