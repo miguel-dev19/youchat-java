@@ -23,6 +23,7 @@ import java.util.ArrayList;
 
 import cu.alexgi.youchat.adapters.AdaptadorDatosMiembroGrupo;
 import cu.alexgi.youchat.items.ItemGrupo;
+import cu.alexgi.youchat.ChatsActivity;
 import cu.alexgi.youchat.swipebackfragment.BaseSwipeBackFragment;
 import cu.alexgi.youchat.views_GI.FABGI;
 import cu.alexgi.youchat.views_GI.ImageViewBarGI;
@@ -162,7 +163,7 @@ public class InfoGrupoActivity extends BaseSwipeBackFragment {
 
         TextView textIcono = dialogView.findViewById(R.id.text_icono);
         TextView textEliminar = dialogView.findViewById(R.id.text_eliminar);
-        final EditText input = dialogView.findViewById(R.id.et_input);
+        final EditText input = dialogView.findViewById(R.id.et_codigo);
         
         textIcono.setText("Editar nombre");
         textEliminar.setText("Ingresa el nuevo nombre del grupo");

@@ -25,6 +25,8 @@ import java.util.Locale;
 import cu.alexgi.youchat.adapters.AdaptadorDatosContactoSeleccionable;
 import cu.alexgi.youchat.items.ItemContacto;
 import cu.alexgi.youchat.items.ItemGrupo;
+import cu.alexgi.youchat.items.ItemChat;
+import cu.alexgi.youchat.SendMsg;
 import cu.alexgi.youchat.swipebackfragment.BaseSwipeBackFragment;
 import cu.alexgi.youchat.views_GI.FABGI;
 import cu.alexgi.youchat.views_GI.ImageViewBarGI;

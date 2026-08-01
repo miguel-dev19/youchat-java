@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
 import java.util.ArrayList;
+import java.text.SimpleDateFormat;
 
 import cu.alexgi.youchat.Convertidor;
 import cu.alexgi.youchat.YouChatApplication;
@@ -15,6 +16,7 @@ import cu.alexgi.youchat.items.ItemAtajo;
 import cu.alexgi.youchat.items.ItemChat;
 import cu.alexgi.youchat.items.ItemComentarioPost;
 import cu.alexgi.youchat.items.ItemContacto;
+import cu.alexgi.youchat.items.ItemGrupo;
 import cu.alexgi.youchat.items.ItemEstadisticaPersonal;
 import cu.alexgi.youchat.items.ItemEstado;
 import cu.alexgi.youchat.items.ItemMensajeCorreo;
