@@ -190,6 +190,8 @@ public class ChatsActivity extends BaseSwipeBackFragment
     private Animation anim;
     private CircleImageView mini_img_perfil;
     private int beforeLength, tipo_contacto, cant_Msg_No_Vistos, calidad;
+    private ItemContacto contacto;
+    private ItemGrupo grupoActual;
     private boolean estaSilenciado, estaBloqueado;
     private TextView chat_usuario,chat_correo;
     private boolean estaMinimizado;
