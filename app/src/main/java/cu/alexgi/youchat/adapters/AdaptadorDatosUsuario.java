@@ -113,6 +113,7 @@ public class AdaptadorDatosUsuario extends RecyclerView.Adapter<AdaptadorDatosUs
         private AppCompatImageView estado_view;
         private ImageView anclado_view,estado_type,user_verificado;
         private CircleImageView item_seleccionado, item_en_linea, preview_chat_image;
+        private ImageView icono_grupo;
         private View preview_chat_item,viewBackground,user_silenciado;
 
         //ImageView fotos;
@@ -126,6 +127,7 @@ public class AdaptadorDatosUsuario extends RecyclerView.Adapter<AdaptadorDatosUs
             estado_view = itemView.findViewById(R.id.estado_view);
             usuarios_time=itemView.findViewById(R.id.usuarios_time);
             preview_chat_image = itemView.findViewById(R.id.preview_chat_image);
+            icono_grupo = itemView.findViewById(R.id.icono_grupo);
             anclado_view=itemView.findViewById(R.id.anclado_view);
             estado_type=itemView.findViewById(R.id.estado_type);
             ll_usuario_seleccionar = itemView.findViewById(R.id.ll_usuario_seleccionar);
@@ -424,6 +426,18 @@ public class AdaptadorDatosUsuario extends RecyclerView.Adapter<AdaptadorDatosUs
             if(contacto.getCorreo().equals(YouChatApplication.idOficial)){
                 preview_chat_image.setVisibility(View.VISIBLE);
                 YouChatApplication.ponerIconOficial(preview_chat_image);
+                icono_grupo.setVisibility(View.GONE);
+            }
+            else if (contacto.esGrupo()) {
+                preview_chat_image.setVisibility(View.VISIBLE);
+                String cache = Utils.cargarImgCache(contacto.getRuta_img());
+                if(cache.equals("")){
+                    preview_chat_image.setImageResource(R.drawable.contacts);
+                }
+                else {
+                    Glide.with(context).load(cache).into(preview_chat_image);
+                }
+                icono_grupo.setVisibility(View.VISIBLE);
             }
             else {
                 String cache = Utils.cargarImgCache(contacto.getRuta_img());
@@ -434,6 +448,7 @@ public class AdaptadorDatosUsuario extends RecyclerView.Adapter<AdaptadorDatosUs
                     preview_chat_image.setVisibility(View.VISIBLE);
                     Glide.with(context).load(cache).into(preview_chat_image);
                 }
+                icono_grupo.setVisibility(View.GONE);
             }
 
         }
