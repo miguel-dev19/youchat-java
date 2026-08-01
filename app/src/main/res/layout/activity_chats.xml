@@ -427,6 +427,17 @@
                         android:background="?attr/selectableItemBackground">
                         <cu.alexgi.youchat.CircleImageView
                             android:id="@+id/mini_img_perfil"
+
+        <ImageView
+            android:id="@+id/icono_grupo_chat"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignBottom="@+id/mini_img_perfil"
+            android:layout_alignEnd="@+id/mini_img_perfil"
+            android:background="@android:color/transparent"
+            android:src="@drawable/chat_4_line"
+            android:visibility="gone"
+            android:padding="1dp" />
                             android:layout_width="45dp"
                             android:layout_height="45dp"
                             android:src="@drawable/profile_white"

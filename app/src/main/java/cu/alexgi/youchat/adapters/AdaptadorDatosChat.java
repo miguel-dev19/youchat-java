@@ -1368,6 +1368,7 @@ public class AdaptadorDatosChat extends RecyclerView.Adapter<AdaptadorDatosChat.
         private View est_reenviado, tv_es_editado;
 //        private LinearLayout lllll;
         private EmojiTextView mensaje_izq;
+        private TextView nombre_emisor_izq;
         private TextView hora_izq;
         private AppCompatImageView corner_izq;
 //        private MaterialCheckBox cb_modo_seleccion;
@@ -1377,6 +1378,7 @@ public class AdaptadorDatosChat extends RecyclerView.Adapter<AdaptadorDatosChat.
         public ViewHolderDatosTextIzq(@NonNull View itemView) {
             super(itemView);
             mensaje_izq = itemView.findViewById(R.id.mensaje_izq);
+            nombre_emisor_izq = itemView.findViewById(R.id.nombre_emisor_izq);
             hora_izq = itemView.findViewById(R.id.hora_izq);
             //fondo_msg_chat=itemView.findViewById(R.id.fondo_msg_chat);
 //            lllll=itemView.findViewById(R.id.lllll);
@@ -1393,6 +1395,20 @@ public class AdaptadorDatosChat extends RecyclerView.Adapter<AdaptadorDatosChat.
             String u = chat.getMensaje();
             String hor = chat.getHora();
             boolean esReenviado = chat.EsReenviado();
+            
+            // Mostrar nombre del emisor si es un mensaje de grupo
+            String emisor = chat.getEmisor();
+            if (emisor != null && !emisor.isEmpty() && !emisor.equals(YouChatApplication.correo)) {
+                String nombreEmisor = dbWorker.obtenerNombre(emisor);
+                if (!nombreEmisor.equals(emisor)) {
+                    nombre_emisor_izq.setText(nombreEmisor);
+                } else {
+                    nombre_emisor_izq.setText(emisor);
+                }
+                nombre_emisor_izq.setVisibility(View.VISIBLE);
+            } else {
+                nombre_emisor_izq.setVisibility(View.GONE);
+            }
 
             if(esReenviado) est_reenviado.setVisibility(View.VISIBLE);
             else est_reenviado.setVisibility(View.GONE);
@@ -1933,6 +1949,7 @@ public class AdaptadorDatosChat extends RecyclerView.Adapter<AdaptadorDatosChat.
         public ViewHolderDatosTextIzqResp(@NonNull View itemView) {
             super(itemView);
             mensaje_izq = itemView.findViewById(R.id.mensaje_izq);
+            nombre_emisor_izq = itemView.findViewById(R.id.nombre_emisor_izq);
             hora_izq = itemView.findViewById(R.id.hora_izq);
             mensaje_respuesta_nombre_izq=itemView.findViewById(R.id.mensaje_respuesta_nombre_izq);
             mensaje_respuesta_texto_izq=itemView.findViewById(R.id.mensaje_respuesta_texto_izq);
@@ -3523,6 +3540,7 @@ public class AdaptadorDatosChat extends RecyclerView.Adapter<AdaptadorDatosChat.
         public ViewHolderDatosEstadoIzqResp(@NonNull View itemView) {
             super(itemView);
             mensaje_izq = itemView.findViewById(R.id.mensaje_izq);
+            nombre_emisor_izq = itemView.findViewById(R.id.nombre_emisor_izq);
             hora_izq = itemView.findViewById(R.id.hora_izq);
             mensaje_respuesta_nombre_izq=itemView.findViewById(R.id.mensaje_respuesta_nombre_izq);
             mensaje_respuesta_texto_izq=itemView.findViewById(R.id.mensaje_respuesta_texto_izq);
@@ -4458,6 +4476,7 @@ public class AdaptadorDatosChat extends RecyclerView.Adapter<AdaptadorDatosChat.
         public ViewHolderDatosPostIzqResp(@NonNull View itemView) {
             super(itemView);
             mensaje_izq = itemView.findViewById(R.id.mensaje_izq);
+            nombre_emisor_izq = itemView.findViewById(R.id.nombre_emisor_izq);
             hora_izq = itemView.findViewById(R.id.hora_izq);
             fondo_msg_chat=itemView.findViewById(R.id.fondo_msg_chat);
             background_mensaje= itemView.findViewById(R.id.background_mensaje);
@@ -4857,6 +4876,7 @@ public class AdaptadorDatosChat extends RecyclerView.Adapter<AdaptadorDatosChat.
 
         private View view1,view2;
         private EmojiTextView mensaje_izq;
+        private TextView nombre_emisor_izq;
         private TextView hora_izq;
         private AppCompatImageView corner_izq;
         private View background_mensaje;
@@ -4864,6 +4884,7 @@ public class AdaptadorDatosChat extends RecyclerView.Adapter<AdaptadorDatosChat.
         public ViewHolderDatosTextIzqEmoji(@NonNull View itemView) {
             super(itemView);
             mensaje_izq = itemView.findViewById(R.id.mensaje_izq);
+            nombre_emisor_izq = itemView.findViewById(R.id.nombre_emisor_izq);
             hora_izq = itemView.findViewById(R.id.hora_izq);
             view1=itemView.findViewById(R.id.view1);
             view2=itemView.findViewById(R.id.view2);

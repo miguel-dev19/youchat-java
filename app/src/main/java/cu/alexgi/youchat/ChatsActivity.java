@@ -189,6 +189,7 @@ public class ChatsActivity extends BaseSwipeBackFragment
     private EmojiEditText text_send;
     private Animation anim;
     private CircleImageView mini_img_perfil;
+    private ImageView icono_grupo_chat;
     private int beforeLength, tipo_contacto, cant_Msg_No_Vistos, calidad;
     private ItemContacto contacto;
     private ItemGrupo grupoActual;
@@ -1010,6 +1011,7 @@ public class ChatsActivity extends BaseSwipeBackFragment
 //        fecha_act_chat_text = view.findViewById(R.id.fecha_act_chat_text);
         progressBar = view.findViewById(R.id.progressBar);
         mini_img_perfil = view.findViewById(R.id.mini_img_perfil);
+        icono_grupo_chat = view.findViewById(R.id.icono_grupo_chat);
         llamar_movil = view.findViewById(R.id.llamar_movil);
         icono_respuesta=view.findViewById(R.id.icono_respuesta);
         llamar_movil.setOnClickListener(new OnClickListener() {
@@ -1471,9 +1473,19 @@ public class ChatsActivity extends BaseSwipeBackFragment
 
             if(correo.equals(YouChatApplication.idOficial)){
                 YouChatApplication.ponerIconOficial(mini_img_perfil);
+                icono_grupo_chat.setVisibility(View.GONE);
+            }
+            else if (tipo_contacto == ItemContacto.TIPO_GRUPO) {
+                if (!ruta_img_perfil.isEmpty()) {
+                    Glide.with(context).load(ruta_img_perfil).error(R.drawable.contacts).into(mini_img_perfil);
+                } else {
+                    mini_img_perfil.setImageResource(R.drawable.contacts);
+                }
+                icono_grupo_chat.setVisibility(View.VISIBLE);
             }
             else {
                 Glide.with(context).load(ruta_img_perfil).error(R.drawable.profile_white).into(mini_img_perfil);
+                icono_grupo_chat.setVisibility(View.GONE);
             }
 
 

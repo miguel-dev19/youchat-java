@@ -33,6 +33,7 @@ import cu.alexgi.youchat.YouChatApplication;
 import cu.alexgi.youchat.items.ItemChat;
 import cu.alexgi.youchat.items.ItemContacto;
 import cu.alexgi.youchat.items.ItemUsuario;
+import cu.alexgi.youchat.items.ItemGrupo;
 
 import static cu.alexgi.youchat.MainActivity.dbWorker;
 
