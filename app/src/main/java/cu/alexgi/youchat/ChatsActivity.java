@@ -1244,16 +1244,6 @@ public class ChatsActivity extends BaseSwipeBackFragment
             correo = mibundle.getString("correo", "");
             contacto = dbWorker.obtenerContacto(correo);
             if (contacto != null) {
-                if (contacto.esGrupo() || contacto.esCanal()) {
-                    grupoActual = dbWorker.obtenerGrupo(correo);
-                    if (grupoActual != null) {
-                        if (apodo.equals("") || apodo.equals(correo))
-                            apodo = grupoActual.getNombre();
-                        ruta_img_perfil = grupoActual.getFotoGrupo();
-                    }
-                    option_agregar_contacto.setVisibility(View.GONE);
-                    item_bloquear.setVisibility(View.GONE);
-                }
                 if(!correo.contains(",")){
                     if (apodo.equals("") || apodo.equals(correo))
                         apodo = contacto.getNombreMostrar();
@@ -2375,7 +2365,6 @@ public class ChatsActivity extends BaseSwipeBackFragment
                         texto_enviar,
                         "",
                         hora, fecha, "", aut_user, false, fechaEntera,false,"",0,true);
-                if (contacto != null && contacto.esGrupo()) newChat.setEmisor(aut_user);
 
                 if(YouChatApplication.estaAndandoChatService())
                     YouChatApplication.chatService.enviarMensaje(newChat,SendMsg.CATEGORY_CHAT);
