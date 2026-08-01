@@ -31,6 +31,7 @@ import android.provider.ContactsContract;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.text.Editable;
+import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -5151,6 +5152,31 @@ public class ChatsActivity extends BaseSwipeBackFragment
             transImage.exit(locationOnScreen[0], locationOnScreen[1],
                     locationOnScreen[2], locationOnScreen[3]);
         }
+    }
+
+    private void enviarMensajeAGrupo(ItemChat chat) {
+        ArrayList<String> miembros = dbWorker.obtenerMiembrosGrupo(chat.getCorreo());
+        // Crear copia del chat con todos los miembros como destinatarios
+        ItemChat chatGrupal = new ItemChat(
+            chat.getId(),
+            chat.getTipo_mensajeReal(),
+            chat.getEstado(),
+            TextUtils.join(",", miembros), // todos los miembros como destinatarios
+            chat.getMensaje(),
+            chat.getRuta_Dato(),
+            chat.getHora(),
+            chat.getFecha(),
+            chat.getId_msg_resp(),
+            chat.getEmisor(),
+            chat.esReenviado(),
+            chat.getOrden(),
+            chat.esEditado(),
+            chat.getId_mensaje(),
+            chat.getPeso(),
+            chat.isDescargado()
+        );
+        chatGrupal.setEmisor(aut_user);
+        YouChatApplication.chatService.enviarMensaje(chatGrupal, SendMsg.CATEGORY_CHAT_VERY_MUCH);
     }
 
     public void abrirInfoGrupo() {
