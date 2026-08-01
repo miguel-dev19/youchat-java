@@ -1242,7 +1242,7 @@ public class ChatsActivity extends BaseSwipeBackFragment
         if (mibundle != null) {
             apodo = mibundle.getString("usuario", "");
             correo = mibundle.getString("correo", "");
-            ItemContacto contacto = dbWorker.obtenerContacto(correo);
+            contacto = dbWorker.obtenerContacto(correo);
             if (contacto != null) {
                 if (contacto.esGrupo() || contacto.esCanal()) {
                     grupoActual = dbWorker.obtenerGrupo(correo);
@@ -3339,7 +3339,7 @@ public class ChatsActivity extends BaseSwipeBackFragment
             }
             else if(requestCode == 34){//contactos
                 option_agregar_contacto.setVisibility(View.GONE);
-                ItemContacto contacto = dbWorker.obtenerContacto(correo);
+                contacto = dbWorker.obtenerContacto(correo);
                 if(contacto==null){
                     contacto = new ItemContacto(apodo,correo);
                 }
@@ -3686,7 +3686,7 @@ public class ChatsActivity extends BaseSwipeBackFragment
             //if(estado!=null) estados.add(estado);
 
 
-            ItemContacto contacto = dbWorker.obtenerContacto(correo);
+            contacto = dbWorker.obtenerContacto(correo);
             if (contacto == null) contacto = new ItemContacto(correo, correo);
 
             Glide.with(context)
