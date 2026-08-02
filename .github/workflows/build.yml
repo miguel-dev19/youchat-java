@@ -63,15 +63,15 @@ jobs:
       with:
         name: YouChat-Debug-APK
         path: app/build/outputs/apk/debug/*.apk
-
-- name: Crear Release automático
-  if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-  uses: softprops/action-gh-release@v2
-  with:
-    tag_name: v${{ github.run_number }}
-    name: Release v${{ github.run_number }}
-    body: |
-      🚀 Build automático desde commit ${{ github.sha }}
-    files: app/build/outputs/apk/debug/*.apk
-  env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Crear Release automático
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: v${{ github.run_number }}
+        name: Release v${{ github.run_number }}
+        body: |
+          🚀 Build automático desde commit ${{ github.sha }}
+        files: app/build/outputs/apk/debug/*.apk
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
