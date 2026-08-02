@@ -1378,7 +1378,7 @@ public class AdaptadorDatosChat extends RecyclerView.Adapter<AdaptadorDatosChat.
         public ViewHolderDatosTextIzq(@NonNull View itemView) {
             super(itemView);
             mensaje_izq = itemView.findViewById(R.id.mensaje_izq);
-            nombre_emisor_izq = itemView.findViewById(R.id.nombre_emisor_izq);
+            // nombre_emisor_izq = itemView.findViewById(R.id.nombre_emisor_izq);
             hora_izq = itemView.findViewById(R.id.hora_izq);
             //fondo_msg_chat=itemView.findViewById(R.id.fondo_msg_chat);
 //            lllll=itemView.findViewById(R.id.lllll);
@@ -1949,7 +1949,7 @@ public class AdaptadorDatosChat extends RecyclerView.Adapter<AdaptadorDatosChat.
         public ViewHolderDatosTextIzqResp(@NonNull View itemView) {
             super(itemView);
             mensaje_izq = itemView.findViewById(R.id.mensaje_izq);
-            nombre_emisor_izq = itemView.findViewById(R.id.nombre_emisor_izq);
+            // nombre_emisor_izq = itemView.findViewById(R.id.nombre_emisor_izq);
             hora_izq = itemView.findViewById(R.id.hora_izq);
             mensaje_respuesta_nombre_izq=itemView.findViewById(R.id.mensaje_respuesta_nombre_izq);
             mensaje_respuesta_texto_izq=itemView.findViewById(R.id.mensaje_respuesta_texto_izq);
@@ -3540,7 +3540,7 @@ public class AdaptadorDatosChat extends RecyclerView.Adapter<AdaptadorDatosChat.
         public ViewHolderDatosEstadoIzqResp(@NonNull View itemView) {
             super(itemView);
             mensaje_izq = itemView.findViewById(R.id.mensaje_izq);
-            nombre_emisor_izq = itemView.findViewById(R.id.nombre_emisor_izq);
+            // nombre_emisor_izq = itemView.findViewById(R.id.nombre_emisor_izq);
             hora_izq = itemView.findViewById(R.id.hora_izq);
             mensaje_respuesta_nombre_izq=itemView.findViewById(R.id.mensaje_respuesta_nombre_izq);
             mensaje_respuesta_texto_izq=itemView.findViewById(R.id.mensaje_respuesta_texto_izq);
@@ -4476,7 +4476,7 @@ public class AdaptadorDatosChat extends RecyclerView.Adapter<AdaptadorDatosChat.
         public ViewHolderDatosPostIzqResp(@NonNull View itemView) {
             super(itemView);
             mensaje_izq = itemView.findViewById(R.id.mensaje_izq);
-            nombre_emisor_izq = itemView.findViewById(R.id.nombre_emisor_izq);
+            // nombre_emisor_izq = itemView.findViewById(R.id.nombre_emisor_izq);
             hora_izq = itemView.findViewById(R.id.hora_izq);
             fondo_msg_chat=itemView.findViewById(R.id.fondo_msg_chat);
             background_mensaje= itemView.findViewById(R.id.background_mensaje);
@@ -4884,7 +4884,7 @@ public class AdaptadorDatosChat extends RecyclerView.Adapter<AdaptadorDatosChat.
         public ViewHolderDatosTextIzqEmoji(@NonNull View itemView) {
             super(itemView);
             mensaje_izq = itemView.findViewById(R.id.mensaje_izq);
-            nombre_emisor_izq = itemView.findViewById(R.id.nombre_emisor_izq);
+            // nombre_emisor_izq = itemView.findViewById(R.id.nombre_emisor_izq);
             hora_izq = itemView.findViewById(R.id.hora_izq);
             view1=itemView.findViewById(R.id.view1);
             view2=itemView.findViewById(R.id.view2);
